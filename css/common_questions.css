@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-color: var(--medium-brown);
+	background-image: none;
+}

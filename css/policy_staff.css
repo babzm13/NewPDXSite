@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page_heading {
+	background-color: var(--green-gold);
+	background-image: none;
+}
+.page_heading img {
+	top: -50%;
+}
+.role_div, .always_on {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--dark-off-white);
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-color: var(--light-brown);
+	border-width: 2px;
+	border-radius: 20px;
+	margin-bottom: 1.2%;
+}
+.role_div p, .always_on p {
+	padding-left: 5%;
+}
+.collapsible ul {
+	padding-left: 5%;
+}
+.collapsible ul li {
+	padding-left: 1%;
+	padding-right: 5%;
+	list-style: circle outside;
+}
+body {
+	color: var(--dark-red);
+}
+.role_div h3, .always_on h3 {
+	width: 79%;
+	padding-left: 3%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 24px;
+}
+.collapsible {
+	width: 100%;
+}
+.expand_collapse {
+	text-align: right;
+}
+@media (min-width: 321px) and (max-width: 768px) {
+	.collapsible ul {
+		padding-left: 10%;
+	}
+}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to top right, var(--medium-green), var(--dark-green));
+}
+.whole_title {
+	width: 100%;
+	background: var(--light-pink);
+	text-align: center;
+}
+body .row .column_title {
+	color: var(--off-white);
+}
+.left_image {
+	height: auto;
+}

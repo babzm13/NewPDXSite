@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.columns {
+	background-color: transparent;
+	color: var(--dark-green);
+	margin: 0px;
+	padding: 0px;
+	width: 28%;
+}
+.outside {
+	padding-top: 10px;
+}
+.center {
+	width: 35%;
+}
+.center ul li, .centered ul li {
+	list-style: none;
+}
+.row .center p {
+	padding: 0px;
+}
+.centered {
+	color: var(--dark-green);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 24px;
+}
+.centered ul {
+	text-align: left;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+.small_hidden {
+	display: none;
+}
+@media (min-width: 800px) and (max-width: 999px) {
+	.columns {
+		width: 33%;
+	}
+	.row .columns p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.small_hidden {
+		display: none;
+	}
+}
+@media (max-width: 799px) {
+	.columns {
+		width: 100%;
+	}
+	.row .columns p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.small_hidden {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.thumbnail_overlay img {
+		height: 100px;
+		width: 100px;
+	}
+	h1, h2, h3, h4, h5 {
+		padding-left: 0px;
+	}
+}

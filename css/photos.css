@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page_heading {
+	background-image: linear-gradient(to right, var(--medium-brown), var(--medium-blue));
+}
+.photo_row {
+	padding: 2%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.photo_row img {
+	width: 30%;
+	height: auto;
+}

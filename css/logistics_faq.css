@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-color: var(--light-pink);
+	background-image: none;
+}
+.page_heading img {
+	top: -50%;
+}
+body article ol li {
+	font-weight: 600;
+}
+body article ul li {
+	font-weight: 300;
+}

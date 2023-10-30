@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to right, var(--medium-blue), var(--dark-pink));
+}
+.page_heading img {
+	top: -25%;
+}
+body .article table {
+	margin-right: 5%;
+}

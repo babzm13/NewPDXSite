@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-color: var(--medium-blue);
+	background-image: none;
+}
+.flipped {
+	transform: rotate(180deg);
+}
+#page_purple {
+	background: var(--dark-purple);
+}
+.article .page h3, .article .page ul {
+	color: var(--dark-off-white);
+}
+#page_green {
+	background: var(--dark-green);
+}
+.page {
+	padding: 1%;
+}

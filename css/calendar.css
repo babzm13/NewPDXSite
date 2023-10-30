@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to right, var(--dark-yellow), var(--dark-yellow));
+}
+.page_heading img {
+	top: -50%;
+}
+body {
+	color: var(--dark-blue);
+}
+body ul {
+	padding-left: 5%;
+	padding-right: 10%;
+}
+.center_article h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.columns {
+	background: var(--light-yellow);
+	color: var(--dark-blue);
+}
+.columns a {
+	color: var(--dark-blue);
+	hover: var(--dark-blue);
+}
+body .columns h3 {
+	color: var(--dark-blue);
+}
+#top_calendar {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-content: normal;
+	align-items: center;
+}
+.right_image_container {
+	width: 40%;
+	justify-content: center;
+}
+.right_image {
+	width: 100%;
+}

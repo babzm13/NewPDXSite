@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page_heading {
+	background-image: linear-gradient(to right, var(--dark-pink), var(--dark-purple));
+}
+.page_heading img {
+	top: -75%;
+}
+body p, h3 {
+	color: var(--dark-purple);
+}
+body .left_article p, body .left_article h3{
+	color: var(--dark-purple);
+}
+body #opening_bg, #closing_bg {
+	height: 156px;
+}
+#opening_bg {
+	transform: rotate(180deg);
+}
+#page {
+	background-color: var(--dark-purple);
+	color: var(--off-white);
+	padding: 5%;
+}
+.centered {
+	text-align: center;
+	color: var(--off-white);
+}
+.row {
+	flex-wrap: nowrap;
+	align-content: normal;
+	align-items: center;
+}
+.right_image {
+	width: 95%;
+	justify-content: center;
+}
