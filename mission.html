@@ -1,0 +1,203 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/mission.css" rel="stylesheet" type="text/css">
+		<title>Mission Statement</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background" />
+			<div class="heading_text">
+				<h1>Mission Statement</h1>
+				<h3>Who we are as an organization</h3>
+			</div>
+		</section>
+		<section class="row">
+			<article class="article left_article">
+				<h3>Introduction</h3>
+				<p>Refuge LARP Portland has some very intentional views on the culture it is trying to create. As such, we have created this document to try and outline some of the key pieces and assist others in determining if this is the right game for them.</p>
+				<p>Any and all questions can be directed towards the owners and/or staff.</p>
+				<p>This is a living document and will be updated regularly. Please check back if you have questions, or if it has been announced that changes have been made. Thank you.</p>
+				<div class="trio">
+					<span class="thumbnail_overlay light_yellow"><img src="images/circle borders/icon 11 circle border.png" alt="A sword and sheild" class="thumbnail" /></span>
+					<span class="thumbnail_overlay light_yellow"><img src="images/circle borders/icon 12 circle border.png" alt="An image of a sun" class="thumbnail" /></span>
+					<span class="thumbnail_overlay light_yellow"><img src="images/circle borders/icon 11 circle border.png" alt="A sword and shield" class="thumbnail" /></span>
+				</div>
+				<h3>Refuge LARP Portland's Mission and Culture Statement</h3>
+				<p>Refuge LARP Portland wants to create an inclusive culture, where differences between players are not just acknowledged, they are celebrated. Players - PCs or NPCs - are expected to take this into consideration when they are engaging with others, and participate in good faith, as much as possible. We define “good faith” as when you give others the benefit of the doubt, and act as if the actions of others are reasonable by default.</p>
+			</article>
+			<article class="right_image">
+				<img src="images/pictures/Layn/Goat.jpg" alt="A person dressed as a goat, photo by Layn S" class="right_image"/> 
+			</article>
+		</section>
+		<section>
+			<article class="center_article">
+				<img id="opening_bg" src="images/BG image 4/BG image_4_4.png" alt="A torn page background" />
+				<div id="page">
+					<p class="centered">Refuge LARP Portland expects players to...</p>
+					<ul>
+						<li><strong>Try and make the game as fun for the PLAYERS as possible.</strong> Remember, this is a game. Not everyone wants the same thing in games, and that’s fine. Some players have a “play to win” mentality, while others might have a “play to lose” one. Try and engage different mentalities with the notion that they are valid forms of enjoying the game, and appreciate them for what they are: different ways of having fun.</li>
+						<li><strong>Try to make the game as safe as possible for everyone involved.</strong> This includes, but is not limited to:</li>
+						<ul>
+							<li>No derogatory language out of character</li>
+							<li>Be mindful of the abilities and disabilities of others</li>
+							<li>Ask for permission before touching people, unless you have pre-negotiated standing consent (like between good friends or spouses)</li>
+							<li>Follow our romantic RP policies</li>
+							<li>Alert staff to problems with other players quickly if there was a confrontation that needs to be addressed - but keep in mind, not every confrontation needs to be addressed</li>
+							<li>Be honest and forthright OUT of character (lie all you want in character)</li>
+							<li>Be mindful of bleed - both yours and others - and try to engage from a place of understanding when confronted with it</li>
+							<li>Walk away if you need to take a few minutes, and let others walk away if they need that space. You can return to a conversation later, if needed</li>
+							<li>Seek help if you need it, from whatever source makes you feel comfortable</li>
+							<li>Take care of yourself - eat, drink, sleep, etc to the best of your abilities</li>
+							<li>Encourage others to be their best selves, and take that encouragement for yourself</li>
+						</ul>
+						<li><strong>Check in with each other after particularly difficult scenes, or if someone doesn’t look like they’re doing well.</strong> This could be as short and sweet as an OOG “you okay?” followed by a thumbs up, or as complicated as a long conversation. No one is required to engage with the check-in if they feel uncomfortable or unsafe, but it is strongly encouraged in those situations to check in with someone else, if needed. If you really don’t have the mental energy after an encounter to do a check-in, feel free to say so, go take care of yourself (have you drunk water recently?), and then come back to the other person later to check in. Even if there’s been time between scene and check-in, it’s better to check-in and be good in the end, than skip the check-in and percolate undesired feelings in others.</li>
+						<li><strong>Remember that discomfort is not the same as feeling unsafe.</strong> Everyone brings their own experiences to bear on the game, and might find different things very uncomfortable. In many cases, feeling uncomfortable is a great first step on a path to growth, and should be encouraged. We believe it can be healthy for players to feel uncomfortable at times, but this is different from feeling unsafe. Feeling unsafe is not good. It can lead to making rash, precipitous, and ill-considered choices, stress, anxiety, and panic attacks. If you feel unsafe for any reason, please check in with a staff member, but please keep in mind that sometimes it’s hard to tell the difference between the two.</li>
+						<li><strong>Engage from a place of good faith as much as possible.</strong> You can’t always be the best person you want to be. As much as possible, try to engage from a place where you are doing your best, and try to understand that others are too. We’ll all be a better, happier, more fun game for it.</li>
+						<li><strong>Assume good faith from others as much as possible.</strong> Not every situation allows you to see good faith - nor should it, as good faith is not always present - but when presented with two options, choosing to believe in good faith is preferable. You certainly don’t need to like everyone who shows up to game, and we understand that there may be bad-blood between players. That’s fine. But try and remember that by and large we’re all just people trying to live our lives.</li>
+						<li><strong>Eschew judgment in favour of compassion and understanding.</strong> Again, not every situation permits this, but for those that do, actions done out of compassion and a quest for understanding will lead to a better, healthier game than ones steeped in judgment.</li>
+						<li><strong>Remember that the core of our game is to tell giant group stories with our friends.</strong> We aren’t here to “win” necessarily (although winning does have its place). Rather, we’re here to tell stories. The stories we want are different for everyone, but it’s in coming together and throwing it all into the giant melting pot of an event that we get the amazing legends that get passed down from generation to generation of LARPers, and that’s freaking AWESOME.</li>
+					</ul>
+				</div>
+				<img id="closing_bg" src="images/BG image 4/BG image_4_4.png" alt="A torn page background" />
+				<p>These are not prescriptive “you are not welcome at our game if you don’t do X” rules. Each individual has their own comfort with these guidelines, making some of them easier and some of them harder. You should feel empowered to do the ones you’re good at well, and do your best with the ones you’re not good at with an eye towards improving as you go along. Again, these aren’t rules of the game (except for our romantic and physical touch policies), they are cultural norms that are designed to guide folk to feel comfortable with the community around them.</p>
+				<p>Serious cases of inappropriate conduct as detailed by this guide may result in warnings or further penalties - but not generally on a first offense. However, the use of racial slurs (even in jest), assault, blatant disregard for our rules, etc, may result in immediate expulsion from the game. Other infractions are likely to be addressed by a member of staff and discussions will ensue from there. </p>
+				<p>We want to make sure everyone has a better understanding of what they’re signing up for when coming to one of our events, and so everyone can feel as safe as possible. We’re here to build a community, and we want you to feel comfortable being a part of it.</p>	
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

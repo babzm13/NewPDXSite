@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer {
+	background-color: var(--dark-dark-blue);
+}
+.copyright {
+	text-align: center;
+	background-color: var(--dark-dark-blue);
+	color: var(--text-off-white);
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+	font-family: var(--font);
+}
+@media (max-width: 320px) {
+	.secondary_header ul li {
+		float: none;
+		margin-top: 28px;
+		margin-left: 0px;
+		width: 100%;
+	}
+	body .secondary_header ul {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		height: auto;
+		width: 100%;
+		text-align: center;
+	}
+	.secondary_header {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 1px;
+		padding-bottom: 40px;
+	}
+	.copyright {
+		padding-top: 25px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	.social .social_icon img {
+		width: 80%;
+	}
+}
+@media (min-width: 321px) and (max-width: 768px) {
+	.secondary_header ul li {
+		float: none;
+		margin-top: 28px;
+		margin-left: 0px;
+		width: 100%;
+	}
+	body .secondary_header ul {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		height: auto;
+		width: 100%;
+		text-align: center;
+	}
+	.secondary_header {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		padding-top: 1px;
+		padding-bottom: 40px;
+	}
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+	.secondary_header {
+		overflow: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.secondary_header ul li {
+		margin-top: 10px;
+		margin-right: 7%;
+		margin-bottom: 10px;
+		margin-left: 7%;
+	}
+}
+.bottom_menu {
+	background-color: var(--dark-purple);
+}
+.social {
+	text-align: center;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	background-color: var(--menu-bg-green);
+	clear: both;
+	overflow: auto;
+}
+.social_icon {
+	width: 25%;
+	text-align: center;
+	float: left;
+	transition: all 0.3s linear;
+	line-height: 0px;
+	padding-top: 7px;
+}
+body .social .social_icon:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+.social_icon p {
+	color: var(--text-off-white);
+	font-family: var(--font);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}

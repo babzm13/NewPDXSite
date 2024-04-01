@@ -1,0 +1,244 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/species.css" rel="stylesheet" type="text/css">
+		<title>Species of Refuge</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Species of Refuge</h1>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>Introduction</h3>
+				<p>Below you will find a list of the playable species of Refuge. If you haven't looked at the <a href="quick_start_guides.html">Quick start guides</a> or the <a href="getting_started.html">Getting started</a> pages yet, you may want to start there. The species of Refuge are an important choice in determining what character you want to play.</p>
+				<p>Along with a short write-up of each species below, you can download the species packet pdf. This packet contains a lot more detailed information on the species in question. There are packets for every species except humans. If you need or want further guidance, we are happy to answer any and all questions. Simply <a href="contact_us.html">Contact us</a>, and we'll do our best to ensure you're playing the right character for you!</p>
+			</article>
+			<section class="three-column">
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 1 circle border.png" alt="" class="icon"></span><h4>Avani</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 1 circle border.png" alt="" class="icon"></span>
+					<p>Avani were originally created by gryphons from the birds that dwelled in their mountainous homes. The connection Avanian societies maintain to gryphons varies wildly, but their history does tend to result in Avani who are highly motivated and have strong convictions. Individual Avani also can form strong bonds with gryphons, called pacts, that can have both positive and negative consequences.</p>
+					<p>Like their progenitors, Avani have the innate ability to interact with minds and mental landscapes. Their power in this area largely centres around memory, and their ability to view, protect, and alter it. This intimate relationship with memory gives them a unique perspective on its inherent weakness and value. Many Avanian cultures place emphasis on the role memory plays in the creation of the self, and the idea of immortality through the preservation of memory. </p>
+					<a href="pdfs/Avana_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Avani PDF" longdesc="pdfs/Avana_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 3 circle border.png" alt="" class="icon"></span><h4>Dark Elves</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 3 circle border.png" alt="" class="icon"></span>
+					<p>To surface-dwellers, Dark Elves often seem cold and standoffish. This is due to their high expectations of personal conduct, both for themselves and others. This is not to say that Dark Elves never laugh or cry, but they are expected to keep excessive emotions in check. Additionally, their sense of humor may be darker than others.</p>
+					<p>Dark Elves place a high value on personal integrity. While they can lie, it is almost always to a greater purpose. Due to their mistrust of the more “carefree” people of the surface, Dark Elves tend to gravitate toward and place greater trust in those with similar values. While Dark Elves do have a sense of self-preservation, they are generally taught not to show fear or hesitation in the face of adversity. Therefore, they are often inclined to meet difficult, and even life-threatening, challenges head on. Dark Elven culture places a high value on the valor of such deeds, but this belief does often cost Dark Elves their lives.</p>
+					<a href="pdfs/Dark_Elf_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Dark Elf PDF" longdesc="pdfs/Dark_Elf_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 11 circle border.png" alt="" class="icon"></span><h4>Dryads</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 11 circle border.png" alt="" class="icon"></span>
+					<p>While there is some debate over what type of ecosystem the "great forest" actually is, the general consensus is that Dryads watched over the First Realm until it was time for them to take their rest and pass over stewardship. When they woke from their Great Sleep, memories of their culture had become buried deep within the recesses of their minds. Many have woken to a quite different Realm from what they knew and are curious to know what the Realms have become </p>
+					<p>These curious, gentle folks are not actual plants but mortal creatures of flesh and blood with an extremely diverse background. Their physiology is as broad as all the flora and fungi that exist in the natural world. Dryads also come from many varied regions. For example, you may find Dryads living in swampy mires, arid deserts, and deeply forested regions.</p>
+					<a href="pdfs/Dryad_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Dryad PDF" longdesc="pdfs/Dryad_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 2 circle border.png" alt="" class="icon"></span><h4>Dwarves</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 2 circle border.png" alt="" class="icon"></span>
+					<p>Dwarves are a tough, resilient and proud species that often live in mountainous regions but can be found in a variety of climates. In the Realms of Refuge "dwarf" does not mean small nor short. They commonly live in vast cities built with precision and adorned with elaborate carvings and the finest metal work. The most recognizable trait of a Dwarf is a glorious beard and or braids. These are very well-groomed and generally adorned with jewelry or personal accessories, these features are a major part of their culture and a source of great pride for the species. </p>
+					<p>Dwarves take great pride in the various things they create, and those creations are not limited to smithing. From weapons and armor, to towering statues, down to the most delicate of jewelry, even their cuisines and ale they make has the same passion poured into it.  Dwarven artisanship is held in the highest regard by most, prized throughout the Realms of Refuge; the byword for quality is craftdwarfship. Be warned, considering the time and meticulous attention to detail that goes into everything they make, Dwarves are not amused by unwarranted and hasty criticism.</p>
+					<a href="pdfs/Dwarf_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Dwarf PDF" longdesc="pdfs/Dwarf_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 4 circle border.png" alt="" class="icon"></span><h4>Elves</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 4 circle border.png" alt="" class="icon"></span>
+					<p>If other long-lived species are stones in the river of time, steadfast against the torrents of change, then Elves are fish. They exist within the movements and flows of their world--they understand them, are molded by them,--and live in harmony. Because of that, they have made their way into every corner of the realms they inhabit, displaying an incredible fluidity of physiology, culture, and temperament.</p>
+					<p>Elves understand that there is always, always more time, and even the most awful tragedies or grand triumphs will pass and fade away. This tendency can make them appear unempathetic to the day-to-day hardships of life-- even aloof, passive aggressive, or at worst, elitist. While many elves feel most comfortable forging lasting bonds with others who share their lifespan, each individual elf creates their own perspective on the shorter-lived species. Many young elves are filled with an unquenchable wanderlust and strike out into the world that they’ve heard lovingly described by their elders. Some never settle down, and spend mortal lifetimes seeking adventure on the ever-elusive edge of the unknown. </p>
+					<a href="pdfs/Elf_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Elf PDF" longdesc="pdfs/Elf_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 5 circle border.png" alt="" class="icon"></span><h4>Halflings</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 5 circle border.png" alt="" class="icon"></span>
+					<p>Halflings are peaceful people. Primary among all other considerations, Halflings love comfort. They enjoy a pleasant home, a warm fireplace, good food, fancy clothing, fine wine, and excellent distractions. Halflings love a good story, play, book, or bard, and will actively seek out entertainment when it is available. The art of storytelling in all its forms is highly valued, so much so that those who take up trade as a bard or author are highly revered in Halfling society. As such, both oral and written history are extremely important to a Halfling. A Halfling dedicated to chronicling histories sticks with the facts. But if the focus is storytelling, then why let facts get in the way?</p>
+					<p>Reputation among fellow Halflings is extremely important, as it is essential to keeping a peaceful and comfortable life. Among other species, however, a Halfling does not necessarily place their reputation in such high concern. Seldom does a Halfling do something without considering the impact to his or her reputation, but it is important to keep in mind that sometimes reputation and action are quite different things.</p>
+					<a href="pdfs/Halfling_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Halfling PDF" longdesc="pdfs/Halfling_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 6 circle border.png" alt="" class="icon"></span><h4>High Ogres</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 6 circle border.png" alt="" class="icon"></span>
+					<p>Ogres have large rearward facing horns, red, orange, or yellow veins around the eyes and protruding teeth or tusks.  They have one of the shortest lifespans of the adventuring species, reaching maturity in one year, with an average lifespan of twenty years, though some do manage to live into their late thirties.</p>
+					<p>Ogres have a heightened metabolism leading them to operate at a level of intensity that absolutely befuddles longer lived species.</p>
+					<p>Due to this, when bored they tend to find something to do, whether it is work, fighting, or some other rigorous activity.  This is because they process certain sugars, such as those found in fruits, incredibly rapidly, to the point of needing to do something physical shortly after its consumption.</p>
+					<a href="pdfs/High_Ogre_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="High Ogre PDF" longdesc="pdfs/High_Ogre_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 7 circle border.png" alt="" class="icon"></span><h4>High Orcs</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 7 circle border.png" alt="" class="icon"></span>
+					<p>Orcs have green skin of varying shades and protruding teeth or tusks.  They have shorter lifespans than a human, reaching maturity in two years, with an average lifespan of thirty years, though some do manage to live into their late forties.</p>
+					<p>No less intelligent than any of the other sapient species, their short lifespan means that they tend to be more focused on the immediate, rather than the long term.  While an elf might see a plan that takes twenty years to come to fruition as reasonable, to an Orc that’s essentially a lifelong commitment.</p>
+					<a href="pdfs/High_Orc_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="High Orc PDF" longdesc="pdfs/High_Orc_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 8 circle border.png" alt="" class="icon"></span><h4>Humans</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 8 circle border.png" alt="" class="icon"></span>
+					<p>Across the entirety of the Realms, no species is so numerous or ubiquitous as humanity. No single creed or goal unifies their disparate civilizations, not even the concept of civilization itself, or what such a thing should look like. </p>
+					<p>Longer-lived species frequently find interacting with humans to be a dizzying affair - after all, with an average life span considerably shorter than a century, their individual lives seem to come and go like leaves on trees. Still, those lives frequently burn bright and hot with ambition and excellence, and with there being just *so many of them*, to ignore them outright is a grave mistake </p>
+					<p>This adaptability has developed in humanity an incredible capacity for imagination and ingenuity. Where other species are capable of almost instinctive feats of magical or warrior prowess, humans have had to rely upon their wits and problem-solving abilities to survive the frequently perilous Realms. It is a matter of pride (for humans) and consternation (for other, older species) that human beings are often capable of developing skills in just about any field comparable to the greatest masters of any other people. Rhetoric, warfare, commerce, even the higher arts of magic have all been mastered by humanity at one point or another - with successive generations raising the bar of mastery repeatedly.</p>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 9 circle border.png" alt="" class="icon"></span><h4>Kyn</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 9 circle border.png" alt="" class="icon"></span>
+					<p>Kyn are seen throughout the Realms. From a simple Foxkyn baker, to a ferocious Bearkyn who lives in the wilds. Their culture is as diverse as the subspecies that make up Kyn. Some live remotely in the wilds while others grow up in massive cities. A Wolfkyn may feel they want to howl at a full moon. In the wilds this may happen, but a city dwelling Wolfkyn Mage may take a moment to gaze out the window on their busy day rather than howl.</p>
+					<p>Having animal roots means it takes a little more focus to become educated. This does not mean they are incapable of magic or bookkeeping. Many have become accomplished healers or High Magic wielders. Some are greatly skilled in the trades, like fishing, carpentry, and baking. A more gregarious Kyn may work as a tavern keeper, painter, or a performing artist - or positions where they can be among a constant flow of other individuals. </p>
+					<p>All Kyn are based on a real world animal. No fictional creatures such as gryphons or dragons are allowed as Kyn. There are also no cross breeds unless it happens in nature such as a Ligerkyn.</p>
+					<a href="pdfs/Kyn_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Kyn PDF" longdesc="pdfs/Kyn_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 10 circle border.png" alt="" class="icon"></span><h4>Realmsworn</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 10 circle border.png" alt="" class="icon"></span>
+					<p>The Realmsworn are a pragmatic and stoic species defined by their unyielding commitment to duty. They are collectively united by the Primal Vow, a shared burden among Realmsworn to protect the Realms of Refuge from outside threats. Through the Primal Vow they share a deep connection with the land that manifests as the rocky or bony protrusions seen on the faces of Realmsworn. All Realmsworn make the same Primal Vow:</p> <p>“I commit myself to the Realms of Refuge with my spirit, mind and body. To be its guardian and protector wherever I may travel, striving to maintain its balance by removing foes not native to the Realms. Forever shall I be steadfast and true to this vow and any other that I take. To this I do swear, as the Realms and my people do witness!” </p>
+					<p>The taking of any vow is a solemn act for Realmsworn that requires significant deliberation. Once taken, the vow becomes a part of who they are. Realmsworn take immense pride in the vows they have taken and display this by prominently wearing  a Var, on their clothing for all to see.</p>
+					<a href="pdfs/Realmsworn_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Realmsworn" longdesc="pdfs/Realmsworn_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 11 circle border.png" alt="" class="icon"></span><h4>Stellarean</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 11 circle border.png" alt="" class="icon"></span>
+					<p>To be a Stellarean (stel-AR-ee-an) is to be a member of a species of fallen stars. With this unique heritage comes an extraordinary birthright. Every Stellarean is connected to every other member of their species via a deep and subtle empathic bond. This means when two Stellarean meet for the first time, they are much more likely to get on well with each other, and most Stellarean bond more quickly and strongly with others of their own species. Not to say that the species is unable to harbor great and intense emotions towards members of other species; not every Star in the sky is part of a constellation. In fact, it has been said that a Stellarean can even form a bond with a non-Stellarean so strong, that something very like their species-wide empathic link is forged between them.</p>
+					<p>Stellarean have a natural curiosity for the world around them. Due to their celestial heritage, everything about the world feels just a bit alien to them. This causes them to be drawn to meet new people, experience new things and travel to new places. Some find this need insatiable, causing them to wander far and wide, while others find they can satisfy it within their chosen community.</p>
+					<a href="pdfs/Stellarean_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Stellarean PDF" longdesc="pdfs/Stellarean_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 12 circle border.png" alt="" class="icon"></span><h4>Stone Elves</h4><span class="thumbnail_overlay icon green_gold"><img src="images/circle borders/icon 12 circle border.png" alt="" class="icon"></span>
+					<p>Legends say that long ago a group of Dark Elves were changed by a Celestial magic backlash into the stoic Stone Elves of today, removed from the reckless emotions that once brought them ruin. Stone Elves show nearly no emotion and have the appearance of being eternally calm. Their discipline and their mental strength enable them to suppress outward emotional expression. Most spend a lifetime seeking to be rid of inner turmoil as well and proximity to others’ emotional expressions can be uncomfortable. Some claim that this discomfort is due to Stone Elves feeling physical pain when exposed to strong emotion, though Stone Elves themselves are typically quite reticent to discuss such matters. </p>
+					<p>Role-playing a Stone Elf can be mentally draining as it involves watching yourself for most any sign of emotion and repressing expressions. Please take care to give yourself out of game breaks if needed. Please see national or local stone elf species packets for information on glyphs in your chapter, the fabled mindbonds, and other tips and tricks for bringing your stone elf to life. For examples of skin glyphs in your campaign, check with the local chapter</p>
+					<a href="pdfs/Stone_Elf_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Stone Elf PDF" longdesc="pdfs/Stone_Elf_Species_Packet_1.0.pdf"></a>
+				</div>
+				<div class="species">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 1 circle border.png" alt="" class="icon"></span><h4>Syladrin</h4><span class="thumbnail_overlay icon dark_blue"><img src="images/circle borders/icon 1 circle border.png" alt="" class="icon"></span>
+					<p>The Syladrin (Sill-ah-Dren) are descended from the Fae of, their closest cousins being satyrs and fauns.  They are truly a communal society believing “it takes a village” to accomplish most tasks, from defeating a vile foe to raising children.  As such they have a strange idea of personal possession compared to other species, finding little reason to hoard wealth when it can be spent for the betterment of the community; be that in arms and equipment or throwing a lavish party to raise everyone’s spirits.</p>
+					<p>The Syladrin hold the ideal of personal freedom in high esteem and are reticent to take away that freedom from any sentient beings without due reason.  They abhor Command magics, though the strength of their revulsion is different from person-to-person and community-to-community.  Their respect for personal freedom is so strong that their wills are notoriously hard to break. </p>
+					<a href="pdfs/Syladrin_Species_Packet_1.0.pdf" class="right-justify">Download<img src="images/arrow.png" alt="Syladrin" longdesc="pdfs/Syladrin_Species_Packet_1.0.pdf"></a>
+				</div>
+			</section>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

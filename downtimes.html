@@ -1,0 +1,258 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/downtimes.css" rel="stylesheet" type="text/css">
+		<title>Downtimes</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Downtimes</h1>
+				<h3>Interacting with the World Between Games</h3>
+			</div>
+		</section>
+		<article>
+			<section class="article">
+				<img src="images/pictures/Layn/Group 2.jpg" alt="A group of players contemplates the game, photo by Layn S" id="right_image"/>
+				<p id="top_spacing">Downtimes are fun actions you can take in between games to build your story and bring your characters even more to life. This guide to downtimes includes...</p>
+				<ol>
+					<li><a href="#note">An important note on downtimes</a></li>
+					<li><a href="#what_is">What is a downtime?</a></li>
+					<li><a href="#what_isnt">What is a downtime not?</a></li>
+					<li><a href="#characteristics_good">Characteristics of good downtimes</a></li>
+					<li><a href="#characteristics_poor">Characteristics of poor downtimes</a></li>
+					<li><a href="#keep_in_mind">Things to keep in mind</a></li>
+					<li><a href="#examples">Examples of good downtimes</a></li>
+				</ol>
+			</section>
+			<section class="article center_article">
+				<ol>
+					<li id="note">An important note on downtimes</li>
+					<p>Always keep in mind that Plot Teams are running a game for many different players, and they also have a story framework they're working within. Sometimes, even if you submit the best, most reasonable downtime submission in the world, you'll get a response that is disappointing, confusing, or not completely in line with the actions requested. This might mean that the Plot Team has other things they're focusing on, or something interesting/unexpected is going to happen at the event. As always, be patient and understanding. Your Plot Team is staffed by volunteers, and are doing their best.</p>
+					
+					<div class="trio">
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+					</div>
+					
+					<li id="what_is">What is a downtime?</li>
+					<p>A downtime is a story suggestion you're offering to Plot that you'd like to be a part of, or it's a request for more information about the world or a current storyline. The best downtimes include many of the following elements, but there's also an art to writing them that takes time to master. When in doubt, feel free to reach out to your local plot team and ask for guidance. You can also receive guidance from other players, if you like.</p>
+					<p>Downtimes can be as simple as "my character would like to visit the Stellarean camp to trade stories" or as complex as trying to win support from the local community in order to stage a coup and overthrow the local Baron.</p>
+					<p>Downtime requests should be open-ended, but can include some direction. You might say something like "my character wants to explore Keris, a ruined town mentioned in game. If there's anyone there, my character would ask them about the history of the town. If there's no one there, my character is looking for signs of how the townspeople died."</p>
+					<p>The best downtimes take into consideration who your character is, the actions they've performed in the past, and the character's current place in the world. It would be a suboptimal experience if your character, a local rogue and ne'erdowell who has a reputation for stealing from townspeople, spent their downtime trying to become a knight. We're not saying you wouldn't get a good story out of it, but it might not be the story you're expecting.</p>
+					
+					<div class="trio">
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+					</div>
+					
+					<li id="what_isnt">What is a downtime not?</li>
+					<p>Downtimes are not replacements for in game actions at an event. The guiding principle of LARP is if you can do it in game, it should be done in game. Downtimes might give you information to act on, or even a chance to achieve some minor victories along the way, but downtimes should not be scoped for major victories. You won't be able to kill the campaign's big bad guy by yourself in a downtime.</p>
+
+					<div class="trio">
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+					</div>
+					
+					<li id="characteristics_good">Characteristics of the Best Downtimes</li>
+					<p>Not ever downtime needs all of these, but the more of these you have in your downtime, the better your downtime is likely to be. Again, there's an art to writing downtimes. Feel free to reach out for help if you're struggling. Plot and other players are happy to pass along their knowledge.</p>
+					<h4>Good downtimes...</h4>
+					<ul>
+						<li>Ask for more without demanding. The best downtimes are framed with the requests you want in mind, without issuing demands of the Plot Team. Not only does this ingraciate you to Plot for being kind, but you get better answers if you don't write the whole downtime yourself. Imagine the difference between "My character is going to Keris to see what's going on there" and "My character is going to Keris to interrogate every person living there. They will hunt down at least one person and ask the following questions, and the answers will be..." etc. That second one isn't likely to get you what you want, or it may be flatly rejected.</li>
+						<li>Are written with a specific goal, but open-ended in both action and potential results. It's easier to go with "My character wants to learn more about the evil knight, Ser Caryrn, and will achieve this by going to the library and looking him up" than "My character wants to learn more about bad people in the area." The first directs the downtime to who you're interested in and how to achieve it, without being demanding or closing the story. There's room for all sorts of thigns to happen in the library, or on the way to the library, or what have you. The second is too vague to get good results. You'll likely end up with something that's not related to your goals with the second (although, again, you'll probably still get a good story).</li>
+						<li>Relate directly to events that occurred recently at game, or gives good ideas for things that could happen in game. Bringing up ancient history can be a real double-edged sword in downtimes. The Plot Team may not know about ancient history, or may have to do a ton of research to figure it out, and that can be really difficult. If plot has to spend all the time reading up on history, they may not have as much time to craft a really good story for you. If you do have relevant ancient history, feel free to include a primer with your downtime! This will help plot figure out what to do, and they will be very thankful for it! You can also throw out crazy ideas for things that can happen in game. The more people involved in that crazy idea, the more likely it is to happen. Things like, "I would like to hunt down a gryphon who's my personal bitter enemy" might not get much traction, but "I want to lure the gryphon terrorizing the adventurers into a trap so that we can arrange to fight them at our convenience next gather" might be better, if that's something Plot is up for.</li>
+						<li>Enhance the game of many other players, not just a few. Sometimes, downtimes only further your own personal plotlines, and that's totally fine! But really awesome downtimes will also draw in other players and give them a chance to engage with the stories being told. The best downtimes are ones that create stories you want to tell and share with others. :)</li>
+						<li>Supplement actions that have occurred at event, and don't replace actions that could happen at event. For example, if your character was recently elected Reeve, sending in downtimes about spending time in town resolving disputes is a great downtime idea! A less-awesome downtime idea would be trying to become Reeve during downtime. You might make headway with the constituents, but the actual election should probably take place *in* game, not in a downtime.</li>
+						<li>Can attempt to do things that cannot be reasonably phys-repped in game. Be careful here! You should ask yourself why this non-phys-reppable action needs to happen and if there's an alternate way to accomplish this goal that could be done in game. There are certainly exceptions! Just be cautious. For example, if your character's ultimate goal in life is to ride a gryphon, the actual ride itself probably needs to take place in downtimes, although the befriending of the gryphon and events leading up to the ride may take place in a combination of in game and downtime actions. However, if your character wishes to become a knight or other noble, that is not a great thing to accomplish in downtimes alone. You can start the journey or work on the journey in downtimes, but there should be a lot going on in game too, and you definitely should be knighted in game. How else would people know???</li>
+					</ul>
+					
+					<div class="trio">
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+					</div>
+					
+					<li id="characteristics_poor">Characteristics of poor downtimes</li>
+					<p><strong>DO NOT AVOID WRITING DOWNTIMES BECAUSE YOU'RE AFRAID THEY MIGHT BE BAD.</strong> Everyone writes bad downtimes. I wrote so many bad ones when I started...but that's how you learn! If you're really concerned, please reach out to Plot or other players to ask for advice. Plot would rather have 10 bad downtimes than no downtimes at all! I promise! Also, take this list with a grain of salt. Sometimes something or many things on this list are appropriate for a given circumstance. Only you can know if it's appropriate or not, and Plot will work with whatever you send them!</p>
+					<h4>Poor downtimes...</h4>
+					<ul>
+						<li>Are excessively long. By all means, give your Plot Team context for your goals and the reasons behind the actions your character wants to pursue, but you don't need to write 10,000 words explaining it. ;) A good rule: keep your downtime under approximately 1,000 words (about 2 pages).</li>
+						<li>Attempt to accomplish actions which cannot be reasonably done by your character. For example, the average character won't be able to gain an audience with the King of Sedovia without a lot of groundwork going into this audience. This groundwork should be done both at events and in prior downtimes, and is not a single-downtime feat.</li>
+						<li>Attempt to accomplish something that should be done at an event. When it can be done in game, it should be done in game. This is the best advice I have for you. If you think this could reasonably take place in game, check in with your Plot Team before submitting the downtime, or be prepared for it to go a little sideways.</li>
+						<li>Ignore or discount the actions of you or other characters at previous events. Plot wants to create a consistent, cohesive world both at and between events. If you spent the last game refusing to help a Kobold group fight some undead, don't expect to be given an audience with the Queen of the Kobolds in downtime.</li>
+						<li>Attempt to complete or otherwise control a plotline in which many different people are invested as just one or a few people. Please don't try to kill the big bad gryphon who's the town's enemy in a downtime, even if it's you and your friend who are the biggest bad-asses in town. It's not fun for anyone except you, and Plot is trying to make the game as fun for as many people as possible. Plus, that should be done in game, as it *can* be done in game.</li>
+						<li>Request information with no details about how you're going to find it or why you would have access to it. For eaxmple, if you're looking for information on Biff the Sorcerer, you should probably have a good starting place to start looking. If you don't then try some in game conversations! That is the appropriate way to find out where to start looking. Just submitting a downtime saying, "I want information on Biff the Sorcerer" is not going to get you what you expect (and might get you kidnapped by Biff the Sorcerer instead!). Another example, if you want information on the secret history of the royal family, you probably need some way to get into the restricted section of the Royal Library. Getting that access is probably a downtime or two of its own right, and/or some serious in game ations as well.</li>
+						<li>Writes the beginning, middle and end of the story of your downtime. The best downtime requests only write the beginning of the story (if that), and then have some direction for the middle, but never include an ending. If you tell me how the downtime ends, why do you need the Plot Team?</li>
+						<li>Break the rules of Refuge. Even in downtimes, battle magic, ritual magic, combat and death work just like they do at game. For example, if you assassinate someone in a downtime, you can expect that they will resurrect.</li>
+						<li>Attempt to cast rituals. Players cannot cast ritual magic in downtimes. We have made the occasional exception, but those exceptions are VERY RARE, and are never for the purposes of casting items. Visions, Lores and Resonances are meant to be cast in game. Plot really doesn't like bypassing the 5-10% chance of failure for any ritual. If you think you have a reasonable exception, please ask, but be prepared for the answer to be "no." If you do plan on casting a Vision, Resonance, or Lore at a future event, please DO LET PLOT KNOW. You get better stories that way.</li>
+					</ul>
+					
+					<div class="trio">
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+					</div>
+					
+					<li id="keep_in_mind">Things to keep in mind: </li>
+					<p>This is not a list of "don't"s. This is simply a list of types of actions that may not result in your desired outcomes.</p>
+					<ul>
+						<li>If your downtime action only contributes to the story of your PC (player character) without a place for other PCs to interact and influence it, it's not likely that your downtime is going to be brought by Plot into the game. There's definitely some wiggle room here, but remember: our goal is to tell joint stories as a community. If you keep this in mind and build community stories with your actions and downtimes, you're going to have way more fun!</li>
+						<li>If your downtime action introduces the existence of factions, magic, or other world lore pieces that you haven't encountered at event, plot may just say "no, that kind of thing doesn't exist." The classic example here is trying to join a thieve's guild or something similar in a world where you haven't found one yet. Some plot teams might run with it, while others may say there's no place for that in our story.</li>
+					</ul>
+
+					<div class="trio">
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+						<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+					</div>
+					
+					<li id="examples">Examples of good downtimes</li>
+					<ul>
+						<li>"Last event, my character had a substantial breakdown and ran off into the woods Sunday morning. They will be avoiding contact with the adventuring community and camping out in the woods until next game." - This lays out some context, states a specific and time limited action, and otherwise leaves the result very open ended. Nine times out of ten, you'll get a response which gives a little context or hints for the next event. That last time, you'll inspire plot to write something which will entertain the whole game with your assistance.</li>
+						<li>"After speaking with Paladin Lara at game, my character would like to explore joining the Knightly Orders." - This reminds Plot of a conversation you had a game, and then informs them that you'd like to put your character on the path to Knighthood. This lets them give you a lot of information about expectations, vows, etc in the memory-friendly format of a downtime, while also recognizing that actual initiation into the Knightly Orders is an event that should happen at game.</li>
+						<li>"Alex and Sven would like to go find out information about Hogarth the Lich. Having heard in game that Hogarth used to be Sedovian, they will travel to the Capital city and try to find records of Hogarth's pre-lich life. Alex is a citizen of Sedovia, and has previously become friends with a clerk at the Sedovian Records bureau. Sven has Craftsman: Scholar. They are specifically interested in a) whether Hogarh has any family, living, dead, or undead, and b) whether Hogarth has any weaknesses we can exploit." - This is a straightforward "informational" downtime. You could add more specifics about the kind of information you're looking for or how you are getting it, but the key components are there: where you're going, what questions you're asking, what you know right now, why your characters have access to the information sources you're searching, and what advantages at event you hope to gain.</li>
+						<li>"Helga and Bunny are going to scout for entrances to Hogarth's secret lair. Helga has Craftsman: Tracker, and Bunny was told the general area of the secret lair by torturing one of Hogarth's minions." - This is a good "Scouting" downtime. It states what useful skills and knowledge the characters have, where that knowledge came from, and what the goal of the downtime is. It also keeps to the kinds of actions that are appropriate to Downtimes. Sneaking into the lair itself and/or killing Hogarth are actions that should be done at event.</li>
+					</ul>
+				</ol>
+			</section>
+		</article>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

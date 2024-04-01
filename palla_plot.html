@@ -1,0 +1,172 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/palla_plot.css" rel="stylesheet" type="text/css">
+		<title>Palla Plot</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Palla</h1>
+				<h3>A Pacifist Country Under Attack</h3>
+			</div>
+		</section>
+		<section class="right-image-left-text">
+			<article class="article left_article">
+				<h3>The World of Palla</h3>
+				<p>The main Portland campaign setting has been in an archipelago for the last 20 years or so out of game, although every few years or so we move from island to island within the archipelago. The setting varies greatly depending on the plot team's interests and desires, but we remain within the archipelago to preserve a continuous story.</p>
+				<p>The current campaign is on an island called Palla. Palla is a pacifistic nation that was founded around 8-10 years ago (give or take) in the game world. The founders set out to createa a utopia of a nation, where everyone was given an opportunity to rewrite themselves from the moment they set foot on shore. There are only two edicts of Palla: 1. respect the hierarchy of the leaders, and 2. eschew violence and conflict while in the lands.</p>
+				<p>While not everyone in game believes in the mission of Palla (especially the Adventurers (what the PCs call themselves)), the people themselves seem happy and content, or did until disaster struck.</p>
+				<p>Around Fall of 2022 (622 in game years), a legion of monsters attacked one of the settlements in Palla, Hethrin. The town fell to the monsters and many of the citizens of Hethrin fled - some by land to other villages (Amora and Yaso), others by sea to the nearby pirate outpost of SawTooth Cove, and some remained behind, having escaped the monsters through luck. The Adventurers were called in to rescue those who made their way to SawTooth Cove and were captured by Pentavraas pirates.</p>
+				<p>Once in SawTooth Cove, the Adventurers quickly freed the captured Hethrins and set sail to return them to their town, with the aid of some of the pirates present. Those pirates, who all sail under the Brigantine moniker, assisted in the rescue and bore Adventurers and Hethrins back to Palla.</p>
+				<p>Once they arrived in Palla, the questions grew. Adventurers helped rescue the Hethrins who were trapped in the Whistletree Inn, having taken shelter there when they realized they had been left behind to defend against the monsters continuously attacking the town. The Order of the Skull, who had assumed charge of Hethrin in the absence of the Provost, happily relinquished control, and the Adventurers began to clear monsters from the town. There was a large plethora of creatures, some normal and others magical, in town that resulted in several big fights, but then things quieted down for a while.</p>
+				<p>Taking advantage of the break in combat, the Adventurers began to strengthen Hethrin's position. They helped create some basic defenses, rebuild buildings, and scour the other settlements of Palla for aid to be had. Calls for help were answered, and soon others arrived in Palla to assist.</p>
+				<p>A second wave of violent creatures struck a few months after the Adventurers' arrival in Palla. The gather (the IG word for "event") was begun with a series of attacks from creatures that transformed into large beasts in the moonlight. Subsequent work discovered a small hidden room nearby, and in it, pieces of paper with interesting notes on them. Pirates continued to be present, both Pentavraas and Brigantine, and a malevolent entity was revealed to have taken control of one Brigantine pirate's mind to have her lead a troupe of animals into town and attack. The Adventurers got the drop on the mind-controlled pirate and her animal troupe, and successfully rescued her. But what is this malevolent entity and what does it want? Only time will tell...</p>
+			</article>
+			<article class="image_container right_image">
+				<img src="images/pictures/Rahs.jpeg" alt="A syladrin pirate" />
+			</article>
+		</section>
+		<section class="article center_article">
+			<h3>Culture Packets</h3>
+			<p>There are three important packets to have access to for the Palla game. The first is the <a href="https://drive.google.com/file/d/1g8jFUaYGeEpeTr1d-dSwkMlCNBY0Nder/view?usp=sharing" target="new">Culture Packet of Palla</a>. This packet contains all the common information about Pallan society. If you are creating a character from Palla or who has heard of Palla, you would know most of the information in this packet.</p>
+			<p>The second packet that is important to know about is the <a href="https://drive.google.com/file/d/1RxgifE07c69CupC9mIqBz7cFPY7ObOko/view?usp=drive_link" target="new">Pirate Culture Packet</a>. This packet contains all the general information your character might know about the two pirate factions within Pallan seas. If you would like to create a pirate character, or have your character know about the pirates some, you would do well to read this packet.</p>
+			<p>Finally, there is a <a href="https://drive.google.com/file/d/1qkFSpUx4HsokDLmPz1nTSHve95ABUpjp/view?usp=drive_link" target="new">Pallan Ship Packet</a> available for perusal too. This is mostly for people who want to have their own ship to use in Pallan waters. You could align yourself with the Pallans, either Pirate faction, or be independent if you so choose, but if you want a ship and to be able to use it in game, you should read this packet. It's dense, but you don't need to know it all at once.</p>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

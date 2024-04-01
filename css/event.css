@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to bottom right, var(--dark-purple), var(--dark-blue));
+}
+.red_text {
+	color: var(--dark-red) !important;
+}
+#dark_purple {
+	background: var(--dark-dark-purple);
+}
+.flipped {
+	transform: rotate(180deg);
+	margin-bottom: -1px;
+}
+.right_ways {
+	margin-top: -1px;
+}
+body .dark_bg p, body .dark_bg h3, body .dark_bg h4, body .dark_bg a, body .dark_bg a:hover, body .dark_bg ol, body .dark_bg ul {
+	color: var(--off-white);
+}
+.pink-bg {
+	background-color: var(--dark-pink);
+	display: flex;
+	flex-direction: column;
+}
+body .pink-bg p, body .pink-bg h3, body .pink-bg ol, body .pink-bg ul {
+	color: var(--dark-off-white);
+}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Aer'Astria Plot</title>
+		<link href="css/aa_plot.css" rel="stylesheet" type="text/css">
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Aer'Astria</h1>
+				<h3>The Plot So Far...</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<p class="first_paragraph">What follows is a brief synopsis of the plotline of the Aer'Astrian campaign for the last few years. If you want more details, please contact the <a href="mailto:newplayer@refugelarpportland.com">New Player Representative</a>, or the <a href="mailto:plot@refugelarpportland.com">Aer'Astrian Plot Team</a>.</p>
+				<h2>Recent Plot Synopsis</h2>
+				<p>Recent memory starts with tales of the second undead wars. Unlike the first undead wars, which happened before the adventurers came to Aer'Astria, these wars were not started by a dracoliche, but rather by the adventurers.</p>
+				<p>As it came to be understood, the adventurers found all the undead from the first undead wars locked in a necropolis. An artifact that they needed was keeping the undead stuck in this location, so they removed the artifact and released the undead.</p>
+				<p>The undead, including the four generals of the dracoliche, were set free as a new blight upon the land. The generals took the opportunity to begin a new campaign of terror with the intention of reviving the lost dracoliche, Verikal. They organized themselves and attacked the land.</p>
+				<p>The four major nations of Aer'Astria - Valenzia, Sedovia, the Savage Lands, and Wylenzia - had been struggling to reach understanding between themselves, and the leaders of these four nations decided to attempt something that had not been attempted in a long time: they attempted peace. These four nations sent ambassadorial generals to a place deep in the Auros mountains known later as Skerra's Bastion, to attempt to defeat the undead. The adventurers joined them.</p>
+				<p>Thanks to the efforts of the adventuring community and the four nations, the war was eventually won, although a high price was paid: the Celestial dragon of Aer'Astria was lost in the final ritual to send Verikal to her grave once and for all. Three of the four generals were defeated, and the nations found a foundation of peace upon which to build a new life.</p>
+				<p>The final general - the Talon of Disease - remains at large, however, and peace is tenuous unless carefully maintained.</p>
+				<p>The King of Sedovia, dedicated to the peace that had been started, build an embassy town on the ruins of the town of Foxbridge, and invited the nations of Aer'Astria to send their delegations in a quest for peace. Every nation in Aer'Astria except the Stone Elf enclaves sent representatives - and the Stone Elf enclaves agreed to let the ambassadors from the nations they lived in to represent them. Fethra'dar, Black Butte, Garu, and the Stellarian - the four minor nations of Aer'Astria - all sent their people to join in the peace-making. But peace is not without its own drama.</p>
+				<p>About the same time as the embassies began working at their capacity, a new Celestial dragon was introduced. Bavaikas, the newest dragon, was under the protection of Alluvio, the young Earth dragon of Aer'Astria while they learned to be a strong dragon on their own.</p>
+				<p>But safety is never guaranteed. In a dramatic flash, a tear to the Void was opened up, which sent the nations into a bit of a tizzy. The Void is a place of destruction and absence. Those we know of who have crossed into the Void from our plane have been killed. The Void tear was stabilized by the dragons with assistance from the adventurers, and a wall built around it to protect Aer'Astria from incursions from the tear itself, and to protect it from mortals with an intent to make it bigger, for there are those known as the Consortium who would see the world consumed by the Void.</p>
+				<p>The Consortium are members of an order who seek to unify with the void. Some are willing participants, but others have simply been brainwashed - quite literally - by the Void and have been made its servants, and servants of the Void creature known as the Acolyte.</p>
+				<p>The Acolyte has been waging a war on the other planes, and several are near to collapse. The Plane of Stone was bolstered by the adventurers, but other planes are struggling. The Acolyte even interferes with those on this plane by sending "Contact Other Plane" messages, which have strange effects once the messages are finished.</p>
+				<p>Once they had been exposed and their Ambassador willingly Void Tainted herself, one of the first real challenges of the new Embassy coalition became deciding what to do about the Consortium.  Ultimately the group was barred from reentry.  For a while this was seen unfavorably by the average citizen, due to the Consortium previously painting themselves as humanitarian philanthropists and champions of the downtrodden.</p>
+				<p>No one knows quite how the tide of public opinion began to shift, though at first it did seem to coincide oddly with where Stellarean nomads had recently traveled.  Either way, eventually the Embassies and Adventurers were seen in a better light, and the Consortium began to lose favor.  Especially once the shadowy organization tipped their hand by enlisting the fighting forces of the Twisted, (A long time enemy of all Nations and the Adventurers.) to attack the Void Tear Wall, presumably to gain access to the Tear itself.</p>
+				<p>As these attacks became more persistent, the Sedovian Embassy reached out to the other nations to garner additional troops for the Wall.  However, Adventures were forced to step in and take up the slack when it became evident that each of the other three major nations were beset either by internal strife or politics, blocking these efforts.</p>
+				<p>It was at this point that the Nation of Wylenzia was in danger of devolving into a three-fronted civil war.  They called up on the joint power of the Embassies to assist with overseeing a Peace Summit, to prevent this.  Happily, these efforts were successful and Wylenzia began to stabilize.  Similarly, The Savage Lands went through a major upheaval and restructuring to address long-standing injustices brought against the High Orcs of that Nation, as well as other issues.</p>
+				<p>While this National level restructuring was taking place, back in Foxbridge unsavory elements from both the Valenzian and Fethra’darian Embassies finally exposed themselves.  Up until this point, they had managed to remain below the radar, seemingly satisfied with sowing chaos and insult behind the scenes.  However, these rogue agents enmeshed themselves in a scheme that ultimately caused the explosive destruction of the Valenzian Embassy, and the death of the Valenzian Ambassadorial Second.  All guilty parties were caught and brought to justice, and the Embassy was rebuilt.  However, that wound is still fresh in many minds and hearts.</p>
+				<p>The wall that had been so carefully constructed and guarded by Adventurers and Sedovians alike, and had stood for over a year, was half destroyed only days after the demolition of the Valenizian Embassy.  This seemed to come about due to careful plotting by the Consortium, headed by Quill, to power up and free the Acolyte.</p>
+				<p>During this attack, the Dragons’ careful over-stitching was completely ripped away.  The Acolyte’s malevolent rupture in reality nearly doubled in size as it attempted to push its way through to our Realm, digging a deep crevasse in the ground beneath it.  Thanks to Adventurer intervention, this effort was not completely successful.  However, the fissure rent in the ground and the crumbled pieces of that once great wall are a stark reminder of the power the Acolyte can bring to bear while their nightmare door stands open.  Even once it had retreated, the tear gaped larger, and began dripping Void Sludge to pool in the deepest parts of that fissure.</p>
+				<p>Once again, this time joined by the Vale Guardian Illahee, the Dragons attempted to staunch the now literal flow of Void poison into this realm.  Fighting back against these efforts, the Acolyte flung deadly tendrils through the Tear to grasp and flail at them.  Fortunately the trio was protected by valiant Adventurers, and so were able to bring the full might of their combined magical prowess to bear upon the tear.  Their woven mesh of power is now all that holds back the Acolyte and their plane of Void from forcing open the edges of that Tear and swallowing this realm entirely.</p>
+				<p>There isn’t much time left, and the next step is in the hands of the Adventurers.  Will they be able to take on the Acolyte and protect the Realm?  Or will Aer’Astria be voided from existence?  (Come join us when we are able to host our next live game, to find out!)</p>
+			</article>
+			<hr />
+			<h2 class="centered" id="stories">Stories from the Nations of Aer'Astria</h2>
+			<article class="note v1">
+				<h4>The Savage Lands</h4>
+				<p>Pillar of the Savage Lands: Vale Guardian Illahee The Elemental Spirit of Winter, Ice and Death</p>
+				<p>Hello my readers!  As you know, I've taken it upon myself to interview the amazing variety of peoples brought together by the Sedovian Embassy project.</p>
+				<p>Today I had the privilege of interviewing Illahee, leader of the Savage Lands.  What I learned may shock you.  Or not, but read on if you wish to find out.</p>
+				<p>During our discussion, I discovered Illahee is now over 5,000 years old!  She has watched the birth and death of the kingdom of Auros.  She's seen Species proliferate Aer'Astria, where once there were only Dryad and Kyn.  For all that, my dear readers, the most surprising thing to me was finding out that Illahee was once mortal like you and me!</p>
+				<p>The Vale Guardian was once just a woman, chosen to leap from the very waterfall the Syladrin of the Savage Lands now leap from.  What she started as, which Species?  Even she no longer remembers.  Perhaps she was once part of a Species which was a precursor to what we now know of as Dryad?  All we can do is speculate.  What we do know is that she was one of four Spirits empowered by the Land and tasked with protecting Aer'Astria and keeping its balance, by guarding and upholding its four  Pillars.</p>
+				<p>These Pillars of Power were four locations where the Elemental Planes had created anchor points to the Material Plane: Life and Flame, Stone and Order, Lightning and Chaos, and of course Ice and Death.</p>
+				<p>Sound familiar?  That is because they are the self same Pillars now upheld by the King of Sedovia, the Insofu of Wylenzia, the Arch Magus of Valenzia, and obviously Illahee.  Even during the reign of the King of Auros, these four Spirits existed. Though over time, three of them diminished and disappeared.  Not even Illahee knows what happened to her Sister Elemental Spirits.</p>
+				<p>What we do know is this:  Their disappearance, coupled with the Chainfire Plague that ripped through Aer'Astria and destroyed the Nation of Auros, destabilized the Land.  Facing inevitable destruction, the Land called upon the newly appointed leaders of the fledgling Nations that had formed in the rubble of Auros, binding them in the same way that the Spirits had once been bound.</p>
+				<p>The ceremonies used to bind those first leaders to the Land are still used to this day, as leadership has passed from person to person.  Leaving Illahee the only Major Nation Leader who has never been replaced.</p>
+				<p>As this interview comes to a close, I must say, the noble Elemental Spirit before me looks... tired... as she speaks of the events of her past. I can only guess as to how profoundly lonely it must be, to have outlived not only eons of peoples and Nations, but also all other members of your Species.</p>
+				<p>For all that, the Vale Guardian seems to have a positive outlook going forward.  She tells me of projects involving the Dryad Village near Foxbridge, and speaks of the ongoing battle with the Void Tear, and her tone and manner enliven once more.  It will be fascinating to see what this Spirit of Ice and Death does with the next few millennia of her life.</p>
+				<p>That's all for now, gentle readers.  I look forward to meeting up with you again in my next interview!</p>
+				<p>-Rheaumly Frophren</p>
+			</article>
+			<article class="note v2">
+				<h4>Sedovia</h4>
+				<p>King of Sedovia Scott Lancaster: Pillar of Fall, Stone and Order</p>
+				<p>Hello my readers!  As you know, I've taken it upon myself to interview the amazing variety of peoples brought together by the Sedovian Embassy project.</p>
+				<p>Today I had the privilege of interviewing people from the Sedovian Embassy itself!  Acting Ambassador Squire Theah has given me an in depth look into the rise of Sedovia and its structure.</p>
+				<p>Sedovia was one of the four Nations that arose around 400 years ago, after the Chainfire Plague destroyed the ancient nation of Auros.  Back then it was called Sedov, and only Valenze was its equal in organization and technology.</p>
+				<p>There is evidence that a Lancaster may have sat upon the throne of Sedovia since those times.  As rare as it is to see a succession of decency in Land Bonded leaders, the Lancasters seem to be an unbroken line of Land-chosen leaders.</p>
+				<p>The ceremony of Land Bonding in Sedovia is to be entombed in an underground chamber in the Capital of New Pascal.  The prospective leader is then left there to starve unto death.  There is an Earth Circle located just outside the chamber.  And if the Land Sacrifices for the prospective leader, once they die and their Spirit enters the circle, they then become the new King or Queen of Sedovia.</p>
+				<p>The current King of Sedovia is King Scott Lancaster, who rules with his Queen, Michelle Lancaster.  Beneath the King, Sedovia consists of three Duchies.  In each Duchy are three Counties, and within each County are three Baronies.  The Barony of Westhamlet is where Foxbridge is located, where we are right now!</p>
+				<p>Each of these Nobles is landbonded to these locations with a symbolic death, two days isolation without food or water. The Nobles don't always die, but if they do and the Land sacrifices for them, they are considered extremely high quality leader.</p>
+				<p>Currently one of these Nobles, Baron Ser Hivius Trei, has risen to become the unofficial Advisor to the King.  This Baron is also Officially the Ambassador of Sedovia.  When not busy with the King, she acts in that capacity here, in the Embassy.  The acting Ambassador Squire Theah, who I am currently interviewing, and Ser Baron Hivius, are both part of the King's knightly order; the Silver Blades.  This order has been around as long as the Nation itself, and its ranks are full of historic heroes.</p>
+				<p>That concludes this volume of your favorite author's interviews.  Please look forward to my next edition, when I delve into the fascinating nation of Valenzia!</p>
+				<p>-Rheaumly Frophren</p>
+			</article>
+			<article class="note v1">
+				<h4>Valenzia</h4>
+				<p>Arch Magus Zalim: Pillar of Summer, Flame and Life.</p>
+				<p>Hello my readers!  As you know, I've taken it upon myself to interview the amazing variety of peoples brought together by the Sedovian Embassy project.  Today I have the pleasure of interviewing the fabulous Flame Caste Aqua!  (This will likely be a short interview, as Ambassador Aqua has informed me that her time is very valuable.  But we'll see what information we can get her to divulge, eh?)</p>
+				<p>Valenzia was one of the four Nations that arose around 400 years ago, once the Chainfire Plague had destroyed the ancient nation of Auros.  Back then it was called Valenze and it's only technological equal was Sedov, though none could or can match Valenzia's magical prowess.</p>
+				<p>Valenzia is a meritocracy, which ranks its citizens upon their 10th birthday, by potential.  Many different attributes are taken into consideration when the evaluation takes place, but Ambassador Aqua admits magical aptitude is high on the list of factors. Once each citizen is evaluated, they are sorted into four Castes: Stone Caste, Ice Caste, Lightning Caste, and Flame Caste.</p>
+				<p>The Flame Caste are considered the most powerful of Valenzia's citizens, and the only ones traditionally allowed to attempt the Land bonding ritual which determines who the new Arch Magus will become. The ceremony in place for this Bonding is as follows:</p>
+				<p>The applicant is taken to a location in Valenzia where there is a large lava tube that rises to the surface, a symbolic place of Fire.  Four Ritual Daggers, each empowered with one of the four elements and wielded by a member of its corresponding caste, are used to stab the applicant before throwing them into this lava tube.  If the Land Sacrifices for the prospective leader, once they die and their Spirit arrives in the nearest circle, they then become the new Arch Magus of Valenzia.</p>
+				<p>Apparently there was a bit of excitement surrounding the ascension of Arch Magus Zalim.  He was bonded after a group of Adventurers overthrew the previous Arch Magus.  But not before an Avana attempted to throw themselves into the Land Bonding ritual in his place.</p>
+				<p>Here I inquired as to how Ambassador Aqua felt about this Avana’s attempt.  The eloquent elf responded only with a dry comment, stating that since the Avana clearly did not succeed, it doesn’t really matter.</p>
+				<p>Interestingly enough, Ambassador Aqua used to be an Ice Caste, but was recently elevated to Flame Caste due to a restructuring of the evaluation system used to sort Valenzian citizens.  This is a fairly new change, designed to shift those who may have initially been missorted.  Elevation from one caste to another is apparently rare, but has been occuring slightly more frequently, since this new policy was enacted.</p>
+				<p>As I have just been informed this is all the time I will get with the fair Ambassador, this is where I leave you, gentle readers.</p>
+				<p>Until next time, when we delve into the mysteries of the Nation of Wylenzia!</p>
+				<p>-Rheaumly Frophren</p>
+			</article>
+			<article class="note v2">
+				<h4>Wylenzia (Formerly Wyldemoore)</h4>
+				<p>The Inofu: Pillar of Spring, Chaos and Lightning
+				<p>Hello my wonderful readers!</p>
+				<p>Welcome to my last installment of the interviews I’ve undertaken to accomplish, speaking to representatives from the Four Major Nations of Aer’Astria!</p>
+				<p>Today I am interviewing Pavlo the Peacock-kyn, Ambassador of Wylenzia!  Before speaking to the Ambassador, I'd no idea how fascinating and complex Wylenzia's history is!
+				<p>Before it was known as Wyldemoore, it was a loosely organized and primarily nomadic nation of kyn.   During this time period, written history is more spotty, but verbal history tells us that the predator-kyn ruled over the others through brute force and magic.  However, internal strife eventually caused this dichotomy to be flipped on its head, around the time when nations were arising from the ashes of ancient Auros.  As Wyldemoore formed around the Pillar of Spring, magic became shunned and large prey dominant.  Pachyderm kyn, as the largest, rose to supremacy.  Additionally, by keeping the Nation's landbonding site secret, they maintained this dominion for generations.</p>
+				<p>However, Pavlo tells me that his nation underwent another drastic shift in the last decade!   The catalyst?  The undead scourge that began pouring from the Auros mountains around 617.</p>
+				<p>Wyldemoorians, with their active shunning of magic and casters, and their still fairly unorganized and nomadic Nation, found themselves woefully underprepared to fend them off.  The peacock-kyn before me is not too proud to admit that if Valenzia hadn’t stepped in at that time, Wyldemoore may have been wiped from the map before it ever became Wylenzia.  They brought their golems and celestial mages, built roads and infrastructure to aid in transporting them, and mowed down the undead. Though Valenzia was now an occupying force, the kyn did not protest, as they were too busy fighting for their lives.  At least, they didn't protest until the huge political scandal!</p>
+				<p>No one knows quite how a Valenzian managed to find the secret Elephant Graveyard landbonding site.  Regardless of how it was managed, they not only found it, but successfully became the next landbonded ruler of Wyldemoore!  The most fantastical part of this tale (folks I cannot make this stuff up), is that they somehow turned into an elephant kyn in the process!</p>
+				<p>You can imagine the kind of dissonance this produced amongst the people of Wyldemoore.  As they bickered over whether or not to depose their new ruler, that self same ruler lost no time dictating an entirely new mandate for their nation.</p>
+				<p>The Insofu’s Edicts</p>
+				<ol>
+					<li>If someone proves they can do the job better than you, let them do it. To step aside for one who does it better is always wisdom.</li>
+					<li>Magic, in all its forms, allows for things that no strength of arm can accomplish.  To wield magic is to be a help to the community and a threat to your enemies.  Those who can cast battle magic will be allowed to wear a sash, and be honored for it.</li>
+					<li>You have changed me for the better, and I hope I will do the same for you.  Do not fear change; live, fight, die, and make your mark in the world.  We will outsmart, outfight, and outright kill any who come to take our land.  And if I fail to lead us to greatness, remember the first edict.</li>
+				</ol>
+				<p>With this pronouncement, the Insofu won hearts and minds of many of the smaller kyn, used to being treated as lesser.  And while they may have been physically weaker, their numbers weren't.  Then the Insofu systematically either absorbed or repelled the Valenzian occupying force.  The message was clear.  Whoever the Insofu had been before, they were now wholly committed to ruling and protecting this country, refusing to be seen as a puppet of Valenzia.</p>
+				<p>In one last bold stroke, the Insofu sent a proclamation to every corner of Aer'Astria. “Wyldemoore”, it announced, had been the name forced upon their Nation by outsiders.  Now they wished to name themselves Wylenzia.</p>
+				<p>Though the transition was not perfectly smooth (two extremist groups had to be met and treated with recently, producing the now joint rule between a Council of the People and the Insofu), the Insofu has managed to stay in power and by all rights has improved the quality of life for all Wylenzian citizens.</p>
+				<p>Ambassador Pavlo is emphatic that these changes are all for the better, that the current Insofu is the best thing to have happened to Wylenzia.  My goodness, what a thrilling evolution!</p>
+				<p>Well, with that, I conclude this collection of interviews.  It's been quite a journey!  I hope you enjoyed reading these as much as I enjoyed writing them, gentle readers.  Perhaps I will be able to bring even more fascinating tales to you someday soon, but for now your favorite author bids you all a fond farewell!</p>
+				<p>-Rheaumly Frophren</p>
+			</article>
+		</section>
+			<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

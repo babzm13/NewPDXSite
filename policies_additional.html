@@ -1,0 +1,211 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/policies_additional.css" rel="stylesheet" type="text/css">
+		<title>Additional Policies</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Additional Policies</h1>
+				<h3>Anything Left Unmentioned</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>Additional Policies</h3>
+				<ul>
+					<li><a href="#lcs_purchases">LCS Ritual Policy</a></li>
+					<li><a href="#cancellation">Event Cancellation Policy</a></li>
+				</ul>
+				<p>All additional local policies, clarifications and other related information can be found <a href="https://www.refugelarp.org/forum/viewtopic.php?f=81&t=689" target="new">on our local policies post</a> in the forums. Please reference that for any questions you may have, or <a href="contact_us.html">contact us</a> using any of the other typical methods.</p>
+			</article>
+			<section class="right-image-left-text" id="lcs_purchases">
+				<article class="article left_article">
+					<h3>Rituals Permitted</h3>
+					<p>At the time of initial Logistics check-in for an event, each PC may check in no more than 20 LCS rituals.</p>
+					<ul>
+						<li>An LCS magic item must be completely checked-in or left at home; items may not be “split” and partially checked-in, even if the LCS rituals for an item are on multiple tags. LCS items must be entirely below the cap to be brought in. This is to avoid confusion later on during the event as to which rituals are “active” and which are not.</li>
+						<li>Body, Spirit, and Location tags for locations within the bounds of the game space MUST be checked in at the beginning of game.</li>
+						<li>All LCS items count against this limit, no matter which chapter they originate from.</li>
+						<li>Any LCS item marked as an “Artifact” is exempt from this limit.</li>
+						<li>Any specific rituals which are restricted from use by a campaign (as per the Refuge Treasure Policy rules) do not count towards the LCS limit for that campaign’s events. If all rituals with a LP duration on a tag are restricted from use, that tag will not have its duration punched for the event, though it will otherwise be considered in-game for all other mechanical and roleplay purposes.</li>
+						<li>The following rituals do not count against this limit:</li>
+						<ul>
+							<li>Spirit Link
+							<li>Spirit Lock</li>
+							<li>Item Recall</li>
+							<li>Preserve Duration</li>
+							<li>Permanent Duration</li>
+							<li>Boost Duration</li>
+							<li>Extend Battle Magic Duration</li>
+							<li>Resist Destroy Magic</li>
+							<li>Investiture</li>
+							<li>Render Indestructible</li>
+							<li>Any ritual which is immobile once cast (Limited Circle of Power, Warder Glyph, Circle Lock, Stable Foundation, Proscribe, etc.)</li>
+							<li>Any ritual marked as “Treasure Policy Exempt” (TPE)</li>
+							<li>Any ritual which lasts less than 5 days from the time of casting (Ritual of Woe, Whispering Wind, etc.)</li>
+						</ul>
+						<li>All rituals which are not specifically exempt as per the list above count against this limit, including such “times ever” rituals as Enchant and Skill Store.</li>
+						<li>LCS rituals only apply to this limit once they have been cast. A player may bring as many uncast LCS ritual scrolls into game as they wish, so long as they otherwise follow the guidelines of this policy.</li>
+					</ul>
+					<p>The intent is that no player may utilize more than 20 applicable LCS rituals at once. Temporary exceptions may be made in the heat of battle so that game play is not interrupted (e.g. when a teammate throws you their magic sword so you can strike the attacking Death Knight, you don’t need to ask “how many LCS rits does this have on it?”), but players who are found to intentionally violate this policy (such as consistently asking other players to “check in” LCS rits which they then use for the rest of the event above and beyond the 20 ritual limit) will be sanctioned appropriately at the discretion of the chapter’s leadership.</p>
+					<p>Individual campaigns may choose to apply stricter general limitations and/or specific ritual prohibitions. These limitations and/or prohibitions will be documented here and in Pre-Registration posts for each event. This presently applies to the following campaigns:</p>
+					<p><strong>Broken Shards</strong>: All magic items from other campaigns, regardless of whether they are LCS or Universal, are not accepted at Broken Shards events. The Portland LCS ritual scroll purchase list is not available for the Broken Shards campaign.</p>
+				</article>
+				<article class="image_container right_image"><img src="images/pictures/Layn/Ambix.jpg" alt="A wolfkyn looks at the camera, photo by Layn S" /></article>
+			</section>
+			<article class="article center_article">
+				<h3 id="cancellation">Event Cancellation Policy</h3>
+				<p>Safety is our number one priority at Refuge Portland and occasionally something will happen that is requires the cancelation of an event.  These circumstances are typically last minute and safety-related and include, but are not limited to, particularly nasty weather or damage to the site that would result in unsatisfactory safety conditions during the event.  If staff has deemed that an event will need to be canceled for any reason, then the staff will announce it to the playership as soon as possible after the decision has been made through all normal methods. As of this writing those methods are Discord, the official Refuge forums and Facebook.</p>
+				<p>In the event of an event being canceled, the players will be able to request a refund, if they have prepaid.  That refund can be done in one of the following ways:</p>
+				<ol>
+					<li>Money refunded through the method in which the prepayment was received.  Eg, Square.</li>
+					<ol>
+						<li>Refunds must be requested by emailing Logistics at <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a> within 60 days of the cancellation being announced.</li>
+					</ol>
+					<li>A chapter point donation at a 10:1 chapter-point-to-dollar ratio.</li>
+					<li>Credit towards another Refuge Portland event, within the next year (12 months from the date of the canceled event), that the player wishes to attend.</li>
+				</ol>
+				<p>In the event of an event being canceled, the chapter will give all pre-registered players a 60 chapter point donation.</p>
+				<p>Please note that due to our very busy schedule of events, and the fact that this is a volunteer-run organization, all possible attempts will be made to reschedule the event but we cannot guarantee that these attempts will be successful.</p>
+				<p>Please note that if the event is cancelled, event experience cannot be awarded to players. If an event must be cancelled mid-event, players will receive credit for the logistics periods they attended. Players may be awarded experience for the whole event, but that is not guaranteed.</p>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

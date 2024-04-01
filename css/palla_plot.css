@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to right, var(--light-yellow), var(--light-pink));
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>About Refuge Portland</title>
+		<link href="css/about_us.css" rel="stylesheet" type="text/css">
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<div class="heading_text">
+				<h1>About Us</h1>
+				<h3>The world of Refuge</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>About LARPing</h3>
+				<p>Welcome to Refuge LARP Portland's website! If you've come here, you've probably heard of the idea of LARPing before, but if not, we're the place for answers!</p>
+				<p>Wikipedia defines LARPing as "A live action role-playing game (LARP) is a form of role-playing game where the participants physically portray their characters. The players pursue goals within a fictional setting represented by real world environments while interacting with each other in character. The outcome of player actions may be mediated by game rules or determined by consensus among players. Event arrangers called gamemasters decide the setting and rules to be used and facilitate play." (<a href="https://en.wikipedia.org/wiki/Live_action_role-playing_game" target="_blank">Wikipedia, 10/1/2021</a>)</p>
+				<p>In its purest essence, LARPing is basically like Dungeons and Dragons or your other favourite table-top game, but you dress up and act out your character. Instead of rolling dice to determine outcomes, you actually swing your weapon, or block with your shield, or throw a bean-bag to represent casting magic. LARPs come in all different varieties - some, like ours, are all about acting out your actions, especially combat. Others, known as parlour LARPs, can solve conflict with cards, rock-paper-scissors, or discussing what you want to happen out of game, then making that happen in game. There are as many flavours of LARP as there are roleplaying games, and trying them out is the only way to figure out if one is right for you at the beginning!</p>
+				<div class="trio">
+					<span class="thumbnail_overlay light_pink"><img src="images/circle borders/icon 5 circle border.png" alt="" class="thumbnail" /></span>
+					<span class="thumbnail_overlay light_pink"><img src="images/circle borders/icon 3 circle border.png" alt="" class="thumbnail" /></span>
+					<span class="thumbnail_overlay light_pink"><img src="images/circle borders/icon 1 circle border.png" alt="" class="thumbnail" /></span>
+				</div>
+				<h3>About Refuge LARP</h3>
+				<p>Refuge LARP Portland is a chapter of the international <a href="https://www.refugelarp.org/" target="_blank">Refuge LARP</a> game. Our chapter uses the same basic rules set, combat system, magic system, etc, as every other Refuge LARP chapter in the world. Refuge LARP Portland (Refuge PDX as we often shorthand it) is proud to be a founding member of the game.</p>
+				<p>Refuge is a high-fantasy medieval-inspired boffer LARP related distantly to other boffer LARPs like NERO. Refuge has been an organization since 2021, and is proud to serve the west of the United States and Canada. We have chapters in Portland, Seattle, San Francisco, Salt Lake City, Boise, Edmonton and Calgary, here to meet your needs as a LARPer. If you would like, you can read more about the Refuge organization as a whole on <a href="https://www.refugelarp.org/" target="_blank">the national organization's website</a>.</p>
+				<div class="trio">
+					<span class="thumbnail_overlay medium_green"><img src="images/circle borders/icon 2 circle border.png" alt="" class="thumbnail" /></span>
+					<span class="thumbnail_overlay medium_green"><img src="images/circle borders/icon 6 circle border.png" alt="" class="thumbnail" /></span>
+					<span class="thumbnail_overlay medium_green"><img src="images/circle borders/icon 4 circle border.png" alt="" class="thumbnail" /></span>
+				</div>
+				<h3>About Refuge LARP Portland</h3>
+				<p>Refuge LARP Portland is based out of Portland, OR. We generally play games in the southern Washington/northern Oregon area. Our main sites are:</p>
+				<div class="column">
+					<div class="rows">
+						<img src="images/block_bg.png" alt="" />
+						<div class="rows_text">
+							<h4>Brooks Memorial State Park</h4>
+							<p><a href="https://www.parks.wa.gov/372/Brooks-Memorial" target="_blank">Park information</a></p>
+							<p>Location: <a href="https://www.google.com/maps/place/Brooks+Memorial+State+Park/@45.9438464,-120.665453,14.75z/data=!4m5!3m4!1s0x0:0x4e3df514cf5e39b8!8m2!3d45.9502205!4d-120.6658682" target="_blank">2465 US-97, Goldendale, WA 98620</a></p>
+							<p>We're on the south side of the freeway</p>
+						</div>
+					</div>
+					<div class="rows">
+						<img src="images/block_bg.png" alt="" />
+						<div class="rows_text">
+							<h4>Camp Lutherwood, Oregon</h4>
+							<p><a href="https://www.lutherwoodoregon.org/" target="_blank">Park information</a></p>
+							<p>Location: <a href="https://www.google.com/maps/place/22960+OR-36,+Cheshire,+OR+97419/@44.1636949,-123.4419193,17z/data=!3m1!4b1!4m5!3m4!1s0x54c107b1c1a6bdf1:0x8f8f4f4c9afabcb9!8m2!3d44.1636911!4d-123.4397306" target="_blank">22960 Highway 36 Cheshire, OR 97419</a></p>
+						</div>
+					</div>
+				</div>
+				<h3>Our Games</h3>
+				<p>Refuge LARP Portland runs two campaigns currently: Palla and Broken Shards.</p>
+				<div class="row">
+					<div class="columns">
+						<p class="thumbnail_align"><span class="thumbnail_overlay medium_green"><img src="images/circle borders/icon 5 circle border.png" alt="" class="thumbnail"/></span></p>
+						<h4>Palla</h4>
+						<p>Palla is a brand-new campaign that is just getting started. It is a high-fantasy game with ready access to magic, both the regular variety and ritual magic too. There is no level cap, and players from all across the <a href="pdfs/Refuge_Cosmology.pdf" target="_blank">Realms of Refuge</a> are welcome. You can read more about what's happening with the setting <a href="palla_plot.html">here</a>.</p>
+						<p>The Palla campaign runs approximately 5-6 times per year in a standard non-COVID year.</p>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align"><span class="thumbnail_overlay medium_green"><img src="images/circle borders/icon 6 circle border.png" alt="" class="thumbnail"/></span></p>
+						<h4>The Broken Shards</h4>
+						<p>The <a href="bros_plot.html">Broken Shards campaign</a> is our lower-fantasy game. This game is level capped at 64 build at the time of this writing. You can find more current build cap information on our <a href="https://discord.gg/NJWRWCS" target="_blank">Discord Server</a>.</p>
+						<p>Characters from other Realms in Refuge can play, even if they exceed the level cap, but those players must "squish" their characters down to the appropriate level using the <a href="https://freeplay-db.refugelarp.org/" target="_blank">Freeplay Database</a>, and may not bring in their magic items unless they were made in the Broken Shards campaign. We also ask that players coming into game only bring in the starting-loot equivalent from their gear, unless they acquired their loot IN the Broken Shards campaign. This keeps the game feeling the way that the Plot team is aiming for. If you have questions about this, our <a href="https://discord.gg/refuge-pdx">Discord Server</a> is a great way to get ahold of us and ask questions.</p>
+						<p>The Broken Shards campaign runs approximately 2 times per year in a standard non-COVID year.</p>
+					</div>
+				</div>
+				<h3>What next?</h3>
+				<p>Interested in what you've read here? Great! Your next steps should be to join our <a href="https://discord.gg/refuge-pdx" target="_blank">Discord</a> or <a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a> groups. Then, if you would like to learn some more, check out our <a href="new_player_faq.html">New Player FAQ</a>. Once you've read through that, browse the <a href="">PCing</a> or <a href="">NPCing</a> sections - whichever one you're more interested in! You can also read all about what to expect at <a href="first_event.html">Your First Event</a>, if you like. If you have questions at any point, please feel free to email our <a href="mailto:newplayer@refugelarpportland.com">New Player Rep</a> or ask for help on our <a href="https://discord.gg/refuge-pdx" target="_blank">Discord</a> or <a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a> groups. There are always players hanging around ready and willing to help answer questions!</p>
+				<p>Welcome, and enjoy!</p>
+			</article>
+		</section>
+			<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

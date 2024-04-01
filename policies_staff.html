@@ -1,0 +1,213 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/policies_staff.css" rel="stylesheet" type="text/css">
+		<title>Staff Policies</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background" />
+			<div class="heading_text">
+				<h1>Staff Policies</h1>
+				<h3>Keeping our volunteers happy</h3>
+			</div>
+		</section>
+		<section class="left-image-right-text">
+			<article class="image_container left_image">
+				<img src="images/pictures/Ryan/ian.jpg" alt="A stellarean in a mask looks at the camera, photo by Ryan W" />
+				<img src="images/pictures/Ryan/apollo.jpg" alt="A stellarean looks at snow, photo by Ryan W" />
+			</article>
+			<article class="article right_article">
+				<p>These policies are dedicated to how to engage with staff in the best and most productive way possible. Please read about those here:</p>
+				<ul>
+					<li><a href="#staff">General Staff Contact Policy</a></li>
+					<li><a href="#logistics">Logistics Contact Policy</a></li>
+					<li><a href="#newplayer">New Player Council Contact Policy</a></li>
+				</ul>
+	
+				<h3 id="staff">General Staff Contact Policy</h3>
+				<p>The entirety of our staff positions are composed of volunteers, who are dedicated to the game, but also have lives outside of the game. We appreciate your understanding, patience, and compassion when engaging with these staff members. Sometimes emails get answered slowly, or DMs get missed. This isn't intentional - it's because our volunteers are doing the best they can and life sometimes gets in the way. Please engage in the following ways with our staff members:</p>
+				<ul>
+					<li>If you have a question for a staff member, please start by emailing them using their email addresses (if they have one), or asking a question on our Facebook page, forums or Discord server.</li>
+					<li>If a staff member agrees to it, you are welcome to DM them about your question, but please wait for permission before beginning the DM process.</li>
+					<li>If you have sent an email and it has been more than 2 weeks, please send a follow-up email and CC the owner(s): <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a>. We'll do our best to expidite the situation, if we can.</li>
+					<li>If you have an URGENT need and can't get ahold of anyone in the group you're looking for, please feel free to DM an owner - you can find us on the Discord Server, Facebook, and the forums. You can also email the owner(s) at <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a> and put URGENT in the subject line. Please be mindful that your definition of urgent and the owners' might not be identical (or the owners may be at game or whatever, and can't access internet). If we don't respond immediately, we'll do everything in our power to make it right when we have a chance to get back to you.</li>
+				</ul>
+				<p>Long story short, we're going to do everything we possibly can to get your questions and concerns addressed in a timely manner. However, things do come up, and we ask for your patience and understanding when they do. If you ever have an urgent need, the owners are available, and are happy to help you out.</p>
+				<p>In addition to this, we expect all of our players to communicate in a professional, courteous way with our staff, and vice versa. This is true of both text-based and verbal communications.</p>
+				<p>If you feel you are not being treated with due courtesy, please reach out to the owner(s) (<a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a>) and/or the player representative (<a href="mailto:playerrep@refugelarpportland.com">playerrep@refugelarpportland.com</a>) and bring the matter to our attention.</p>
+				<p>Likewise, if our staff members feel that they are not being treated with respect, we may reach out to you to ask you to improve your behaviour. People who continue to not treat staff members with courtesy and respect may be asked to not return to the game.</p>
+				
+				<h3 id="logistics">Logistics Contact Policy</h3>
+				<p>The Refuge Portland Logistics Team is composed entirely of volunteers who love to help our game be the best it can be and to answer your questions so that you can have a fantastic time at each event. However we are still busy people with a lot going on outside of Refuge, and so we need to maintain an adequate level of Larp/life balance in order to stay at peak and avoid burnout. Therefore we ask that you respect the following communications guidelines:</p>
+				<p><strong>The primary means for contacting Logistics are:</strong></p>
+				<ol>
+					<li>Send an email to <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a></li>
+					<li>Send a private message on the National Refuge Forums to the <a href="https://www.refugelarp.org/forum/memberlist.php?mode=viewprofile&u=66">Portland Logistics account</a>.</li>
+					<li>As a direct reply to a relevant forum thread posted by the Portland Logistics account, e.g. an event pre-registration thread.</li>
+				</ol>
+				<p>At our discretion, Logistics may reach out to the player by direct message (Discord, Facebook Messenger, etc.) to <strong>answer</strong> specific questions that are likely to require several clarifications. Unless we have stated otherwise, any question unrelated to the direct message should still be sent by the primary means.</p>
+				<p>In certain circumstances you may contact the Refuge Portland Head of Logistics, Corin, by direct message on Discord (preferred, handle is Renascent#1895), <strong>after contacting Logistics via the primary means</strong>.</p>
+				<ol>
+					<li>Examples of appropriate circumstances for sending an unprompted direct message to the Head of Logistics are:</li>
+					<ol>
+						<li>Any changes that would affect your PC registration for an event and require printing or re-printing of cards, scrolls, or magic items, less than 48 hours before the event begins, e.g. switching characters, completely discarding and rewriting a new character, losing magic item tags and needing a re-print, etc.</li>
+						<li>Last minute NPC registration to determine if there is availability for meal plan/heated cabins less than 48 hours before event</li>
+						<li>When you need to undo a skill purchase in the CMA on an Portland character and it has been between five and seven days since you purchased it.</li>
+						<li>Any emailed/forum message questions for which you have not received an answer after 14 days.</li>
+					</ol>
+					<li>Examples of inappropriate circumstances for sending an unprompted direct message to the Head of Logistics include, but are not limited to:</li>
+					<ol>
+						<li>Questions about how to use the Refuge CMA</li>
+						<li>Asking if payments were received</li>
+						<li>Changes to your event registration more than 48 hours before the event</li>
+					</ol>
+					<li>This is not an exhaustive list, so please use your best judgment. Messages that are considered non-urgent will politely be asked to wait for a reply to their email/forum message. </li>
+				</ol>
+				<p>We sincerely appreciate your understanding and cooperation with these guidelines. It helps to significantly reduce our stress, minimize the amount of things lost in the shuffle, and ultimately contributes to a better experience for all of our players. This policy is not in response to any particular person or persons, just something that happens from time to time that we felt the need to clarify our expectations on. We love the enthusiasm of all of our players and look forward to seeing you at game!</p>
+				
+				<h3 id="newplayer">New Player Council Contact Policy</h3>
+				<p>The New Player Council are the group of players who are dedicated to making the game a better place for our new players. They are a dedicated group of volunteers who ask that you engage in the following way:</p>
+				<ul>
+					<li>When you have questions, please email <a href="mailto:newplayerrep@refugelarpportland.com">newplayerrep@refugelarpportland.com</a>, so that the entire council can see what has been said and what else needs saying.</li>
+					<li>If you get permission to DM one of the members of the New Player Council, please don't take that as permission to DM them all. Each individual member of the council has their own desires and needs around DMs.</li>
+					<li>If you have questions in game, please feel free to seek out members of the New Player Council. They are happy to answer your questions or direct you to people who can answer them.</li>
+				</ul>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/safety.css" rel="stylesheet" type="text/css">
+		<title>Safety</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Safety at LARP</h1>
+				<h3>Preventing Injury - Mental, Physical and Emotional</h3>
+			</div>
+		</section>
+		<section>
+			<section class="right-image-left-text">
+				<article class="article left_article">
+					<h3>Introduction</h3>
+					<p>Safety at game is of vital importance. In order to tell the best stories we can - including stories that may be challenging or hard to participate in - we must all feel a sense of safety. This sense of safety is what permits us to stretch beyond our normal comfort zone to tell the stories we wish to tell and be the people we wish to be. Safety is the ultimate concern.</p>
+					<p>Safety is not just about physical safety, but about mental and emotional safety as well. We encourage all players to practice self-care in the face of any kind of injury, whether it be twisting a knee or spraining a feeling. We want players to be comfortable expressing boundaries - physical, mental and social - and to respect the boundaries of others. Below you will find some guidance as to what our culture is like on these topics. If you have futher questions, please feel free to contact an <a href="mailto:owner@refugelarpportland.com">owner</a>, or our <a href="mailto:DIVERSITY@REFUGELARPPORTLAND.COM">DEI coordinator</a>.</p>
+					<h3>Contents of This Page</h3>
+					<ul>
+						<li><a href="#physical">Physical Safety</a></li>
+						<li><a href="#mental">Mental Safety</a></li>
+						<li><a href="#emotional">Emotional Safety</a></li>
+						<li><a href="pause_game">The Pause Game Rule</a></li>
+						<li><a href="bleed">Bleed</a></li>
+						<li><a href="#metagaming">Metagaming</a></li>
+						<li><a href="#goes_wrong">What to Expect if Something Goes Wrong</a></li>
+					</ul>
+					<h3 id="physical">Physical Safety</h3>
+					<p>Safety of the body is the first concern we shall address. Our game is what's known as a 'lightest touch' boffer system, meaning we use foam-covered weapons and strike only hard enough for the opposing player to feel the blow and know they were hit - no harder. We also try to remember at all times that the people we're fighting are our friends too - at least, out of game. So, in the event that you see someone backing into a dangerous situation, or if someone trips over something or collapses for any reason, the expectation is that you will immediately stop combat with a "Pause Game" call (see the Pause Game section below), and see to the safety of your companions.</p>
+					<p>There are also non-combat rules for people who are not comfortable with combat. We call these people "Pages" and you can see our <a href="policies_safety.html#page">page policy here</a>. These players are NEVER to be touched with a weapon - only packets in SOME cases - and the purpose is to include people who cannot safely participate in combat. People may elect to page for many reasons - some lack the physical strength to fight, others are disabled and cannot safely be hit, others still have PTSD or other situations that make combat hard for them. We welcome these people to our game, and encourage them to page if and when they think it is appropriate. We also have rules about younger players - who are generally required to page until they are old enough to not be injured in the event of an accident on the field.</p>
+					<p>Overall, physical safety is paramount. We do not allow players to use their strength to trap weapons, control a weapon other than their own, or physically touch other players during combat - except for a light touch on the shoulder for <strong>some</strong> specific situations. Our goal is to keep people as safe as possible, and we encourage our players to keep each other safe, too.</p>
+				</article>
+				<aside class="image_container right_image">
+					<img src="images/pictures/hippocampus.jpg" alt="A brave hippocampus jumps proudly off a stump.">
+				</aside>
+			</section>
+			<article class="article center_article">
+				<h3 id="mental">Mental Safety</h3>
+				<p>Mental safety is the next on our list of important safety considerations. Although it's not as highly valued in some places, it is a huge deal for the owners and staff of Refuge Portland. There are a number of situations you can expect to come across in game, and some you should expect to avoid. Knowing how to keep your mental state safe is a powerful tool for keeping yourself healthy and well at events.</p>
+				<p>Players of Refuge should expect to deal with certain triggers regularly - war, death, the loss of a loved one, loss of limb, stressful situations (IG and occasionally OOG), animals of various sorts that may or may not be triggering (such as spiders). Players of Refuge will NEVER be expected to face triggers such as sexual assault, sexual violence, or other topics of such a nature, as sexual assualt DOES NOT EXIST in the game. Likewise, the game does not have deities, religion or any organized belief structures, and as such, should avoid stressful topics related to those ideas. Players of Refuge may encounter situations that deal with pregnancy loss, severe injury, PTSD, speciesism (such as thinking that humans are the superior species, or thinking that syladrin are money-grabbing monsters) and other triggers of that nature. Refuge LARP Portland remains dedicated to avoiding topics of child death as much as possible, but mentioning it is NOT an offense that can remove a player from the game. You might get talked to about it, though. If you are concerned about other triggers, please reach out to an owner or the DEI Coordinator. We are happy to address your individual concerns, and talk through the likelihood of you encountering them at our game.</p>
+				<h3 id="emotional">Emotional Safety</h3>
+				<p>Finally, we have emotional safety. Although this has a lot in common with Mental Safety, we will talk about slightly different topics, and encourage you to read both sections.</p>
+				<p>Players of Refuge are often asked to put as much of themselves emotionally as they can into a character. There is definitely a culture of embracing your character as completely as you feel comfortable in the game, and out of game talk is discouraged in in game spaces as much as possible. This means you may encounter Bleed more regularly (see below for a discussion on Bleed), and you may find yourself thinking things are unsafe when they are uncomfortable.</p>
+				<p>At NO POINT in a game should you ever feel unsafe OUT OF CHARACTER. In character, you may well feel unsafe - perhaps a huge monster is coming to kill you, perhaps other characters are turning or acting against yours, perhaps you have put yourself in a bad position and must now lie to get out of it. Whatever your experiences in character are, OUT OF CHARACTER, you should feel safe to engage in the game. If at ANY time you feel unsafe OUT OF CHARACTER, please immediately report to a staff member. We will do everything in our power to address the situation propmtly and safely.</p>
+				<p>HOWEVER, people experiencing bleed (and, frankly, Americans in general) are generally REALLY BAD at recongizing the difference between unsafe and uncomfortable. As staff members, we will do everything in our power to help you truly understand which one it is, and move forward from a position of confidence from that place. There is no shame in being uncomfortable and mistaking it for feeling unsafe. That is simply our nature. But we will try and get to the bottom of which one it truly is before actions are taken, and not everyone agrees the degree to which something is unsafe versus uncomfortable. That being said, please understand that our desire is to encourage good stories for everyone, and practice safety as best we can. We're all just people, but we'll do our level best.</p>
+			</article>
+			<section class="left-image-right-text">
+				<aside class="image_container left_image"><img src="images/pictures/Jar of Eyes.jpg" alt="A jar of glowing eyeballs held in someone's hands."></aside>
+				<article class="article right_article">
+					<h3 id="pause_game">The "Pause Game" Rule</h3>
+					<p>The "Pause Game" Rule is for any situation that has become unsafe for any reason. If you see an unsafe situation (especially physically), please feel empowered to shout "PAUSE GAME" as loud as you can. If you hear the words "Pause Game," please echo them, and take a knee (if possible). If it was because of an unsafe situation, please rectify the situation (if someone was about to back into something dangerous, please rotate to move them out of the danger zone; if someone was about to hit a page they didn't know was a page, remind them of the page rules; etc) and do a 3-count to "Play On." If you are unsure of how to do that, please feel free to ask another player, and they will happily go over it with you. The important part is the pause game, not getting back into game once the pause is over.</p>
+					<p>If there is a medical situation that requires a pause game, please immediately find someone who can help. If you need a MEDIC, please feel free to call "Medic" at the top of your voice or send a runner. Please reserve the term "Medic" for ONLY OOG medical needs, and use "Healer" for IG ones.</p>
+					<h3 id="bleed">Bleed</h3>
+					<p>"Bleed" is the term LARPers use for when the player's emotions and the character's emotions get co-mingled. Bleed is a normal, healthy part of the game, but can also - like many things - be destructive if not understood fully or if the player isn't aware of what's going on.</p>
+					<p>Bleed may take the shape of Player A deciding they don't like Player B because Player B killed their character. Or maybe Player A and Player B were dating and had an ugly break-up, and now their characters don't like each other any more. Or maybe Player A hates Player B, so Character A kills Character B in the woods for no reason. All of these are examples of bleed.</p>
+					<p>It may be easy to see why the first and the last are worrisome, but let's look at the second for a minute. This is an example of bleed that is not necessarily destructive. Sometimes you need to make IG reflect OOG realities, and that's FINE (this is an example of something called "positive meta-gaming" and is encouraged in our chapter - read that section below for more details). As long as you are aware of what's going on, and not breaking another player's game by, say, trying to turn the town on their character because you two had a bad break-up OUT of game, splitting ways and moving on is fine. It's like how you'll often find players who are partnered create characters who are close - there is trust between two players, which often results in trust between characters when you aren't examining it (and that's also a form of bleed!).</p>
+					<p>So, the long and short of bleed comes down to:</p>
+					<ol>
+						<li>Expect it to happen to you at some point.</li>
+						<li>Examine your choices frequently to ensure you aren't engaging in bleed-powered actions to the detriment of others.</li>
+						<li>Take responsibility for your own bleed, and step OOG if you need a few minutes to decompress.</li>
+						<li>Don't be upset with others if they are also experiencing bleed (but feel free to call them on it with as much kindness, compassion and respect as you can).</li>
+						<li>If you get called on your bleed, be respectful, compassionate and loving with yourself. Find a trusted confidant (or come to Monster Camp and find someone willing and able to talk to you there) and try to refocus - but remember, we aren't licensed therapists or here to be your therapist. At some point, you will need to take responsibility for your own bleed and do with it what you can.</li>
+					</ol>
+					<p>There is NOTHING wrong with experiencing bleed. Some people come to game explicitly for the bleed! That's fine. The part where it becomes not-fine is when bleed is affecting your actions in a way that is detrimental to others at the game. Be thoughtful, mindful, and compassionate with each other, and our game will continue to be AMAZING!</p>
+				</article>
+			</section>
+			<article class="article center_article">
+				<h3 id="metagaming">Metagaming - Postive-Metagaming and not</h3>
+				<p>It is an accepted fact that you know more than your character does at game. Whether it's because you've read the book that inspired the plot, or you speak another language that will help with deciphering the code, or you just heard two players talking about their plans last night while everyone was in the bathroom (which is an out of game space), you will eventually have more knowledge about something than your character should have. Metagaming describes using this knowledge in game.</p>
+				<p>There are two different types of metagaming: positive-metagaming and the other kind. Positive-metagaming is when you use your OOG knowledge to make the game experience BETTER for as many people as possible. The other kind makes the game experience worse for other people (and often benefits you unfairly). For example: Suzie S is playing Harper the Bard and Jamie J is playing Jordan the Assassin. Suzie and Jamie are roommates, and were talking before game about Jordan's newest assignment - killing the NPC Howard the Banker. At game, Jordan kills Howard, and it causes quite a stir. The town's Lord interrogates everyone, including Harper, about who killed Howard the Banker.</p>
+				<p>If Suzie chooses to say that she knows who killed Howard, and explain that it was Jordan, despite having no knowledge of it IG, this is considered metagaming, and since it negatively impacts Jamie, it probably shouldn't be done. There are always extenuating circumstances that could be at play, but generally, in a situation like this, Suzie should go with what her character knows, not what she knows.</p>
+				<p>By contrast, imagine a situation where Suzie is an NPC instead (or maybe double-hooking for a brief period of time). She knows that Jordan has an incredible fear of Flame Elementals because of something in their past (not Jamie, just Jordan). As a result, she leads a small squad of Flame Elementals to go try and make friends with Jordan, which results in a hilarious game of chase, while the other PCs get to engage and interact with the Flame Elementals, too. This is an example of positive-metagaming. Suzie knew something her Flame Elemental didn't, and it made a little crunchie mod turn into a hugely fun experience for everyone. This is totally appropriate and accepted.</p>
+				<p>But it doesn't stop there. Maybe Suzie knows that Jordan's secret desire is to kill the bandit lord that murdered their parents. Well, at an event, Harper finds out that the same bandit lord is hiding in a cave not far from town. Although Harper doesn't really trust Jordan a whole lot, Suzie finds a way to manipulate a conversation that Jordan and Harper are having to reveal to Jordan that the bandit lord is near town. Jordan runs off to go kill the bandit lord, and returns triumphant. This is another example of positive-metagaming, where Suzie knew more than Harper, but used that knowledge to make Jamie's game really awesome.</p>
+			</article>
+			<section class="right-image-left-text">
+				<section class="image_container right_image">
+					<img src="images/pictures/Layn/Morriden.jpg" alt="A human stands with a grey tunic with skulls on it, photo by Layn S" />
+				</section>
+				<section class="article left_article">
+					<p>You don't have to positive-metagame every decision you make at game - in fact, it can be really disruptive to gameplay if you do, but it certainly has its time and place. Don't feel bad for making sure other people have fun too - that's part of the reason we all play!</p>
+					<h3 id="goes_wrong">What to Expect If Something Goes Wrong</h3>
+					<p>No matter how many rules we put in place, or how many examples we give, something can always go wrong with our game. Whether it's tripping over a shield and giving yourself a concussion, or feeling personally attacked and made unsafe by the words that another character said to you in the middle of the tavern, there is bound to be a moment that crops up that is problematic.</p>
+					<p>So what happens then?</p>
+					<p>Our staff is committed to making sure that everyone is as safe as possible in any given situation, and we ask our players to be aware too.</p>
+					<p>If a physical injury occurs, we call an immediate pause game. We have first-aid-trained people on site who can help assess injuries, and 911 will be called if the situation is severe. Our campsites are a ways from civilization usually, but we do have first aid kits, epi-pens and many other different tools at our disposal to keep a person comfortable before paramedics can arrive. That being said, we are NOT medical personnel. Please don't expect us to know how to treat your specific illness or injury. When in doubt, we will call paramedics. This game is a physical game and you are assuming some risk by playing. Please follow our rules, which are there for your safety more than anything, and avoid situations that look dangerous. Sending a player home in a cast is not what any of us wants.</p>
+					<p>If an emotional or mental injury occurs, please report immediately to Monster Camp and find either the Player Rep, the Owner, or a person on staff you trust. You will be asked to explain the situation in as much detail as you feel comfortable, and the fewest number of staff members required will respond to the situation. This generally means that whoever you report to will report your conversation (anonymously, if you desire) to the Head of Plot, General Manager and Owner. Our Diversity Coordinator and Player Rep may also get involved in some situations, as may other staff members as deemed appropriate.</p>
+					<p> In all situations that involve injury, expect that a report will be gathered by a member of staff, and that the Head of Plot, General Manager, and Owner(s) will get involved. Again, other staff memberes may be involved, based on what happened and who saw/knows what. The staff members gathered will talk about the situation, decide what the best move forward is, and take actions to ensure such injuries do not occur again. If there were rules violations that contributed, staff will decide on what to do about those violations and the ones who perpetuated them. In some cases, other players may be asked to contribute their version of events, and in all cases, confidentiality will be kept as much as is possible. Please keep in mind, though, we can't stop the LARP rumour mill. But we will do our best to not contribute to it and set the record straight if that is requested by those involved.</p>
+					<p>Refuge LARP Portland may keep a private record of these injuries, and may reference them in the future if needed. However, they will never be willingly exposed to the public unless a request is made by all parties involved. We're not here to ruin reputations, just respond to sitautions as best we can to ensure a good, safe, fun, enjoyable game for as many people as we can manage.</p>
+					<h3>Questions?</h3>
+					<p>If you have questions about any of this, please <a href="contact_us.html">contact us</a>. <a href="mailto:owner@refugelarpportland.com">Owners</a> are probably the best ones to start with.</p>
+				</section>
+			</section>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

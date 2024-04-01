@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to right, var(--medium-green), var(--light-blue));
+}
+.invert_bottom {
+	transform: rotate(180deg);
+	margin-bottom: -1px;
+}
+.green-bg {
+	background-color: var(--medium-green);
+	display: flex;
+	flex-direction: column;
+}
+.blue-bg {
+	background-color: var(--light-blue);
+	display: flex;
+	flex-direction: column;
+}
+body .green-bg p, body .green-bg h3, body .green-bg ol, body .green-bg ul {
+	color: var(--dark-off-white);
+}
+body .blue-bg p, body .blue-bg h3, body .blue-bg ol, body .blue-bg ul {
+	color: var(--dark-off-white);
+}
+body .color a {
+	color: var(--dark-off-white);
+}
+body .color a:hover {
+	color: var(--dark-off-white);
+}
+.space_between {
+	padding: 2%;
+}
+.article {
+	background: none;
+	padding-top: 2%;
+}
+.right_image {
+	padding: 2%;
+}
+.right-image-left-text {
+	justify-content: space-between;
+}

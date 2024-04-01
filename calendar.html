@@ -1,0 +1,209 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/calendar.css" rel="stylesheet" type="text/css">
+		<title>Calendar</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Calendar of Events</h1>
+				<h3>See What's Happening When!</h3>
+			</div>
+		</section>
+		<section id="top_calendar">
+			<article class="article left_article">
+				<h3>Calendar of Events</h3>
+				<p>Here are the events we currently have scheduled:</p>
+				<h4>2023</h4>
+				<ul>
+					<li>BroS Gameday - Feb 18 - Location TBD</li>
+					<li>Palla Mod Day - Feb 19 - Location TBD</li>
+					<li>Palla Game - March 31 - April 2 - Camp Lutherwood, OR</li>
+					<li>Palla Game - June 2 - 4 - Brooks Memorial State Park</li>
+					<li>BroS Game - Aug 11 - 13 - Brooks Memorial State Park</li>
+					<li>Palla Game - Oct 20 - 22 - Brooks Memorial State Park</li>
+				</ul>
+				<h4>2024</h4>
+				<ul>
+					<li>Palla Game - Feb 2-4 - Camp Lutherwood, OR</li>
+					<li>BroS Finale Game - March 15-17 - Camp Lutherwood, OR</li>
+					<li>Palla Game - April 19-21 - Camp Lutherwood, OR</li>
+					<li>Palla Game - May 31 - June 2 - Brooks Memorial State Park</li>
+					<li>Thevran Opening Game - Aug 9 - 11 - Brooks Memorial State Park</li>
+					<li>REGIONALS with Boise - Aug 31 - Sept 2 - Camp Arrowhead</li>
+					<li>Palla Game - Oct 11 - 13 - Brooks Memorial State Park</li>
+					<li>Palla Game - Nov 15 - 17 - Camp Lutherwood, OR</li>
+				</ul>
+				<h4>2025</h4>
+				<p>Coming Soon!</p>
+			</article>
+			<article class="right_image_container">
+				<img src="images/pictures/Ryan/dragon.jpg" alt="A person in a black hat and blue cloak speaks to a person in green and yellow, photo by Ryan W" class="right_image"/>
+			</article>
+		</section>
+		<section>
+			<article class="center_article">
+				<h3 class="centered">Event Types</h3>
+				<div class="row">
+					<div class="columns">
+						<p class="thumbnail_align"><span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 6 circle border.png" alt="" class="thumbnail"/></span></p>
+						<h3>Full Weekend Events</h3>
+						<p>Our Big Events are our Weekend Events. These run from Friday evening (usually starting around 9pm) until Sunday midday (usually 12pm) approximately every other month. Occasionally, we'll run "3-day" events that either start Thursday (9pm) and go through Sunday (12pm) or start Friday (9pm) and go through Monday (12pm). Our schedules are usually posted several months in advance, but COVID has made scheduling a challenge. Look at our announcements on our <a href="contact_us.html">Social Media Pages</a> for updates on our next events!</p>
+						<p>These events consist of very interesting combats, role-playing events and more that will further our plot lines of our overall story arc as well as any plots that the PCs present to us.</p>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align"><span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 6 circle border.png" alt="" class="thumbnail"/></span></p>
+						<h3>"Gamedays": Single Day Events</h3>
+						<p>On occasion, we'll run single day events called Gamedays. These Gamedays will last from around 12pm to around 5pm or something like that. Gamedays are rarer now, because most of the sites we've used in the past have been local parks, and that makes for some awkward gaming. We may have more Gamedays forthcoming as we stretch our "wings" again in a less-intense COVID world. Check out our <a href="contact_us.html">Social Media Pages</a> to find out more about upcoming Gamedays!</p>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align"><span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 6 circle border.png" alt="" class="thumbnail"/></span></p>
+						<h3>Mod Days</h3>
+						<p>We are starting a new program of running some 1-LP events that are called "Mod Days." These Mod Days will consist of approximately 1 large mod of combat with some role playing on either side. Some may also include some OOG hangout time, and maybe even potluck meals. We're still working on the details of this, but we should have more information soon.</p>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align"><span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 6 circle border.png" alt="" class="thumbnail"/></span></p>
+						<h3>Online Events</h3>
+						<p>During our off-season (which is usually in the summer), and in COVID times, we've been exploring online events. These events, which may contain information important to plotlines, or may just be for fun, are advertised on our <a href="contact_us.html">Social Media Pages</a>, and take place regularly. We even have regular "Tavern Nights" where NPCs just come out and talk to our PCs. Experience <strong>may</strong> be handed out for some of these events, but that is up to the Refuge Board of Directors.</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

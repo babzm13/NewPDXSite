@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to bottom right, var(--dark-purple), var(--dark-pink));
+}
+.rows {
+	margin-bottom: 10px;
+	border-radius: 15px;
+	overflow: hidden;
+	position: relative;
+}
+.rows img {
+	opacity: 0.1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+section .columns {
+	width: 48%;
+	border-radius: 15px;
+}
+.article .row .columns .thumbnail_align {
+	text-align: center;
+	margin-top: -65px;
+}
+.article .row .columns p, .article .row .columns a {
+	color: var(--light-pink);
+}
+.article .row .columns a:hover {
+	color: var(--dark-pink);
+}
+article h3 {
+	text-align: center;
+	padding-left: 0px;
+}

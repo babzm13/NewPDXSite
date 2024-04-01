@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-image: linear-gradient(to bottom right, var(--light-pink), var(--green-gold));
+}
+.invert_bottom {
+	transform: rotate(180deg);
+	margin-bottom: -1px;
+}
+.pink-bg {
+	background-color: var(--dark-pink);
+	display: flex;
+	flex-direction: column;
+}
+body .pink-bg p, body .pink-bg h3, body .pink-bg ol, body .pink-bg ul {
+	color: var(--dark-off-white);
+}
+.gold-bg {
+	background-color: var(--dark-yellow);
+	display: flex;
+	flex-direction: column;
+}
+body .gold-bg p, body .gold-bg h3, body .gold-bg ol, body .gold-bg ul {
+	color: var(--off-white);
+}
+.blue-bg {
+	background-color: var(--light-blue);
+	display: flex;
+	flex-direction: column;
+}
+body .blue-bg p, body .blue-bg h3, body .blue-bg ol, body .blue-bg ul {
+	color: var(--off-white);
+}
+.tan-bg {
+	background-color: var(--light-brown);
+	display: flex;
+	flex-direction: column;
+}
+body .tan-bg p, body .tan-bg h3, body .tan-bg ol, body .tan-bg ul {
+	color: var(--off-white);
+}
+body .color a {
+	color: var(--dark-off-white);
+}
+body .color a:hover {
+	color: var(--dark-off-white);
+}
+.article {
+	background: none;
+}

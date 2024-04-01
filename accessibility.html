@@ -1,0 +1,201 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/accessibility.css" rel="stylesheet" type="text/css">
+		<title>Accessibility Information</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Accessibility</h1>
+				<h3>Making the game work for you</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>An Introduction</h3>
+				<p>LARPing is a fun, intense, really exciting hobby. People who are involved in the community are passionate about the game, but there's one thing that isn't talked about as often as it should be: how to be welcoming to people who have diversity of physical, mental or social abilities.</p>
+				<p>People of all walks of life need different accommodations at different times in their lives. Whether you're pregnant or recovering from an injury and only need some physical accommodations for a few weeks or months, or if you are facing a more permanent situation, this game would like to work with you to see if the hobby is one for you.</p>
+				<p>Unfortunately, because of the nature of the game, it's not a good fit for every individual, no matter what we do as an organization. However, if you come to us with honesty, we will do our best to listen and give you a fair accounting of whether the hobby will be right for you. AND we'll do our best to ensure you have as good an experience as possible if you choose to join us.</p>
+				<p>Some things to know going in: </p>
+					<ol>
+						<li>We are a combat-focused game. Not everyone has to engage in combat to have a good time at game, but it is core to the system we play. If you cannot engage in combat, you should be prepared to watch some of the game from a distance. It can and usually IS still a realy fun experience, but it can occasionally feel like you're on the outside looking in during the big town fights. The plot teams work hard to find other things for you to do, but won't be able to help at all times, so be prepared.</li>
+						<li>We are a physical game. Our camp sites are sometimes on hills, PC and NPC sleeping can be a little ways from the Tavern (the main hub of activity for most of the games), and you will have to be able to load and unload your stuff from your car if you join us for a game. If you have a difficult time walking more than 20-30 feet, you'll probably want to reach out to <a href="mailto:owner@refugelarpportland.com">the owners</a> to see what accommodations can be made for the given site, if any. All of our regular sites have either close sleeping to the tavern, or a flat walk to the tavern from some of the cabins, but it may not be possible to NPC for some of our events if you struggle to walk uphill or longer distances. Again, we're here to help, so please reach out if you have questions or concerns.</li>
+						<li>We are a verbal based game.  Our game is based on verbal conversations and verbal calls as part of simulating in game events.  If you have severe or profound hearing loss or auditory processing disorder that is not being mitigated by devices (Hearing aids, cochlear implants, etc.) this game is likely not a good match for you.  The verbal calls we use are a major component of our combat system and safety measures, an inability to understand them will greatly impact your ability to participate fully and safely in the game.  Since these verbal calls can happen in the dark or in group settings lip reading is not always a practical solution.  We do have players that use hearing devices and we can answer any questions you may have regarding how your situation might affect your gameplay.  Please contact <a href="mailto:owner@refugelarpportland.com">the owners</a> to discuss any accommodations or questions regarding these issues.</li>
+						<li>We are not a good environment for service animals. ESAs are not welcomed at our sites, and we don't allow them under any circumstances. If you have a Service Dog or other animal, we STRONGLY encourage you not to bring them. If you cannot be without them, this game is likely not going to be a good match for you. Historically, service dogs have gotten INCREDIBLY distressed (some to the point of violence) during combats, no matter whether the service receiver has been a part of them or not. There are loud, scary noises at night, plenty of random screaming, combat can and does break out at any time for any reason, and animals just don't understand. We have found it's just not fair to the animal. We are also generally far enough away from hospitals and EMS responders that it's VERY dangerous for people who need urgent access to EMS and hospitals for different conditions. If you are thinking about bringing a service animal with you, please contact our <a href="mailto:owner@refugelarpportland.com">owners</a> ASAP. We will need to look into insurance situations, site considerations and other things to ensure the environment is as safe as possible for you, your animal, and our other players.</li>
+						<li>This game can be hard for people with some forms of PTSD. We explore a lot of themes in this game - all are PG-PG13 and there are NO forms of sexual violence EVER - but the game universally has loud noises at night, sudden combat situations, and things that jump out of the shadows at you. If you worry about your ability to safely handle these situations, please reach out to <a href="mailto:owner@refugelarpportland.com">the owners</a> to discuss your concerns.</li>
+						<li>We are a verbal based game.  Our game is based on verbal conversations and verbal calls as part of simulating in game events.  If you have severe or profound hearing loss or auditory processing disorder that is not being mitigated by devices (Hearing aids, cochlear implants, etc.) this game is likely not a good match for you.  The verbal calls we use are a major component of our combat system and safety measures, an inability to understand them will greatly impact your ability to participate fully and safely in the game.  Since these verbal calls can happen in the dark or in group settings lip reading is not always a practical solution.  We do have players that use hearing devices and we can answer any questions you may have regarding how your situation might affect your gameplay.  Please contact <a href="mailto:owner@refugelarpportland.com">the owners</a> to discuss any accommodations or questions regarding these issues.</li>
+					</ol>
+			</article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="image_container left_image"><img src="images/pictures/Rahs.jpeg" alt="A pirate captain stands proudly"></article>
+			<article class="article right_article">
+				<h3>What do we offer?</h3>
+				<p>We will strive to work with any situation to make reasonable accommodations for you.</p>
+				<p>If you need to sleep close to the tavern, we can usually accommodate that. All of our sites have ways to provide electricity for anyone in need of a CPAP. If you have memory problems, we can share some great equipment that can help you remember your stuff (or give you ideas for how to spend your build so that you don't have to worry about memory as much), or even help you pick out magic items that allow you to cast magic more easily.</p>
+				<p>We don't have one-sized-fits-most solutions. We try to meet every prospective player where they are and give them the tools they need to be successful. It doesn't work for everyone, and in the end, it still may not be your game, but you don't know until you try! :) We welcome the opportunity to work with you and try to find some ways to make you feel comfortable and successful at game.</p>
+			</article>
+		</section>
+		<section class="right-image-left-text">
+			<article class="article left_article">
+				<h3>What do we ask?</h3>
+				<p>The biggest thing we ask of prospective players seeking accommodations is COMMUNICATION. Regardless of how you choose to communicate (email, discord messages, voice chats, phone calls, carrier pigeon, etc), we ask that you are open and honest with us about what your needs are. YOU DO NOT NEED TO DISCLOSE ANYTHING ABOUT YOUR DIAGNOSES, PERSONAL SITUATION, OR ANYTHING ELSE. All we really want to know about is what you NEED. Needs might be things like: I need a bunk close to the tavern. I need a bunk with heat. I need to avoid walking in the dark. I need to be able to see my spellbook as I'm casting. I need help remembering to call my defenses. I need to not be awoken suddenly. Etc. Disclose anything else as you are COMFORTABLE. </p>
+				<p>We will do our best to avoid prying questions, but we may need to ask some to figure out how best to accommodate you. If we're in a brainstorming session and ask a question you don't want to answer, feel free to say so! We aren't doctors and nurses and don't need to know your medical history! But we might want to ask "Do you need to see your spell book because you can't X or because you do Y?" to ensure we're meeting your needs and goals for accommodations.</p>
+				<p>You are also more than welcome to come to use without knowing what your exact needs are! If you've never done something like this LARP before, you might not know what exactly you need. In that case, no worries! Tell us about your limitations and we'll be happy to help you with putting together a plan that works for you. You may need to reveal more about your situation this way, but we will keep that information to ourselves as much as possible while engaging the required staff members on the situation. For example: maybe you struggle with a frozen shoulder on your left side and can't raise your left arm up very far. We might need to talk to our Head of Rules to give them some idea of what your limitations are, so they can help us brainstorm what we could do to accommodate you. However, we wouldn't share that information anywhere beyond where it NEEDS to be shared.</p>
+				<p>We do ask that you begin this conversation EARLY. As early as possible, please. If you reach out less than 2 weeks before game, we may not be able to assist you until after the upcoming game. So please leave enough time when you send an email to <a href="mailto:owner@refugelarpportland.com">the owners</a> that they can have a chance to read the email and get in touch with you before the game is upon us. 2-3 weeks before game should give us enough time, but we can't guarantee that. We are an organization of volunteers, after all. Thank you for your understanding.</p>
+			</article>
+			<article class="image_container left_image"><img src="images/pictures/Layn/Disarming Traps.jpg" alt="A pair of PCs work to disarm a trap"></article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="image_container left_image"><img src="images/pictures/Ryan/jack diamond.jpg" alt="A fancy NPC ready for a gambling session"></article>
+			
+			<article class="article right_article">
+				<h3>Caveats</h3>
+				<p>We would love to be able to say that no matter what, we can find a way for you to engage with this game. However, there are some situations that we just cannot accommodate. But we don't know if yours is one until you reach out and share some information with us. We will do our best to find a path into the game for you, but we need your assistance in doing so. If you are not forthright about honest about your own limitations, nothing we can provide will be enough. Likewise, if you tried something and it didn't work for you, you need to say something to us about it so we can iterate as needed. You are welcome to find us at game to see if changes can be made, but please be prepared for the situation to be too complicated at that point.</p>
+				<p>Likewise, this is a game played with a LOT of other people. Accommodations like solo sleeping spaces, no nuts on site, etc, may not be possible. And even the best-intentions might be thwarted by accident. If you absolutely cannot be struck by a weapon, but it's very, VERY dark on site, someone might not be able to see your Page headband. You will be taking a risk by coming to play with us, even if we make every effort to help.</p>
+				<p>Finally, like we mentioned above, this is a physical, combat-focused game. If you cannot manage the combat or the physicality of game, we might ask that you PC instead of NPC, even if you would prefer to NPC. NPCing is harder on the body than PCing is because you don't get to pick your pace as easily. PCs are not being asked to help run the game at every waking moment (we take plenty of breaks as NPCs, but always know we need to break because we need to be ready for the next big thing), which means they can go take a 2 hour nap at 12pm on Saturday without worries. It's just not as easy for NPCs. As a result, we may ask that you PC instead. We can't and won't ever force the issue, but know that it comes from a place of wanting you to have a good game, and we know you'll have a better one as a PC than an NPC in those circumstances.</p>
+			</article>
+			<article class="article center_article">
+				<h3>How to get started?</h3>
+				<p>To get a conversation started about your personal needs, please reach out to <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a>. They will be able to get you started on the right path.</p>
+				<p>Feel free to email the owner, even if you don't think you need much in the way of accommodations, please feel free to reach out if you have ANY questions, or think you even MIGHT need some help on any front. We are here to help and make sure the game is one we can enjoy on as many fronts as possible.</p>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

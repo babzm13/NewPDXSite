@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.page_heading {
+	background-color: var(--dark-brown);
+	background-image: none;
+}
+.padded {
+	padding: 1%;
+}
+.flipped {
+	transform: rotate(180deg);
+	margin-bottom: -1px;
+}
+.right_ways {
+	margin-top: -1px;
+}
+#green_bg {
+	background: var(--dark-green);
+}
+body .dark_bg p, body .dark_bg h3, body .dark_bg h4, body .dark_bg a, body .dark_bg a:hover, body .dark_bg ul, body .dark_bg li {
+	color: var(--off-white);
+}
+#yellow_bg {
+	background: var(--medium-brown);
+}
+#dark_blue {
+	background: var(--dark-green-blue);
+}
+#dark_blue_bg {
+	background: var(--dark-green-blue);
+}

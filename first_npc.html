@@ -1,0 +1,243 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/first_npc.css" rel="stylesheet" type="text/css">
+		<title>First Time NPCing</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>First Time NPCing</h1>
+				<h3>What to Expect from your First Game</h3>
+			</div>
+		</section>
+		<section>
+			<section class="right-image-left-text">
+				<article class="image_container right_image">
+					<img src="images/pictures/Ryan/undead.jpg" alt="Undead NPCs prepare for battle, photo by Ryan W" />
+				</article>	
+				<article class="article left_article">
+					<p>So you’re interested in being an NPC! Great! This is a very simple way to get your feet wet in the game and build friendships with a ton of people at the same time!</p>
+					<p>Here are the key pieces you should think and know about:</p>
+					<ul>
+						<li><a href="#prepare">Things to Prepare in Advance</a></li>
+						<li><a href="#pre-reg">Pre-Register</a></li>
+						<li><a href="#getting_there">Getting to Game</a></li>
+						<li><a href="#first_game">My First Game</a></li>
+						<li><a href="#conclusion">Conclusion</a></li>
+					</ul>
+
+					<h3 id="prepare">Things to Prepare in Advance</h3>
+					<p>If you’re NPCing, there isn’t much you need to worry about in advance. You might want to read the combat rules once or twice, but you’ll go over them in Monster Camp, so it’s not vital. You may also want to learn some of the <a href="basic_calls.html">basic calls</a>, but only if you have time and interest. Like with the combat rules, all of this will be addressed in Monster Camp before you begin.</p>
+					<p>You will also want to run through our <a href="packing_list.html">packing list</a>. Grab the things needed/recommended for NPCs, but don’t worry too much about the rest of the things. It’s a pretty small list, all things considered.</p>
+					<p>The biggest and most important thing to prepare for NPCing the first time is your attitude! You are going to be thrust into a situation that many can find overwhelming (honestly, this is true for both PCs and NPCs, but the NPCs feel it more acutely, in my experience), and it may feel a little intense for the first 24 hours. THIS IS TOTALLY NORMAL. If you come into game ready to be confused and have a good time, you’ll do fine! You will need to learn a LOT on Friday night, and it will probably feel anxiety-inducing at times, but I promise, no one will be angry at you if you follow the few simple rules we’ll lay out in Monster Camp - ask questions freely, do your very best, and when in doubt - fall over and “die”. You will start to get the hang of it Saturday afternoon, and, while you won’t probably feel like a pro until your 2nd or 3rd game, we will get you there!</p>
+					<p>Keep in mind that this is true of EVERYONE who has ever played this game - we have all been overwhelmed by the rules at times, and struggled with these things. People in Monster Camp will help you through, just come with a good attitude and a desire to learn, and you’ll have accomplished most of what you need to accomplish to be successful.</p>
+				</article>
+			</section>
+			<section class="color green-bg">
+				<img src="images/BG image 1/BG image_1_5.png" alt="a torn paper background image" />
+				<h3 id="prereg">Pre-Register</h3>
+				<p>Once you’ve got these things checked off, you can register for the event.</p>
+				<p>To register for the event, create a blank character in our <a href="http://db.refugelarp.org" target="new">online database</a>. This is just the character that will store all of your accumulated XP until you’re ready to PC (if you ever are). You don’t need to choose a permanent name, class, or any skills just yet - just leave it all at the default! When you’re ready to create your PC, logistics will help you redo all of this so you can pick what you want for your PC.</p>
+				<p>Then, go and register for the event. To do this, find the event (you can find a link in our announcements on Discord, Facebook and the forums, or by going to the Events tab in the <a href="http://db.refugelarp.org" target="new">Online Database</a>), and Start Preregistration. Fill out the questions as needed (feel free to post questions to Discord, Facebook and the forums if you have them). Once you complete your preregistration, you can view it to ensure it’s complete, and after a day or two, you can check that it’s been received by checking the applicable post on the forums to see if your name is there.</p>
+				<p>Once you’ve done that, you can pre-pay for NPC Food, if you’ve chosen to participate, by sending the money via Square, or you can pay on site. Either is fine with us!</p>
+				<p>As a note, we like our pre-registrations to happen by 2 weeks before the event usually (sometimes it’s 1 week). You MUST meet this deadline to be included on NPC food. Any closer and it’s just too close for our NPC Chefs to make work. Thank you!</p>
+				<p>You also get <a href="use_cp.html">chapter points</a> for pre-registering before the deadline. They are super nifty and can be used for all sorts of cool things! Check it out!</p>
+				<p>That’s it! You’re done! Now all you need is to get to site and check in for FUN AND AWESOMENESS!</p>
+				<img src="images/BG image 3/BG image_3_5.png" alt="a torn paper background image" class="invert_bottom"/>
+			</section>
+				
+			<section class="right-image-left-text">
+				<section class="image_container right_image">
+					<img src="images/pictures/Layn/Dalion Fights.jpg" alt="A dwarf fights a monster, picture by Layn S" class="space_between"/>
+				 	<img src="images/pictures/Ryan/shadow monsters.jpg" alt="Shadowy monsters get ready for combat, photo by Ryan W" class="space_between"/>
+				</section>
+				<article class="article left_article">
+					<h3 id="getting_there">Getting to Game</h3>
+					<p>Okay! Here’s the fun! Getting to site is a fun experience - driving through the country can be beautiful and lovely!</p>
+					<p>Once you get to site, things get exciting fast! You’ll want to start by parking your car, then finding logistics. Parking should be obvious when you get to site, but if you have questions, stop and ask! Logistics is usually in the Tavern, and the Tavern is usually the biggest building on site.</p>
+					<p>If you’re at Brooks Memorial, the Tavern’s down the hill from the parking area, and if you’re at Lutherwood, it’s across the bridge and past the pavilion. Logistics at Lutherwood may also be held in the Cascadia building, across from the pavilion. Feel free to stop in there and see if it is before heading to the Tavern.</p>
+					<p>Depending on what Covid policies are like at the time, you may be asked for your Covid Proof of Vaccination and a negative Covid test when you arrive at the Tavern. Once that is sorted, the person checking Covid tests should be able to show you where your cabin is for sleeping. You can then unload your gear into your cabin (and your food into the Tavern, if applicable) and go to Monster Camp.</p>
+					<p>Monster Camp, which is where NPCs hang out for the weekend, will have a TON of tasks for you to participate in, including:</p>
+					<ul>
+						<li>Reading the event schedule to get a feel for what’s happening this game</li>
+						<li>Picking a townie to play (or two!)</li>
+						<li>Unpacking gear</li>
+						<li>Reading culture packets to learn more about the society we’re playing in</li>
+						<li>Learning how to fight</li>
+						<li>Getting to know everyone</li>
+						<li>Learning where everything goes</li>
+						<li>Etc</li>
+					</ul>
+					<p>These tasks will take a WHILE, so don’t anticipate that you need to do everything immediately. Plot will also be around to answer questions and give general directions as things happen. You will also get introduced to our very experienced NPCs, known as Guildies, who will be your helpers this game. They will guide you and teach you everything you need to know about how the game works. They will also help translate plot directions, if they’re needed (and plot’s busy). You’ll do a lot of mods with them, so go make some friends!</p>
+					<p>At some point, you’ll go to Logistics to check in. This is a very painless process as an NPC.</p>
+					<p>You will be asked for payment (if applicable) and be asked to fill out some <a href="forms.html">forms</a> - a legal release, a photography release (optional) and a Covid release form. These forms can be found online if you’d like to look them over in advance. You CANNOT PLAY OUR GAME without signing the legal release and the Covid release. The photography release is completely optional. Then you’re done! Head back to Monster Camp to do more prep work!</p>
+					<p>Around 9ish pm, someone will shout that Opening is beginning. Come to the Tavern and hang out as the Plot Team and Staff Members will get everyone together and go over important information for the event. There will be rules clarifications, introductions, introductions of new players (no ice breakers, just stand-and-wave), and a few other things. Once Opening is over, we’ll begin game.</p>
+					<p>There’s usually a short combat training before the actual beginning of game (often out by Monster Camp) and occasionally a new player mod. This ensures that everyone knows how to fight in our system, and the mod permits new players to get to know each other.</p>
+					<p>Then, it’s game on! This is when the roleplay and fighting begin.</p>
+					<p>Enjoy!</p>
+				</article>
+			</section>
+			<section class="color blue-bg">
+				<img src="images/BG image 7/BG image_7_6.png" alt="a torn paper background image" />
+				<section class="right-image-left-text">
+					<section class="article left_article">				
+						<h3 id="first_game">My First NPC Game</h3>
+						<p>Once game has begun, it’s a whole pile of different activities for you! You will be asked by plot to RP and fight at various times throughout the event. There’s usually a big fight on Friday night, one on Saturday around noon, and another Saturday night. These three fights are generally all-hands-on-deck. You’ll play some kind of monster or bad person, and the PCs will try to kill you (all IG of course! We’re friends OOG!). Woot!</p>
+						<p>You’ll also be given roles that will take you into the Tavern to talk to other PCs and NPCs. Please try to talk to the PCs as much as possible. We’re so used to talking to the other NPCs that they feel safe, so it’s hard to branch out. Try your best!</p>
+						<p>Other than that, Plot will have a plan for the weekend. They’ll have a schedule you can probably look at, and write-ups for most of the mods in the schedule. Feel free to ask to see those if you’re feeling lost or confused. Sometimes those can help clear that up. If not, ask a plot member or guildie to explain what’s happening to you! They’ll be happy to do so!</p>
+						<p>Your job is mostly to be a monster or an RP character for the whole weekend! You’ll switch roles regularly, and plot will want you to tell them if anything important or interesting happens while you’re out doing your thing. Otherwise, the weekend is hilariously fun as we chill in Monster Camp and have a great time!</p>
+						<p>You are STRONGLY encouraged to take care of yourself while in Monster Camp. There’s a mentality that we try to watch that you have to be “on” at all times, or else. THERE’S NO REAL “OR ELSE!” Our Monster Camp wants you to be able to participate to the best of your abilities! If that means you need to go take a nap, go take a freaking nap! Even our plot members will do this! Stop when you need to stop, drink water when you need to, eat when it’s a good idea, etc. There’s no worse missing out than having to go home early because you’ve broken yourself - otherwise, you’re NOT MISSING ANYTHING that can’t be told to you later. OOG safety and health is so much more important than anything IG.</p>
+						<p>At around 12pm on Sunday, game will be called off, and we’ll gather in the Tavern for closing. Closing will have everyone give their favourite moments, and then cleanup will begin! We are all expected to contribute to cleaning up the campsite after our game - from cleaning up your stuff, to sweeping out your cabin, to cleaning the bathrooms you used, doing packet sweeps to ensure all the packets were picked up, to cleaning the kitchen. There are lots of tasks, and we all need all the help we can get with them. Please plan on staying until around 2pm to ensure everything is done. If you need to leave before that, please put in extra effort to keep the site clean during the weekend to make it easier on those who stay.</p>
+						<p>Once you leave, that’s it! You’ve done it! LARP weekend accomplished!</p>
+						<p>You’ll get your XP credit shortly on your character in the <a href="http://db.refugelarp.org" target="new">online database</a>, as well as <a href="use_cp.html">chapter points</a> for your NPC work. The next event will be similar to the first, although things get WAY more fun as you get to know your fellow players, your characters, and the game better! It’s a blast!</p>
+					</section>
+					<section class="image_container right_image">
+						<img src="images/pictures/Ryan/knighting.jpg" alt="A dark elf knights a syladrin, photo by Ryan W" />
+					</section>
+				</section>
+				<img src="images/BG image 4/BG image_4_5.png" alt="a torn paper background image" class="invert_bottom"/>
+			</section>
+				
+			<section class="article center_article">
+				<h3 id="conclusion">Conclusion</h3>
+				<p>Whew! That's a lot of information to take in all at once. Don't feel the need to do so! Take each step one at a time, and come back to this page to reference getting ready for the next step. It'll make things a lot easier on you. And remember, we're only a quick message away if you need help with anything. We are here to make your introduction to game as easy as possible, and look forward to seeing you soon!</p>
+			</section>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

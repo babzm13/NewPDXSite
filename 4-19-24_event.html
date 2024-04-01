@@ -1,0 +1,284 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/event.css" rel="stylesheet" type="text/css">
+		<title>4/19/24 Event Information</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Event Information for 4/19/24 Event (Palla)</h1>
+				<h3>The Pre-Registration Details for our Camp Lutherwood Game</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>Introduction</h3>
+				<p>This is for the Refuge Portland <strong>Palla Season 1 Game 6</strong> event happening on April 19-21, 2024 at <strong>Camp Lutherwood</strong> near Cheshire, OR! <strong>We will be using the current provisional ruleset.</strong> As such Character Cards will be printed from the standard database, please see note below for additional details.
+				
+				<p>Registration is now OPEN! (If you have missed the early registration deadline please still send in a registration if you are planning on coming to the event. While you may not get the discount it still helps check-in run more smoothly). <strong>Early registration deadline is Friday, April 12th, at 11:59 PM.</strong> We will give you 30 chapter points if you register by this time! </p>
+				
+				<p>To register, please visit the <a href="https://db.refugelarp.org/events/443" target="_blank">event sign up page</a>.</p>
+			</article>
+		</section>
+		<section class="right-image-left-text">
+			<article class="image_container right_image">
+				<img src="images/pictures/Layn/Ambix Again.jpg" alt="A wolfkyn looks down">
+			</article>
+			<article class="article left_article">
+				<h3 class="red_text">Pre-Registration Information</h3>
+				<p>We have removed High Magic, Artificing, and Crafting choices from our pre-registration options.</p>
+				<ul>
+					<li>All PCs can fill in any High Magic and Artificing choices they want to start with before game on, and the crafting station will be made available before game on (but you will need to also find a crafting marshal to do so, as normal).</li>
+					<li>LCS Ritual Scroll and Auto-Cast Ritual requests must be emailed to Logistics no later than the early registration deadline.</li>
+					<li>Pre-registered MI tags will be marked as used in the database by default for PCs attending the event. It will be the player's responsibility at check in to inform Logistics if any MIs are being added or removed from what they pre-registered. MI hole punches will be available as part of the conversion station so that there's less bottlenecking at check-in.</li>
+					<li><strong>Pre-payment no later than 48 hours before event</strong> is now required to qualify for the lower event fee and bonus chapter points.</li>
+				</ul>
+			</article>
+		</section>
+		<section>
+			<article class="article center_article">
+				<img src="images/BG image 1/BG image_1_10.png" class="flipped" alt="A torn page background" />
+				<div id="dark_purple" class="dark_bg">
+					<h3>Important</h3>
+					<ul>
+						<li>We are using the current provisional ruleset, which can be found <a href="https://refugelarpportland.com/pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">here</a></li>
+						<li>Here is a summary of changes in the ruleset: <a href="https://docs.google.com/document/d/1qoaaz3gblALyPzpeiEJvVsYQv5_XF6gArcwrk3PCh1E/edit" target="_blank">click here</a></li>
+						<li>Here is the Transition Plan that covers how most rule changes will be handled: <a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">click here</a></li>
+					</ul>
+				</div>
+				<img src="images/BG image 2/BG image_2_10.png" class="right_ways" alt="A torn page background" />
+			</article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="article right_article">
+				<h3>General Reminders</h3>
+				<p>Proof of COVID-19 vaccine must be presented at check-in to play.</p>
+				<ul>
+					<li>Proof of a COVID-19 rapid test within 24 hours of game-on (10 pm).</li>
+					<li>You will be asked to show proof of this negative test in the form of a picture of the negative test, the date (ideally written on the test in sharpie), and your face. All three of these things must be in the same picture. Alternatively, you are welcome to take the test on-site and show it directly to the person doing COVID screenings. If you choose to do this, please bring your own test. If, for any reason (including finances), you cannot acquire a rapid test, we will have a small number of rapid tests available with the person doing COVID screenings. Tests cost about $10 a piece, and if you use a test please consider making an equivalent donation if you are able to do so.</li>
+					<li>Please see our full <a href="https://www.refugelarpportland.com/policies_safety.html#covid" target="_blank">COVID-19 policy</a> for further details. Questions, comments or concerns may be directed to <a href="mailto:refugelarpportland@gmail.com">refugelarpportland@gmail.com</a>.</li>
+					<li>Alliance coins and merchant items are now being converted! Old coin can be marked with a non-red paint pen at check-in to indicate that it has been converted and is valid for use in game. If you would like to receive new Refuge coin in order to preserve your old coin for separate use in Alliance, please email Logistics to arrange a way to get your old coin delivered to us for pre-marking before the early registration deadline. If you have old Merchant Code items, please email Logistics with the codes, amounts, and either a photo or a description of how they were marked.</li>
+					<li>If your character has not been played before, please complete a copy of the <a href="https://docs.google.com/spreadsheets/d/1hGGaHpFqTtsEzzNqpKCi7dolgJ6gBCZV6SGjKOPl-ZE/edit?usp=sharing" target="_blank">New Character Starting Gear</a> document and email it to <a href="mailto:refuge.portland.logistics@gmail.com">refuge.portland.logistics@gmail.com</a>. We will be unable to generate new character magic items for you at check-in and you will not be able to do this at a later date.</li>
+					<li>Alliance tags that have not been marked as waived from conversion will not be valid for use in game.</li>
+					<li>All of your pre-Refuge treasure and gear must have been sent in for conversion in one form or another, either through the Portland chapter or another Refuge chapter. For details on how to get your items converted, please see the Portland Treasure Conversion Guidelines - if you still need to convert items to Refuge reach out to Logistics by Jan 12th at 11:59pm for assistance. If you do not submit your conversion in time then you will need to choose between either forfeiting conversion of your magic items or coming into game with no tags.</li>
+					<li>Old Arrow/Bolt tags may be used as Vorpal 2 Coating, and Silver Arrows/Bolts may each be used as Vorpal 5 coatings. This may be done without exchanging the tags. </li>
+					<li>Items with the Enhance Quiver ritual will instead function as one of the new rituals listed <a href="https://docs.google.com/document/d/1EA-pXxIEUsjlgWdEkhHRsmv7mWxwpeVFQLVduOBnn5w/edit" target="_blank">here</a>. Enhance Quiver 60 or less will instead function as Infinite Quiver, and Enhance Quiver 80 or Limitless will function as both Infinite Quiver and Storm Quiver.</li>
+					<li>Character cards are typically printed roughly one week before event, and never earlier than the early registration deadline. Re-prints of cards to account for new skill purchases after Logistics has already printed cards for the event are possible, however you will be subject to the late registration event price and will not receive bonus chapter points for early registration.</li>
+					<li>If you are a PC and have spells to prepare, you will need to set memorization lists. If this is not complete it means you will have to hand write them on your card before game on or meditate them in-game after game on.</li>
+					<li>Major omissions that hold up check-in will lead to your registration being considered incomplete and you will be subject to the at-the-door rate.</li>
+					<li>A consolidated reference of Standard Local Chapter Rules, Policies, and Site Reminders can be found <a href="https://docs.google.com/document/d/1ckEXRI25RNNMtvrdqQ5nMYnCGQbGhL_TS0-po6hWKVg/edit?usp=sharing" target="_blank">here</a>.</li>
+				</ul>
+			</article>
+			<article class="image_container left_image">
+				<img src="images/pictures/Layn/Angry Loclyn.jpg" alt="An angry person">
+			</article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="image_container left_image">
+				<img src="images/pictures/Layn/Maryon.jpg" alt="A contemplative Dryad">
+			</article>
+			<article class="article right_article">
+					<h3>Event Fees</h3>
+					<p><strong class="red_text">We are switching to using Square to take payments for games.</strong> Please find the links for the April 19-21, 2024 game below. Each price item has its own link. If you run into any problems please reach out to logistics for assistance.</p>
+					<ul>
+						<li>Brand new PCs get half off at their first game! Make sure you use the right link below</li>
+						<li>PC: $90 at the door, $80 with early registration </li>
+						<ul>
+							<li>Standard PC Fee <a href="https://square.link/u/8kd3S4ra" target="_blank">https://square.link/u/8kd3S4ra</a> </li>
+							<li>Half off for New PC Fee <a href="https://square.link/u/NwU4sHHQ" target="_blank">https://square.link/u/NwU4sHHQ</a> </li>
+						</ul>
+						<li>Advanced Page: $65 at the door, $55 with early registration</li>
+						<ul>
+							<li>Standard Advance Page Fee <a href="https://square.link/u/YKhAneil" target="_blank">https://square.link/u/YKhAneil</a></li>
+							<li>Half off for New Adv. Page Fee <a href="https://square.link/u/j8Ct2JLO" target="_blank">https://square.link/u/j8Ct2JLO</a></li>
+						</ul>
+						<li>Page: $55 at the door, $45 with early registration</li>
+						<ul>
+							<li>Standard Basic Page Fee <a href="https://square.link/u/SKok3Od4" target="_blank">https://square.link/u/SKok3Od4</a></li>
+							<li>Half off for New Basic Page Fee <a href="https://square.link/u/utkORYnM" target="_blank">https://square.link/u/utkORYnM</a></li>
+						</ul>
+						<li>NPC: Free to play! The optional NPC meal plan is $25 and must be signed up for by the early registration deadline.</li>
+						<ul>
+							<li><a href="https://square.link/u/TYev487D" target="_blank">https://square.link/u/TYev487D</a></li>
+						</ul>
+						<li>Secondary Character Blanket</li>
+						<ul>
+							<li><a href="https://square.link/u/PfdneCv8" target="_blank">https://square.link/u/PfdneCv8</a></li>
+						</ul>
+						<li>Donations (Increase qty to match amount)</li>
+						<ul>
+							<li><a href="https://square.link/u/dCWhDyoz" target="_blank">https://square.link/u/dCWhDyoz</a></li>
+						</ul>
+					</ul>
+			</article>	
+		</section>
+		<section class="pink-bg">
+			<img src="images/BG image 2/BG image_2_5.png" alt="a torn paper background image" />
+			<article class="article center_article dark_bg pink-bg">
+				<h3>Cabin Signup - Palla</h3>
+				<p>At Lutherwood we need to utilize cabins to full capacity and to that end we have a Cabin Request form. <a href="https://forms.gle/pDg41m7jKVpxHxEv8" target="_blank">Cabin Request form</a>.</p>
+				<p>Assigned Cabin Sleeping Locations <a href="https://tinyurl.com/palla-travel-24-04" target="_blank">https://tinyurl.com/palla-travel-24-04</a></p>
+				<p>Please use the above link to sign up for your bunks. Pre-registration will need to be submitted in order for a spot to be fully reserved. I will be adding people to the Assigned Cabin Sleeping sheet once they have registered and completed the request form.</p>
+			</article>
+			<img src="images/BG image 3/BG image_3_5.png" class="flipped" alt="A torn page background" />
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>Camp Lutherwood</h3>
+				<ol>
+					<li>All cabins have mattresses, heat, light, and outlets (2-4 sets of 2, so bring extension cords and power strips if you need more).</li>
+					<li>There is a bathroom in each of the 4 primary PC cabins, and NPC cabins have a bathroom immediately adjacent to them outside.</li>
+					<li>Food is NOT permitted in ANY cabins at ANY time, and liquids are restricted to water ONLY. If you have a medical need for food or other liquids in your cabin, let the <a href="mailto:owner@refugelarpportland.com">Owners</a> know as soon as possible.</li>
+					<li>The dining hall has a commercial kitchen, freezer, and refrigerators.</li>
+					<li>The kitchen is locked each night (around midnight) and opened each morning (around 7AM) by site staff. This does not affect the refrigerators and microwave in the general dining hall or the outdoor freezer.</li>
+					<li><strong>All players not on meal plan are required to attend the kitchen orientation at 6 pm if they plan to use the kitchen, dishes or microwave.</strong></li>
+					<li>Non-staff vehicles are not permitted past the bridge at the site entrance's parking lot. Handcarts are available to take gear from the parking lot to cabins.</li>
+					<li>Parking is located in the parking lot at the entrance to the site, and overflow parking will be in the field on the other side of the fence from the parking lot. If you are confused, ask a staff member for clarification.</li>
+					<li>This site has QUIET HOURS from 10pm to 8am. Please refrain from shouting and screaming during this time.</li>
+					<li>Smoking is permitted in the parking lot ONLY and you are expected to police your butts. There is no other smoking or vaping permitted on site.</li>
+					<li>Stay out of the pool area at all times.</li>
+					<li>There are religious images and spaces in some places on site. Please treat them with respect and reverence and don’t fight in the Chapel area.</li>
+					<li>No fighting on bridges.</li>
+					<li>There are hazards on the site: volleyball nets, a fighting pit, etc. Please be wary of these and alert your combat opponents if they are getting too close to them, then move combat away from such hazards. Most are easy to see or will be avoided as combat locations.</li>
+					<li>There are 2 Yurts that can be rented, they each sleep a maximum of 3 people and will cost $150 for the event.  These will be issued on a first paid, first served method.  Email Logistics to rent a Yurt.</li>
+				</ol>
+			</article>
+		</section>
+	<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

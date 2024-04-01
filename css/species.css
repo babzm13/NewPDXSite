@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+body, body .article p, body a {
+	color: var(--dark-green);
+}
+body a:hover {
+	color: var(--medium-green);
+}
+.page_heading {
+	background-image: linear-gradient(to right, var(--green-gold), var(--dark-green));
+}
+.three-column {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: flex-start;
+}
+.species {
+	width: 27%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.right-justify {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.species h1, .species h2, .species h3, .species h4, .species h5 {
+	padding-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	color: var(--dark-green);
+}
+.species h4 {
+	font-size: 24px;
+	line-height: 50px;
+}
+body .article h3 {
+	color: var(--dark-green);
+}
+p {
+	margin-bottom: 0px;
+}
+.icon {
+	width: 30px;
+	height: 30px;
+}
+@media only screen and (max-width: 1069px) {
+	.species {
+		width: 90%;
+	}
+}

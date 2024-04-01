@@ -1,0 +1,230 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/policies_rules_clarifications.css" rel="stylesheet" type="text/css">
+		<title>Rules Clarification Policies</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background" />
+			<div class="heading_text">
+				<h1>Rules Clarification Policies</h1>
+				<h3>Making the rules work for us</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<p>We have several policies that update the game's rules. You can read about those here:</p>
+				<ul>
+					<li><a href="#fullmakeup">Full Makeup Policy</a></li>
+					<li><a href="#pvp">PVP Policy</a></li>
+					<li><a href="#marshal">Marshal Code of Conduct</a></li>
+					<li><a href="#touch">Expected and Permitted Forms of Physical Contact in Gameplay</a></li>
+				</ul>
+				<p>Refuge LARP Portland may have additional policies that have not made it onto this page. You can read about those <a href="http://www.refugelarp.org/forum/viewtopic.php?f=81&t=689&sid=e0ca93db13e27dff31963604d891e39f" target="_new">on the forums</a>.</p>
+			</article>
+			<article class="article center_article">
+				<img src="images/BG image 1/BG image_1_10.png" class="flipped" alt="A torn page background" />
+				<div id="dark_purple" class="dark_bg">
+					<h3 id="fullmakeup">Full Makeup Policy</h3>
+					<p>Any character who is designated as a full-makeup species (dark elves, stone elves, kyn, and orcs) must be obviously that species at first glance, but it does not mean your full face must be covered. If you were a stone elf, for example, and had on pointed ears and enough of your face covered in white paint that it was obvious what you were, you would be fine. A good guideline is approximately 25% of your face covered in makeup, but you can do more or less if you desire, so long as you are obviously repped as the species you are trying to portray at first glance.</p>
+					<p>You can also use masks to get the desired effect, if you so choose.</p>
+					<p>Marshals have the final say on all makeup done in this way, and if you choose to wear less than a full-face of makeup, a marshal must sign off on your makeup before you come into game. Your species must be obvious to anyone who glances at you while they are within 10 feet when you are not attempting to obfuscate your species. Remember, there are still bonuses to armour for repping your species particularly well, and well-done full face makeup is one of the ways to do that.</p>
+					<p>In neither case do you need makeup on the rest of your exposed skin.</p>
+					<p>In addition, dark elf players who have hair and wish to do so are encouraged to put grey or white in their hair to emphasize their species. This may be the full head of hair, or simply an addition through clips or dye. If you do not wish to or cannot, you do not need to do so.</p>
+					<p>All elves must still have pointed ears, and all other prosthetic requirements still apply.</p>
+				</div>
+				<img src="images/BG image 2/BG image_2_10.png" class="right_ways" alt="A torn page background" />
+			</article>
+			<article class="article center_article">
+				<h3 id="pvp">PVP Policy</h3>
+					<p><strong>PVP is a natural, permitted part of the game in Refuge LARP Portland.</strong> It is a way for players to engage with the situations that they are exposed to, and it is a reaction that many people seek out - either because it is something that they enjoy as a player or as a character.</p>
+					<p>Refuge LARP Portland players are expected to engage with the game in a way that utilizes positive metagaming, but never to the exclusion of PVP. We ask that players remember that they are here to tell fun stories with their friends. But sometimes, perhaps even often, those fun stories involve conflict - of a physical, emotional, or verbal nature. It is important to have this conflict to further people’s stories, and build an interesting and fun game.</p>
+					<p>That being said, we do ask players to be thoughtful about their PVP. If you see a brand new player who has done something “wrong” in the context of the game or your character, especially if that action may be construed as coming from their newness, please take the opportunity to think carefully about how to respond. It may be in character to kill them, but we do ask that you use your knowledge of their newness to mitigate the character’s response, if necessary. This doesn’t mean you must walk away from a character who your knight saw casting necromancy, but perhaps you can capture them and turn them into the authorities for “reeducation,” instead of murdering them outright yourself. This is not a rule, but a guideline. Please use your best judgment here.</p>
+					<p>In addition, please be compassionate when engaging with conflict on an OOG level. If there’s a situation that you walk away from and think, “Should I check in with XX about that?” - DO IT. Even if the conflict was a while ago: it’s better to reach out late than never. Not all PVP situations require a conversation after the fact, but some do. Use your best judgment to determine which is which.</p>
+					<p>In the event that you are the “receiver” of a PVP interaction and feel badly or uncomfortable about it, please find a trusted staff member such as the Player Rep or an Owner. They can help guide you and the other player(s) through the situation. Please keep in mind that these staff members are volunteers, and will do their best, but some things may need time and more conversations, and cannot be resolved instantaneously.</p>
+			</article>
+			<article class="article center_article">
+				<img src="images/BG image 7/BG image_7_7.png" class="flipped" alt="A torn page background" />
+				<div id="dark_green" class="dark_bg">
+					<h3 id="marshal">Marshal Code of Conduct</h3>
+					<p>The following standards apply to Rules & Ritual Marshals in the Refuge Portland and Seattle chapters. Items 4, 6, and 7 also outline our expectations for player behavior when interacting with Marshals in the context of a rules or combat safety matter.</p>
+					<ol>
+						<li><strong>Marshals are expected to be familiar with the rules mechanics and safety requirements of the Refuge Larp, including local rules clarifications and LCS rules.</strong> To this end, prospective Marshals must pass a written test to earn Marshal status, and current Marshals must re-test every two years to maintain that status. Effort should also be made to be familiar with playtest rules in use for the Portland and Seattle Chapters.</li>
+						<li><strong>Marshals are not expected to be perfect.</strong> In urgent situations where a Marshal is uncertain about the specifics of a rule and another Marshal with knowledge of that rule is not readily available, a Marshal should always seek to make the best ruling they can while minimizing disruption to the current scenario. Afterwards the Marshal should seek clarification from the rulebook, another Marshal, or the Head of Rules, then follow up with the involved player(s) when they are able. If many players were involved then it may be preferable to handle the clarification during closing announcements or an incidental gathering.</li>
+						<li><strong>In the case of disagreement between Marshals on an initial field ruling, the ruling of an NPC Marshal supersedes that of a PC Marshal unless the NPC Marshal voluntarily defers to the PC Marshal due to a lack of knowledge.</strong> Only the Head of Rules for the Chapter (as of 4/1/2023: Bryan Gregory for Seattle events and Corin Lynn for Portland events) may override an NPC Marshal on the field. If Marshals playing in the same capacity disagree they should focus on continuing the game, giving deference to the Marshal with seniority to make a ruling if necessary.</li>
+						<li><strong>Field rulings stand for the duration of the immediate scenario.</strong> Players are expected to abide by a field ruling, even if it contradicts their past experience; if a player disagrees they may later bring the matter to the Chapter's Head of Rules for review. An alternate ruling made later in the scenario by another Marshal should only be implemented if it can be resolved quickly and without disagreement from the original Marshal.</li>
+						<li><strong>Marshals are expected to be courteous and respectful to players, staff, and one another.</strong> Public expression of disagreement on rules - either as written, intended, or desired - is not discouraged, but it is expected that Marshals will take care to prevent their public discourse from descending into vitriol or contempt for the opinions and efforts of players and volunteers at any level or locale of the Refuge Larp. If any player has concerns about a Marshal's conduct, they are strongly encouraged to bring this to a Head of Rules or Chapter Owner. Failure to adhere to this standard of conduct is grounds for removal of Marshal status.</li>
+						<li><strong>Marshals are not expected to intervene in or resolve conflicts not related to rules and safety.</strong> While Marshals can and should intervene when a player's behavior presents an OOG safety concern, they should limit their involvement to the immediate rules and safety issues. General concerns about a player's behavior that extend beyond those confines should be formally directed to the Chapter's Player Rep and/or other staff members as soon as possible.</li>
+						<li><strong>Marshals are expected to treat all players as fellow community members, not as problems.</strong> In the course of play Marshals may have to step in to resolve a rules dispute or safety issue where a player is upset or being disruptive. A Marshal should attempt to de-escalate the situation to the best of their ability. However, if a player persists in being belligerent, a Marshal is within their rights to remove that player from the immediate scenario. When this happens a Marshal should treat this as a corrective action for the health and safety of the game, and not as a punitive measure. Any situations that may warrant more permanent action go beyond the scope of Marshaling and should be formally submitted to the Chapter's Head of Rules, Player Rep, and/or Owners.</li>
+					</ol>
+					</div>
+				<img src="images/BG image 3/BG image_3_7.png" class="right_ways" alt="A torn page background" />
+			</article>
+			<article class="article center_article">
+				<h3 id="touch">Expected and Permitted Forms of Physical Contact in Gameplay</h3>
+				<h4>The Basics - Non-Negotiable Methods of Contact</h4>
+				<p>By participating in a Refuge LARP Portland event, all players automatically consent to the following forms of contact:</p>
+				<ul>
+					<li>Contact from melee boffer weapons in an appropriate striking location </li>
+					<li>Contact from thrown packets and boffer thrown weapons in an appropriate striking location</li>
+				</ul>
+				<p>Players may only opt out from these forms of contact if they are participating as a Page. Basic Pages with yellow headbands are exempt from both, and Advanced Pages with orange headbands are exempt from melee boffer contact. See our local <a href="policies_safety.html#page">Paging Policy</a> or ask a Rules Marshal for clarifications about how to interact with Pages in combat.</p>
+				
+				<h4>Other Methods of Contact & Physical Roleplay Negotiation</h4>
+				<p>Aside from the forms outlined in the Non-Negotiable Methods of Contact section, the default assumption is that players will not perform any method of physical contact with another player at a Refuge LARP Portland event unless they have the other player’s previously communicated consent.</p>
+				<p>If you wish to engage in a conversation with another player about mutually acceptable forms of contact, you are welcome and encouraged to do so. Please see our <a href="policies_safety.html#physicalrp">Physical Roleplay Policy</a> for more details on how to have this type of conversation.</p>
+				<p>Physical contact with the intent to cause real bodily harm is not allowed in any form, with or without consent. Reckless contact is also disallowed. If a reasonable person would conclude that taking an action is likely to cause real injury, even by accident, it should not be performed by any player.</p>
+				
+				<h4>LCS Touch-Casting & Ritual Targeting Rule</h4>
+				<p>The following modifications to the standard Touch-Casting and Ritual Targeting rules are temporarily in effect as a local playtest:</p>
+				<p>To Touch-Cast an effect onto another player, the caster will hold the packet over either the recipient’s hand or shoulder and say “Touch-cast,” followed by the normal effect verbal.  For example, “Touch-cast, 5 Elemental Healing” or “Touch-cast, I call upon Earth to grant you life!” The caster must be within arm’s reach of the recipient in order to touch-cast in this manner.</p>
+				<p>If the target of a ritual is either another player or an Item being worn by another player, the ritual caster will designate the target by pointing at the target and state “Designate target,” followed by a brief description of the target. The ritual caster must be within arm’s reach of the target in order to designate in this manner.</p>
+				<p>Please be ready to offer feedback on these LCS rule changes when you fill out your feedback form after you attend an event. Depending on feedback received we may alter, permanently adopt, or rescind these rules. Should any changes occur, we will update this policy document and communicate the changes through Discord, Facebook, and our official forums.</p>
+				
+				<h4>LCS Pickpocketing Rule</h4>
+				<p>Physically pickpocketing from clothing, pouches, or any other containers being worn by a player is no longer allowed under any circumstances in our chapter. This does not affect your ability to use the “I search you” verbal action described in the Searching a Person section of the Refuge Rulebook  (see pg 179 of the 1.0.6.1 rulebook). Containers which are not being worn or carried by a player may still be stolen from in-game, following the standard rules for Stealing & Searching.</p>
+				
+				<h4>Consent Violations</h4>
+				<p>Any case of willful and non-consensual physical contact will be taken very seriously, with consequences up to and including reporting to local law enforcement and a permanent ban from the chapter. Any players who have witnessed such a violation should immediately report it to the chapter's Player Representative, General Manager, or an Owner.</p>
+				
+				<h4>Conclusion</h4>
+				<p>If you are struggling with any of this, please bring it to the attention of a staff member - we will be happy to work with you to ensure you get the best gaming experience you can have!</p>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

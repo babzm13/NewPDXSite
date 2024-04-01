@@ -1,0 +1,201 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/thevran_plot.css" rel="stylesheet" type="text/css">
+		<title>Thevran Plot</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Thevran</h1>
+				<h3>A new low-level campaign in Portland</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>Introduction</h3>
+				<p><em>A few lanterns are still lit and the fire burns low on the hearth at The Wayward Courier, a tavern in Zegarin City.  The staff have all retired for the evening with the exception of the Halfling barkeep who can be heard cleaning up the last dishes.  There are two patrons still sitting at a table near the hearth enjoying the company and the last of their beverages.  A weathered Syladrin, lines cut deep into his face, provides some wisdom to the new adventurer just arriving to the city...</em></p>
+				<p>“Thevran had been in conflict for so long, even members of longer lived species, such as my own Syladrin can’t recall where everything started, or why...  Conflicts were not always amongst us, the mortals, but my great-father’s great-father used to tell stories about creatures of myth and legend.  About these entities using minions and cat’s paws as mortal followers.  A dragon was rumored to be somewhere to the south; a strong extra-planar being laid claim to the Bulwark; I’ve heard tales of a Gryphon in Kaskidir, stories heard around campfires all our lives of how these mythic beings were mighty generals in those conflicts, each of whom was trying to gain control over the continent.  There were side effects to these conflicts and battles,  shattered the ways that history told us we could connect to other... realms, while still others sundered the land. Some of the sailors from Gravol have attempted to sail to other continents, going for months without reaching another significant land mass.  The islands that they did come across were uninhabited.  Of the many, many vessels that went out, only a handful have come back.” <em>A moment of silence as the speaker reflects, gazing through the fire.</em></p>
+				<p>“The lines of our current map are only a few centuries old.  My spouse’s mother was a cartographer of the Anzariof Exploratory Corp, and she sailed around the continent and nearby islands…  What’s that?  What was Anzariof?  It is the country that came before Gravol. But back to my tale, young one. As I was saying, my mother-in-law sailed and walked from corner to corner of this land.  She worked with the surveyors of the kingdoms and countries, as they came up, reformed, and came up again. The Official Surveyor’s Maps are still found in the Great Library in Zegarin City.  Stone and Wind, the Exploratory Corp has become the Exploror’s Guild with a chapter house here in Zegarin City!  Maps and copies of maps with lines drawn and redrawn half a hundred times for different countries and land mass. What we have right now for borders is only around 300 years old.</p>
+				<p>“The Kaskidir Wastes weren’t always the desert they are now. They got that way because of a war between us, the people that you can see walking down the streets of Zegarin City.  How they turned what was supposed to be a rolling, gentle grassland into the dunes is unknown to us now, but the amount of magical energies needed to do that would be astounding. But the people that come from there are determined and dependable. You make friends with a Kaskidian, you have an ally for the rest of your life. Those from my homeland of Balthasin are rugged people.  We tend to be more upfront with everything.  We know when it’s time to work, we work hard to get the job done, and done right.  Because when the work is done, that’s when the fun can start! Meanwhile the Indali have always seemed to me to be wary of outsiders.  Not rude, just aloof. For centuries, the people of the Indali Isles have migrated from the mainland because they were fed up with the constant conflicts here. They just had enough, and I don’t blame them.  Good people, every one of them I’ve met, just… watchful. And no, they are not all pacifists. Something tells me that you are from Gravol, just by the ease that you carry yourself. Easy going, easy smile, but also not a sucker. The best merchants I’ve met come from Gravol, and their charm seems to be why.” <em>A sly smirk as he looks across the table.</em></p>
+				<p>“How did we get here?  Tensions grew between Balthasin and Kaskidir.  Something about the foothills off to the east, towards the coast, Dryads from Balthasin and Realmsworn from Kaskidir not agreeing about something.  I wasn’t there at the time, and have only heard fourth hand what was going on, so I can’t say.  But someone came up with a wonderful idea to turn the midlands into a sort of neutral ground.  Each of our countries should send representatives to this neutral ground so all of our peoples can work out squables without bloodshed. Those first negotiators went over the maps, solidifying the borders we know… What’s that?  You are full of questions. Who was in the midlands at that time?  For the most part, those who inhabited the area we now call Zegarin are still there.  Some folk chose to relocate of their own accord.  Some held out, not supporting the idea of Zegarin.  The initial development of the city state built around them.  As I understand it, these holdouts remained separate for some time, but ended up becoming citizens of Zegarin, just by continuing their livelihoods on their homesteads.  Farmers sold their crops at the closest markets or to the merchants, most of whom came from Zegarin.  So after a generation, they were grandfathered in.</p>
+				<p>“There are... rumors that those first delegates invoked one of the Ancient Adversaries.  Again, I wasn’t there, can’t say for certain, I’m just setting the stage.  Other rumors were some old forms of magic, to make sure that everyone agreed to the treaties the delegation came up with, I’m not sure. I have some odd feelings.  Something is coming, but I can’t put my finger on what.”  <em>A troubled frown crosses the creased brow. After a moment, he peers at the empty stein in front of him, at the dark out the windows, and how the tavern is empty.</em> “Ah, but my young friend, it’s late, and from what you’ve told me, you are attempting to get on with the City Watch tomorrow!  I wish you well!  Many young adventurers have come into town recently for the Celebration, the Tricentennial!  I wish you well, but for now, I must find my blankets.  No, I don’t require an escort, but I do appreciate the offer.” <em>The elder stands, pulling a few gold and few silver out of his purse and setting them on the table.</em> “It will be my pleasure to cover this round.  Wish you the best on your trials!”</p>
+				<p><em>Without another look back, the Syladrin spryly steps out of the tavern.</em></p>
+				<p><strong><em>A late night conversation between Lamwhen Britghtoak, a Syladrin Merchant and Historian from  Balthisin, and a young Adventurer newly arrived and wishing to make it in the Big City.</em></strong></p>
+			</article>
+			<article class="article center_article">
+				<h3>Thevran</h3>
+				<img src="images/thevran.jpg" alt="A map of the country Thevran" />
+				<h4>Our World - Thevran</h4>
+				<p>As pictured above, we have already developed an intriguing world teeming with possibilities for you to discover and evolve. Thevran is a semi-large island continent, with five major regions and cultures: Zegarin (where we will be playing out of,) Gravol, The Indali Islands, Balthasin, and the Kaskadir Wastes.  Also, just because a species isn’t mentioned in a particular territory/country doesn’t mean that they don’t have a population there.  You can most assuredly play a Realmsworn from Gravol, or a Halfling that’s from Kaskidir.</p>
+				<p><em>Species found commonly across the entire continent: Humans, Kyn</em></p>
+
+				<h4>The Northern Forests and Mountains: Balthisin (BAL-thi-sin)</h4>
+				<p><em>Most common species: Dryads, Elves, Stone Elves, Dwarves, Realmsworn</em></p>
+				<p>Balthisin is a mountainous region, known for the granite and marble harvested from The Bulwark, as well as some veins of rare metals and gems. The abundant forests that decorate the mountains are tended by Dryads and Elves, and working with the other species that inhabit the country for procuring the other part of the nation’s main income source: lumber. </p>
+				<p>The people who live in this region are hardy and weathered. Life on the mountains isn’t easy, therefore Balthisinians aren’t easy on each other. Outsiders would describe their culture as harsh, exacting, entirely too serious. In actuality, they work hard so that they can play hard.</p>
+
+				<h4>The South And Western Floodplains: Gravol (GRA-vol)</h4>
+				<p><em>Most common species: Dwarves, Halflings, High Orcs, Stellarean</em></p>
+				<p>This country is the southern coastline of this continent. Rivers from the mountains feed down into a delta in the southwestern corner, creating the Web. The lands are fertile and could be considered the ‘breadbasket’ of Thevran. Aside from farming, people here are fond of life on the water. River trade and ships that skirt the shallows as they bring goods up to the port cities all around the continent have brought a modicum of wealth to the country.</p>
+				<p>Gravolers are a communal culture. Everyone has enough to go around, and that allows a degree of freedom. People are encouraged to follow their passions and live a vibrant life full of adventure. They value spontaneity and following your impulses. Outsiders might describe their culture as too loose and relaxed, overly familiar and easily excitable.</p>
+
+				<h4>The South and Eastern Deserts and Caves: Kaskadir Wastes (KAS-ka-deer)</h4>
+				<p><em>Most common species: Dark Elves, High Ogres, Avani, Stone Elves</em></p>
+				<p>This is a desert region on the eastern shore into the midlands of the continent.  While it is inhabited, the residents do not consider themselves members of a nation or country. The residents call themselves Tenders and act as caretakers of the land. Under the desert, there are aquifers and cisterns of water, minded over by contingents of Dark Elves. Tenders also watch for troubles of creatures and monsters that come from the deep underground network of tunnels. </p>
+				<p>Culturally, members of the Wastes feel Fate chose them to caretake what the Wastes have become. That just because it is not a verdant forest does not mean it isn’t teeming with life. They place a large importance on destiny and legacy. Additionally, their deep relationship with the spirit of the Land and Elementals intimidates outsiders. Outsiders might describe their culture as too deterministic and self-important, too rigid and unwilling to adapt.</p>
+
+				<h4>The Northwestern Island Archipelago: Indali Isles (in-DAL-lee)</h4>
+				<p><em>Most common species: Avani, Stellarean, Syladrin</em></p>
+				<p>Despite living off of the northwestern coast of Thevran, the climate of the Indali Isles is warm, humid, and ripe for jungles. The Indali, it is said, used to be a part of various mainland nations. Fed up with the conflict between regions, they decided the best way to escape it was to find a place to call their own, where they could stay out of it. The Indali Isles became that home. </p>
+				<p>What distinguishes the people of Indali is their independent, self-reliant attitude. Their culture is not unlike New York City. At first glance, it seems a little brusque and wary of outsiders. But when someone is in immediate danger or need, the community comes together to take care of them - and then continues about their day, not even waiting for them to say thank you. Outsiders might describe their culture as paradoxical; simultaneously independent and communal. Interested in the outside world, but refusing to participate in it. </p>
+
+				<h4>The Center City-State, Hub of Our Campaign: Zegarin (ze-GAR-in)</h4>
+				<p><em>Every species is visible and present. </em></p>
+				<p>A small city state situated in the middle of Balthisin, Gravol, and the Kaskadir Wastes. This is a neutral meeting ground between the countries/kingdoms, used to adjudicate disputes, legislate peace and trade treaties, and so on and so forth. It is the beating heart of the continent and where all major politics for the region unfolds. </p>
+				<p>Culturally, Zegarin is a melting pot of everyone who comes into it. Aspects from each of the four other regions represent themselves in different districts and corners. But one thing binds them all together: Ambition. If you are in Zegarin, you are here to make a name for yourself. Even something as simple as saying, “Hi, how are you?” to a stranger on the street will be analyzed to see what game you’re playing. As a result, people frequently go after high-risk, high-reward situations. And when the risks fail… so too, do they.</p>
+				<p>While politics pervade these streets, that does not mean everyone who comes here must have a desire for them. Some are sent unwillingly to delegate certain matters, and pine for home as soon as they can. Others have lived here all their life, and learned to adapt to the hustle and flow of a busy city. </p>
+			</article>
+			<article class="article center_article">
+				<h3>Our Story Begins</h3>
+				
+				<p>It’s the 300th birthday of Zegarin, and people have gathered from all over Thevran to take part in its festivities. With the Zegarin City Watch short-staffed, adventurers from all over the continent are encouraged to assist them in keeping the city peaceful. As a reward, participating adventurers are invited to join the city’s official party, where the most powerful people in all of Thevran will be gathered. A golden opportunity that anyone would kill for. </p>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

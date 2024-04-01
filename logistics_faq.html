@@ -1,0 +1,357 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/logistics_faq.css" rel="stylesheet" type="text/css">
+		<title>Logistics FAQ</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Logistics FAQ</h1>
+				<h3>Frequently Asked Questions for Logistics</h3>
+			</div>
+		</section>
+		<article class="right-image-left-text">
+			<section class="article left_article">
+				<h3>FAQ</h3>
+				<p>Welcome to Refuge LARP Portland! This FAQ is intended to answer many of the common questions received with regards to the Logistics surrounding the operation of our game. If you have a question not listed on this FAQ we invite you to post a query on any of our <a href="contact.html">social media platforms</a> or send an e-mail to <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a>.</p>
+				<h3>Questions Answered in this FAQ:</h3>
+				<ol>
+					<li><a href="#what">What is Logistics?</a></li>
+					<li><a href="#contact">How can I contact Logistics?</a></li>
+					<ol>
+						<li><a href="#dm">Can I direct message Logistics?</a></li>
+					</ol>
+					<li><a href="#response">What is the expected response time of Logistics?</a></li>
+					<li><a href="#hear_back">I haven’t heard back from Logistics. What should I do?</a></li>
+					<li><a href="#backstory">Should I send my backstory to Logistics for approval?</a></li>
+					<li><a href="#donate">How do I donate to the chapter?</a></li>
+					<ol>
+						<li><a href="#money">Can I just donate money?</a></li>
+						<li><a href="#receive_cp">When will I receive my Chapter Points?</a></li>
+					</ol>
+					<li><a href="#do_cp">What can I do with my Chapter Points?</a></li>
+					<ol>
+						<li><a href="#earn_cp">Are there other ways to earn Chapter Points?</a></li>
+					</ol>
+					<li><a href="#xp">How does Experience work?</a></li>
+					<ol>
+						<li><a href="#blankets">What types of XP blankets are there?</a></li>
+					</ol>
+					<li><a href="#skills">How do I get new Skills for my character?</a></li>
+					<ol>
+						<li><a href="#late_skills">What is the latest I can purchase skills for an event?</a></li>
+					</ol>
+					<li><a href="#register">Do I need to pre-register for an Event?</a></li>
+					<li><a href="#pre-register">How do I pre-register for an Event as a PC/NPC?</a></li>
+					<ol>
+						<li><a href="#another_chapter">I want to attend an Event at another chapter. What do I need to do?</a></li>
+					</ol>
+					<li><a href="#when">At an event, when does Logistics take place?</a></li>
+					<li><a href="#check_in">How do I check in at an Event?</a></li>
+					<li><a href="#late">Where do I check in if I arrive late?</a></li>
+					<li><a href="#check_out">Do I need to check out if I leave early? Or leave and come back?</a></li>
+					<li><a href="#battle_boards">How do Battle Boards work? How should I mark my Battle Board?</a></li>
+					<li><a href="#per_day">How do my “Per Day” skills and items get refreshed at an Event?</a></li>
+					<li><a href="#cp_event">Can I spend Chapter Points during an Event?</a></li>
+					<li><a href="#xp_event">Can I spend XP during an Event?</a></li>
+					<li><a href="#ritual">I just cast a Ritual. Where do I put the spent scrolls and reagents? And when do I get the tag?</a></li>
+				</ol>
+			</section>
+			<section class="image_container right_image"><img src="images/pictures/Layn/Runar.jpg" alt="An avana hurrying elsewhere, photo by Layn S" /></section>
+		</article>
+		<article class="article center_article">
+			<section>
+				<ol>
+					<li id="what">What is Logistics?</li>
+					<p>A: “Logistics” as a term in Refuge LARP can refer to either a team or a process.</p>
+					<p>As a team, it refers to the personnel who manage all of the logistical resources Refuge LARP utilizes specific to running the game including character / player management, Chapter Point management, checking people into game, giving credit for a game, recording Deaths, etc. Generally speaking, if you have a question with regards to your character, your player information, your spell memorization, your Chapter Points, your Magic Item data (questions not relating to Plot), donations, new players, and other information related to you playing in Refuge LARP the Logistics Team is a great place to start.</p>
+					<p>As a process, it refers to checking in with the Logistics team on-site to ensure your character is ready to be played in-game. This is generally done first before the game is called “On”. When checking in the first night of an event you receive your character sheet and any other pertinent tags / information related to your character.</p>
+
+					<li id="contact">How can I contact Logistics?</li>
+					<p>A: The primary means for contacting Logistics are:</p>
+					<p>Send an email to <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a></p>
+					<p>Send a private message on the National Refuge Forums to the Portland Logistics account.</p>
+					<p>As a direct reply to a relevant forum thread posted by the Portland Logistics account, e.g. an event pre-registration thread.</p>
+					<ol>
+						<li id="dm">Can I direct message Logistics, e.g. through Discord or Facebook?</li>
+						<p>A: Rule of thumb is no. The Refuge Portland Logistics Team is composed entirely of volunteers who love to help our game be the best it can be and to answer your questions so that you can have a fantastic time at each event. However we are still busy people with a lot going on outside of Refuge, and so we need to maintain an adequate level of LARP/life balance in order to stay at peak and avoid burnout.</p>
+						<p>However, in certain circumstances direct messages may be sent to the Head of Logistics, Corin, on Discord (preferred, handle is Khyriel Aejayn#1895), and only after contacting Logistics via the primary means. Acceptable circumstances for sending an unprompted direct message to Corin are:</p>
+						<ul>
+							<li>Any changes that would affect your PC registration for an event and require printing or re-printing of sheets, scrolls, or magic items, less than 48 hours before the event begins, e.g. switching characters, completely discarding and rewriting a new character, losing magic item tags and needing a re-print, etc.</li>
+							<li>Last minute NPC registration to determine if there is availability for meal plan/heated cabins less than 48 hours before event</li>
+							<li>When you need to undo a skill purchase in the CMA on a Portland character and it has been between five and seven days since you purchased it.</li>
+							<li>Any emailed/forum message questions for which you have not received an answer after 14 days.</li>
+						</ul>
+						<p>This is not an exhaustive list, so you may choose to use your best judgment. Messages that are considered non-urgent will politely be asked to wait for a reply to their email/forum message.</p>
+						<p>Specific examples of inappropriate circumstances for sending an unprompted direct message to the Head of Logistics include, but are not limited to:</p>
+
+						<ul>
+							<li>Questions about how to use the Refuge Online Database</li>
+							<li>Asking if payments were received</li>
+							<li>Changes to your event registration more than 48 hours before the event</li>
+						</ul>
+					</ol>
+					<li id="response">What is the expected response time of Logistics?</li>
+					<p>A: Logistics is generally handled on a regular basis, but real life can get in the way. Expect a response time of up to a week in most cases. If you haven’t heard anything after that time, feel free to reply, but again, please be considerate of the fact that our team works real jobs during the week and don’t always have time to get to things immediately, especially right before events, or when we have events less than six weeks apart.</p>
+					<p>At our discretion, Logistics may reply to players by direct message (Discord, Facebook Messenger, etc.) to answer specific questions that are likely to require several clarifications. Unless we have stated otherwise, any question unrelated to the direct message should still be sent by the primary means.</p>
+									
+					<li id="hear_back">I haven’t heard back from Logistics. What should I do?</li>
+					<p>A: If you expected a response and haven’t received one in a week, please reply to your original message or contact Logistics via one of the other means. If you have done so and still have not received a response after 14 days, please contact the Head of Logistics via direct message on Discord (preferred, handle is Khyriel Aejayn#1895) or Facebook Messenger.</p>
+
+					<li id="backstory">Should I send my backstory to Logistics for approval?</li>
+					<p>A: No. Please send your backstory to <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a> (Palla campaign) or <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a> (Broken Shards campaign) and they will notify Logistics when the backstory has been approved.</p>
+
+					<li id="donate">How do I donate to the chapter?</li>
+					<p>A: First off, thanks for donating! Here is a step-by-step tutorial on how to donate:</p>
+					<ul>
+						<li>Review the <a href="donation_needs.html">wishlist</a> for things we want/need.</li>
+						<li>Find a thing you want to donate. Please keep in mind quality! We would rather have one super cool high quality reusable thing than ten cheap low quality things that will break after being used once or twice.</li> 
+						<li>We reserve the right to say “No thanks”.</li>
+						<li>If it is a big thing or an expensive thing, such as armor or a large prop, e-mail <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a> and/or <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a> to make sure the thing you want to donate is something we want and can use. It would be terrible for us to get something we don’t want (because it would just sit there) and terrible for you because you could get a worse Chapter Point per dollar ratio or the item may get rejected altogether.</li>
+						<li>Don’t be afraid to negotiate. All Chapter Point awards for donations are subject to negotiation, but don’t expect to be able to negotiate everything.</li>
+						<li>Bring the thing to an Event! If you can’t bring it to the event e-mail <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a> to determine an alternate way of donation.</li>
+						<li>Receive Chapter Points!</li>
+					</ul>
+					<ol>
+						<li id="money">Can I just donate money?</li>
+						<p>A: Yes! Our standard rate is 5 Chapter Points per US dollar donated, although we occasionally run donation drives where the rate is higher. You may donate via the following:</p>
+						<p>Square: <a href="https://checkout.square.site/merchant/MLTX0J5826MD2/checkout/65AKSR3HXJ2CN2J5ZOLUTSTP" target="_blank">Link!</a> Just increase the number of purchases to spend more $$ for more CP!</p>
+						<p>Cash at check-in (please specify it is for Chapter Points)</p>
+
+						<li id="receive_cp">When will I receive my Chapter Points for my donations?</li>
+						<p>A: Typically within one week of receipt of the item or monetary donation. Item donations require plot to approve and forward the award amount to logistics, so they may take a few days longer. If you have not received your Chapter Points after one week, please email <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a>, as well as the relevant plot team (<a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a> and/or <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a>) if it is for an item donation.</p>
+					</ol>
+
+					<li id="do_cp">What can I do with Chapter Points?</li>
+					<p>A: There is a very useful guide on <a href="use_cp.html">this website</a> explaining all the standard Uses for Chapter Points. Additionally you can purchase certain <a href="lcs_purchase_list.html">LCS ritual scrolls</a> that only work in the Portland chapter. Basically you can use Chapter Points to get more XP for your character or to get extra things to use at events.</p>
+					<p>You can buyback Portland events that you did not attend on a character housed in any chapter, but monthly blankets and skill sellbacks using Portland Chapter Points can only be used on characters with a home chapter of Portland. If you would like to change your character’s home chapter, please email the logistics team for the chapter in which the character is currently housed.</p>
+
+					<ol>
+						<li id="earn_cp">Are there other ways to earn Chapter Points?</li>
+						<p>A: Absolutely! We award Chapter Points for approved backstories, pre-registering at least two weeks before an event, and submitting event feedback within two weeks of the event. You can also earn additional Chapter Points by NPCing an event, volunteering as a staff member, or being a rules marshal.</p>
+					</ol>
+
+					<li id="xp">How does Experience work?</li>
+					<p>A: Experience in Refuge LARP is tricky. Basically, for each “day” you adventure you get what is called an “XP Blanket”. This blanket awards an amount of experience equal to the XP rate your character has (which is variable based on your total XP). Players can also get a special “NPC Blanket” for each event they NPC.</p>
+					<ol>
+						<li id="blankets">What types of XP blankets are there?</li>
+						<p>A: You can obtain XP blankets in the following ways:</p>
+						<ul>
+							<li>Event blankets: Attend an event, or buyback any event that happened within the current month + the last three full calendar months. You can only receive credit from one chapter per calendar day. E.g. if you attend or buyback a one-day event, you cannot also buyback another chapter’s two-day event that overlaps that day.</li>
+							<li>Secondary blankets: Secondary blankets give credit for an attended event on a secondary character. The purchase must be made within a week of the event’s end date and be paid to the chapter hosting the event. The cost is $10 USD per logistics period of the event. This cannot be purchased with Chapter Points or Refuge Points.</li>
+							<li>NPC blankets: Players receive one additional XP blanket for each event they NPC, regardless of event length.</li>
+							<li>Monthly blankets: These can be purchased once per month using Chapter Points for the chapter the character is currently housed in. You may only buy one monthly blanket per month per chapter, but you may buy multiple monthly blankets from different chapters for the same month on different characters. You may also buyback monthly blankets for the last three calendar months, as well.</li>
+						</ul>
+					</ol>
+
+					<li id="skills">How do I get new Skills for my character?</li>
+					<p>A: You can purchase new skills on your character sheet in the Refuge Online Database. We strongly recommend using the Refuge Freeplay Database to test your builds until you’re certain which you’re going to purchase.</p>
+					<p>You may undo purchased skills within one hour. If it has been longer than one hour since you purchased a skill for a character housed in Portland, please email <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a> as soon as possible to get the skill purchase undone. We are able to undo skills after up to one week. After that time period you can only remove skills by spending 60 Chapter Points, and this can only be done for one skill per month.</p>
+					<p>If it has been between five and seven days since the purchase you may contact the head of logistics by direct message. However because of the time frame involved we cannot guarantee that we will be able to complete all undo requests in time. Again, the Freeplay Database is your best bet for playing around with skill options.</p>
+					<ol>
+						<li id="late_skills">What is the latest I can purchase skills for an event?</li>
+						<p>A: The soft deadline for skill purchases will always be the night two weeks before the event. The actual hard deadline of when we print sheets depends on our personal schedules and will not be announced in advance. Re-prints of sheets after the hard deadline and up until the close of check-in are possible, however you will be subject to the late registration event price and will not receive bonus Chapter Points for pre-registering.</p>
+					</ol>
+
+					<li id="register">Do I need to register for an Event?</li>
+					<p>A: Please do. Because we operate from an online database and not all of our event sites have internet, pre-registering guarantees that we will be able to print your character sheets. For PCs who registered late or did not register at all, there is no guarantee that we can print your card on site if you don't pre-register. There is limited leeway for this in regards to characters housed in Portland, but if you are PCing, pre-registration helps Logistics prepare a character package that includes your character sheet, battle board, Craftsperson money, magic item battle board, production you may have used, and any sort of Chapter Point purchases you may have. Then, all you have to do when checking in is pay the fee and receive your package. Otherwise, you have to stand there waiting for us to print all the stuff, pull all the tags, get things signed, and a bunch more boring stuff that takes a significant amount of time. Registering also lets Plot know ahead of time who might be at an event which helps to generate sufficient treasure for the event. Best of all, pre-registering at least two weeks before the event gets you a discount!</p>
+					<p>Registering as an NPC helps Plot know what resources are going to be available to run modules and other plot hooks and it also helps us know how much food to buy since we offer a NPC meal plan. Our primary site also has limited availability for heated cabins for NPCs, so we cannot guarantee they will be available if you do not register and sign up for a cabin slot.</p>
+					<p>So, please help us help you! Pre-register for an event and you will be reducing Plot headaches, check-in wait times, and Logistics hair-pulling! The last thing we want to tell anyone is that they can’t PC because we have no way to print their character sheet! =’(</p>
+
+					<li id="preregister">How do I pre-register for an Event as a PC/NPC?</li>
+					<p>A: Please register for an upcoming event by clicking on the event in the Portland chapter page of the Refuge Database, then click the Preregister button. You can find the link to the cabin registration sheet, as well as other general information about registering for an event in the most recent Pre-Registration thread in the Portland Out of Game forum.</p>
+					<ol>
+						<li id="another_chapter">I want to attend an Event at another chapter. What do I need to do?</li>
+						<p>A: Register for that event by accessing their chapter page in the Refuge Online Database, selecting the event, and then click the Preregister button. Any questions should be directed to that chapter’s logistics team. Contact info is generally listed on their chapter page.</p>
+					</ol>
+
+					<li id="when">At an event, when does Logistics take place?</li>
+					<p>A: Check-in Logistics generally starts around 6pm Friday night and goes until Opening (around 9pm or 10pm).</p>
+					<p>Logistics refresh occurs at 6 pm on subsequent days. You do not need to check-in with logistics again for this.</p>
+
+					<li id="check_in">How do I check in at an Event?</li>
+					<p>A: As a PC follow these steps:</p>
+					<ul>
+						<li>If you are playing a character for the first time, get fully in costume for Armor Point evaluation from a Rules Marshal.</li>
+						<li>Get your weapons safety checked by a Rules Marshal. Every person must do this EVERY GAME.</li>
+						<li>Gather your weapons, spell book, recipe book, magic item tags, coin, tags you are selling back, and money and head to Logistics.</li>
+						<li>Show your spell book / recipe book / magic item tags to Logistics for verification.</li>
+						<li>Pay coin to Logistics for any Production skill you use (such as Alchemy or Create Potion). At the same time you can sell back production items if you have the Merchant skill.</li>
+						<li>Pay money to Logistics for your attendance. If you pre-paid skip this step.</li>
+						<li>Receive your character packet.</li>
+					</ul>
+					<br />
+					<p>If you are checking in as an NPC follow these steps:</p>
+					<ul>
+						<li>Find Logistics.</li>
+						<li>Tell Logistics who you are and what character you want your experience to go to.</li>
+						<li>Pay money to Logistics for your food if you did not pre-pay.</li>
+						<li>Pick up any CP'd tags you included in your pre-reg (it helps to remind us that you did this).</li>
+						<li>Report to Monster Camp.</li>
+					</ul>
+
+					<li id="late">Where do I check in if I arrive late?</li>
+					<p>A: If you arrive after Game On and Logistics is closed, report to Monster Camp and ask for help. Once someone is available we will get you checked in, though you may have to wait for in-game activity to be completed.</p>
+
+					<li id="check_out">Do I need to check out if I leave early? Or leave and come back?</li>
+					<p>A: No. But, if you are not going to be on site for the entire event then it may help reduce our site fees for the chapter if you let us know which days/nights you plan to not be on site. If you know in advance, it helps if you tell us this in your pre-registration notes, or at check-in. If your plans change in the middle of an event you may notify Logistics or GM/AGM, but this is not required.</p>
+
+					<li id="battle_boards">How do Battle Boards work? How should I mark my Battle Board?</li>
+					<p>A: A “Battle Board” is a piece of paper that has all of your “per day” effects and abilities that you can use including combat abilities (such as Parry), memorized spells (such as Purify or Prison), High Magic (such as Rebirth or Formal Magic), Channeling charges, and “per day” magic items (such as Spell Parry, Battlemage’s Strike, or Mystic Smith). The Battle Board does not include constant combat skills (like Weapon Master or Weapon Proficiency) or “times ever” and passive ritual effects (such as Dodge 1/ever or Armored Shell).</p>
+					<p>When you use an ability noted on your Battle Board you need to mark it in some way to show that it has been used. The best way would be to mark the circle with a line. Each event, you will receive a battle board for each day of game play, so at logistics refresh all you need to do is tear up the old battle board and replace it with one of a different color.</p>
+
+					<li id="per_day">How do my “Per Day” skills and items get refreshed at an Event?</li>
+					<p>A: Once mid-event logistics refresh is taking place, all you need to do is tear up your current day’s battle board and replace it with a battle board of another color. You do not need to report to logistics to do this.</p>
+					<p>If you need to change your memorized spells or expend Spellcrafting points then you can write those in and present the written Battle Board to any marshal in the game for their approval (i.e. a signature or initials). This is the fastest way to change your character.</p>
+
+					<li id="cp_event">Can I spend Chapter Points during an Event?</li>
+					<p>A: Yes, at the designated check-in time! However, due to time constraints, not all Chapter Point purchases can be made during events. If you have questions about what can be made during events, please email <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a>.</p>
+
+					<li id="xp_event">Can I buy skills during the middle of an Event?</li>
+					<p>A: No. XP must be spent before you complete your check-in and must be done online in the Refuge Online Database. We strongly recommend that you complete all skill purchases when you submit your event registration, otherwise they may not be reflected in the printed character sheet.</p>
+
+					<li id="ritual">I just cast a Ritual. Where do I put the spent scrolls and reagents? And when do I get the tag?</li>
+					<p>A: Before casting rituals with a duration longer than instantaneous you will give the Ritual Marshal a Temporary Magic Item tag. These may be obtained from Logistics or Monster Camp. If the ritual results in any lasting effect, the Ritual Marshal will provide you with a completed Temporary Magic Item tag. The Ritual Marshal will then collect the Ritual Scrolls and Reagents. It is then your responsibility to take a photo of the tag and email it to logistics between events. If you do so, you can expect to receive a full and complete tag at the next event.</p>
+
+					<p>If you need a complete tag sooner for an event in another chapter, the Refuge Portland Logistics Team can work with the Logistics / Rules / Plot staff of the chapter you are attending to have them print and sign the tag. Please contact Portland Logistics by email as soon as possible. If the event you are attending is the very next weekend after the Portland event in which you received the temporary tag, you must email Portland Logistics no later than the Tuesday after event with a picture of the temporary tag and the information for the event you are attending.</p>
+				</ol>
+			</section>
+		</article>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

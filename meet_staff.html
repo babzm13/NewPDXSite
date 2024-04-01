@@ -1,0 +1,438 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/meet_staff.css" rel="stylesheet" type="text/css">
+		<title>Staff of Refuge PDX</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<div class="heading_text">
+				<h1>Meet Our Staff</h1>
+				<h3>The Staff of Refuge PDX</h3>
+			</div>
+		</section>
+		<section class="main_section">
+			<img class="body_bg" src="images/small_bg.png" alt="A bunch of swirls on a dark background">
+			<article class="row">
+				<div class="person column">
+					<span class="icon thumbnail_overlay dark_purple"><img src="images/no circle borders/icon 9 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Barbara</h3>
+						<p>Positions: Owner, Director, Head of Plot (Palla), NPC Guild (BroS), Rules Marshal, TP Manager, Discord Admin, Web Admin</p>
+						<p>Contact Email: <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a>, <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a></p>
+						<p>Social Media: On Discord and Facebook - please DM me if needed!</p>
+						<p>Bio: Barbara (they/he/she) has been LARPing with Refuge Portland since 2009 - when it was still a part of its prior organization. They have both PC'd and NPC'd for years, and are currently absolutely enamoured with heading up plot for the Palla campaign. They are pretty sure there's nothing they like better than telling stories with other players - except maybe their spouse and child. Barbara has also served in other roles within both the Refuge and other local LARPs, like Logistics and NPC chef, and has been low-key obsessed with LARPing since they started playing. While they are new to being an owner, they think that their experience with the game and their incredible staff and player base will help give them the guideance needed to be successful in the role. Given the trials of the pandemic, Barbara is ecstatic to get back to LARPing regularly - although they enjoyed the online events that were run as well - and can't wait to resume the hobby that has been their passion for so long.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon medium_blue"><img src="images/no circle borders/icon 8 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Brian J</h3>
+						<p>Positions: Owner, Discord Admin</p>
+						<p>Contact Email: <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a></p>
+						<p>Social Media: On Discord</p>
+						<p>Bio: Brian is a fun and exciting person (although I'm biased, being his wife). He has been larping with Refuge Portland for over a decade, and loves this game with a passion. Although he doesn't get to attend as many games lately as he would like (there's a really cute baby involved in that choice), he does love hearing all the stories and helping out behind the scenes.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 7 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Rick</h3>
+						<p>Positions: General Manager, Plot (BroS)</p>
+						<p>Contact Email: <a href="mailto:gm@refugelarpportland.com">gm@refugelarpportland.com</a>, <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Rick is a barely functional adult who's favorite color is blue, while their favorite type of humor is the self-deprecating kind.  He's been LARPing for a decade now, which continues to blow his mind every time he consciously thinks about it.  He loves how player agency can mold a game world and doesn't mind working up a sweat in combat.  He also firmly believes that new players are the lifeblood of our organization and will go out of his way to help them both in- and out-of-game.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_brown"><img src="images/no circle borders/icon 6 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Nas</h3>
+						<p>Positions: Assistant General Manager</p>
+						<p>Contact Email: <a href="mailto:gm@refugelarpportland.com">gm@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Nas is fairly new to our organization, but has already made waves with his dedication, focus, and character-centric story-telling. He's a true delight to NPC with, and has a focused and orderly approach to our game, which makes him an ideal Assistant GM.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_purple"><img src="images/no circle borders/icon 5 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Corin</h3>
+						<p>Positions: Head of Rules, Rules Marshal</p>
+						<p>Contact Email: <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Corin has been larping since early 2016 and can sometimes be specific to a fault, which is almost certainly how they ended up in both Logistics and Rules positions.  They greatly value the Refuge Portland Larp community for giving them the space to grow and actualize themself, as well as the ways in which the Larping creates unexpected and deeply personal experiences you couldn't find anywhere else.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_purple"><img src="images/no circle borders/icon 4 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Sherry</h3>
+						<p>Positions: Head of Logistics, Head of Deco</p>
+						<p>Contact Email: <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Sherry is a long-time member of the RPG gaming community who re-added LARPing to that hobby 5 years ago.  In addition to playing Refuge, she participates in a regular TTRPG gaming group as both GM and player and is a board member of a Gaming Convention.  When she isn’t gaming, she enjoys sewing and being generally crafty.  Her penchant for being organized, planning, and details has led her to taking on the role of logistics.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_green"><img src="images/no circle borders/icon 8 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Halie</h3>
+						<p>Positions: Logistics</p>
+						<p>Contact Email: <a href="mailto:logistics@refugelarpportland.com">logistics@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Halie has been playing our game for a while, and is newly appointed to Logistics. She is a delight to RP with and has an uncanny ability to get her characters to befriend people who probably shouldn't be befriended. We can't wait to see what she brings to the logistics team!</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_purple"><img src="images/no circle borders/icon 1 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Brian H</h3>
+						<p>Positions: Head of Plot (Thevran)</p>
+						<p>Contact Email: <a href="mailto:thevran.plot@gmail.com">thevran.plot@gmail.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Brian has been with Refuge for many years. His primary character has been friends to almost everyone in town at some point or another, and he is friendly with nearly everyone out of character, too! He has extensive knowledge of the game from a player's perspective, and has helped out with BroS plot too. He has an expansive depth of story to draw from, and we're excited to see what Thevran brings to the game world.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 3 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Beyleth</h3>
+						<p>Positions: Head of Plot (BroS), Rules Marshal</p>
+						<p>Contact Email: <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: I'm Beyleth, a nonbinary, kindhearted, introverted doofus who somehow ended up as Head of Plot for the Broken Shards campaign. I've done a lot of work for Refuge including a good stint as the Chair of the National Organization. I love the game, and the players of it.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 2 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Theo</h3>
+						<p>Positions: Plot (Palla)</p>
+						<p>Contact Email: <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Theo is a delightful human with an amazing talent for storytelling. They are skilled at weaving intricate stories and pulling people into them. They have a strong affinity for mushrooms, too.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 1 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Kelsey</h3>
+						<p>Positions: Plot (Palla)</p>
+						<p>Contact Email: <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Kelsey was our baby plot member for a while, but has since graduated, as we have brought on three new plot members! Kelsey is dedicated and focused, with a strong eye towards details, and a sense for making sure every aspect of the stories we tell are consistent with each other. We are so glad to have her on our team.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_red"><img src="images/no circle borders/icon 10 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Aria</h3>
+						<p>Positions: Plot (Palla)</p>
+						<p>Contact Email: <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Aria is a new plot member with the Palla plot. They have been NPCing for a little while and expressed interest in learning the ropes shortly after joining our NPC camp. They have been a delight to work with so far - thoughtful, considerate and very creative. Can't wait to see more from them!</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_pink"><img src="images/no circle borders/icon 9 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Devan</h3>
+						<p>Positions: Plot (Palla)</p>
+						<p>Contact Email: <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Devan is our second new member on the Palla plot team. Devan has been a delight to work with, demonstrating a quick aptitude for character and drama, which we love as a plot team! We are really looking forward to see what Devan comes up with next!</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_green_blue"><img src="images/no circle borders/icon 7 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Amber</h3>
+						<p>Positions: Plot (Palla)</p>
+						<p>Contact Email: <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Our final new member of plot, Amber has been really fun to work with so far. She has a delightful attention to detail, and has been playing in our NPC camp for years! She's becoming quite the fighter, and seems to thrive in combat situations. We can't wait to see what else she brings to the table as our game evolves!</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_red"><img src="images/no circle borders/icon 10 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Chris</h3>
+						<p>Positions: Plot (BroS)</p>
+						<p>Contact Email: <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Chris/Christine {non-binary} is secretly an old person and not so secretly really bad at being a crumudgeon. I love the collaborative, improvisational, and sometimes ridiculous nature of LARP and how those are a beautiful framework for community. I've been playing for 10yrs, Plot for Broken Shards for three-ish, and NPCing for two.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 11 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Sean</h3>
+						<p>Positions: Plot (BroS)</p>
+						<p>Contact Email: <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Sean has been larping for a while, and has been a member of the Broken Shards plot since the beginning. He is dedicated, focused, and has great attention to detail. We have loved working with him in the past, and can't wait to see how things progress in BroS.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 12 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Kevin</h3>
+						<p>Positions: Plot (BroS)</p>
+						<p>Contact Email: <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Kevin has been a great BroS plot member, from what we've seen. He's got a great sense for character and a spectacular attitude when things go awry. He's been a great plot member to work for, and we can't wait to see what comes next from him!</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_green"><img src="images/no circle borders/icon 10 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Brett</h3>
+						<p>Positions: Plot (Thevran)</p>
+						<p>Contact Email: <a href="mailto:thevran.plot@gmail.com">thevran.plot@gmail.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Brett is a master of games. Having been with Refuge for a while, and currently on Staff with the Seattle Chapter, too, Brett has made time to join the Thevran plot and tell some unique and fun stories with the Portland Chapter. Brett has a unique view of how to improve systems, and his perspectives on stories are always fun to discuss. We can't wait to see what Brett reveals of himself in the Thevran world.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_pink"><img src="images/no circle borders/icon 4 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Jen</h3>
+						<p>Positions: Plot (Thevran)</p>
+						<p>Contact Email: <a href="mailto:thevran.plot@gmail.com">thevran.plot@gmail.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Jen is a newer member of the Refuge community, but has already shown herself to be a skilled storyteller and role player. She brings a unique perspective with her character, and is always willing to draw others into stories that she's involved in. Jen is a natural leader within the game, and we can't wait to see what world she helps create with Thevran.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_red"><img src="images/no circle borders/icon 8 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Paul</h3>
+						<p>Positions: Plot (Thevran)</p>
+						<p>Contact Email: <a href="mailto:thevran.plot@gmail.com">thevran.plot@gmail.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Paul has been playing Refuge for almost forever! He has served on plot before - working with Barbara and Beyleth on seasons of Aer'Astria that were huge successes. He's back for more fun and creativity on the Thevran team. Paul has an incredible ability to create characters that have deep ties with the players, and motivate them to care about the world. We can't wait to see how he brings this to bear in Thevran!</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_pink"><img src="images/no circle borders/icon 9 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Erik</h3>
+						<p>Positions: Plot (Thevran)</p>
+						<p>Contact Email: <a href="mailto:thevran.plot@gmail.com">thevran.plot@gmail.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Erik has been playing in Refuge for a while, and knows the ins and outs of the game really well. He's contributed as both and NPC and a PC, and knows how to tell compelling stories. Plot always looks forward to his downtimes to see what crazy shenanigans he'll be up to next! We can't wait to see how his shenanigan tendancies are brought to bear in the Thevran plot team.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 1 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Kit</h3>
+						<p>Positions: New Player Council Chair</p>
+						<p>Contact Email: <a href="mailto:newplayer@refugelarpportland.com">newplayer@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Kit is heading up our newest board - the New Player Council. They graciously accepted it as we were realizing we needed to improve our resources and access for new players. We're stoked to be working with them in this capacity, and can't wait to see what they bring about in the future.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 2 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Jason S</h3>
+						<p>Positions: Player Rep, Rules Marshal</p>
+						<p>Contact Email: <a href="mailto:playerrep@refugelarpportland.com">playerrep@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Jason, the tallest of us, has been an incredible player rep so far! We are so thankful for all he's done. He is thoughtful, kind and considerate to all sides. We really appreciate his dedication to his work and to making the game as amazing as it can possibly be!</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon light_blue"><img src="images/no circle borders/icon 3 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Jessica</h3>
+						<p>Positions: DEI Coordinator</p>
+						<p>Contact Email: <a href="mailto:diversity@refugelarpportland.com">diversity@refugelarpportland.com</a></p>
+						<p>Social Media: None</p>
+						<p>Bio: Jessica, a devoted LARPer since 2006, champions the values of inclusion, diversity, and boundless love for this immersive hobby.</p>
+					</div>
+				</div>
+			</article>
+			<article class="row">
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_blue"><img src="images/no circle borders/icon 10 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Axel</h3>
+						<p>Positions: RAC Rep</p>
+						<p>Contact Email: None</p>
+						<p>Social Media: None</p>
+						<p>Bio: Axel has been gaming with Refuge for a very long time. They are an incredible asset to our team as RAC rep - they have seen enough of the good and bad to know how to guide our organization into a better and better place, and we have nothing but confidence in their continued successes.</p>
+					</div>
+				</div>
+				<div class="person column">
+					<span class="thumbnail_overlay icon dark_yellow"><img src="images/no circle borders/icon 11 no circle.png" alt="" /></span>
+					<div class="bio">
+						<h3>Daniel</h3>
+						<p>Positions: RRC Rep</p>
+						<p>Contact Email: None</p>
+						<p>Social Media: None</p>
+						<p>Bio: Dan has been a member of our community for a long time. He specializes in Knowing About Things and helping new characters. He has been serving as our RRC rep since the start of 2024, and we are excited to have him on board!</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

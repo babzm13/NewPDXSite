@@ -1,0 +1,281 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		<title>Welcome to Refuge LARP Portland</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background" />
+			<div class="heading_text">
+				<h1>Refuge LARP Portland</h1>
+				<h3>Welcome to our world</h3>
+			</div>
+		</section>
+		<section>
+			<h2>Welcome to Refuge LARP Portland!</h2>
+			<article class="article left_article">
+				<h3>A General Welcome</h3>
+				<p>Refuge is an exciting game of high fantasy, mystery, and fun! We play weekend-long events in Goldendale, WA and Eugene, OR (although we're always looking for more sites!), as well as the occasional gameday in the Portland, OR/Vancouver, WA area. We've also been known to host online events, so you can get your feet wet and meet some people without all the stresses of coming to game the first time!</p>
+				<p>We welcome people from all walks of life to our game. Please be sure to check out the <a href="new_player_faq.html">NEW PLAYER FAQ</a> in the <span class="menu-sections">ABOUT</span> section, if you have an interest in learning more about what it's like to play our games. That FAQ is exapanded on in our <a href="first_pc.html">PCING</a> and <a href="first_npc.html">NPCING</a> guides, and you can learn more about what to pack and what to expect from your first event on our <a href="first_event.html">FIRST EVENT</a> page.</p>
+				<p>Want to know more about the game itself? There are a ton of resources under the <span class="menu-sections">RULEBOOKS</span> tab. We're adding more regularly, so if you don't see something you think would be helpful, please let us know and we'll look into adding it!</p>
+			</article>
+			<aside class="image_container">
+				<div class="gallery fade">
+					<img src="images/pictures/Barb/CorinAndChris.jpg" alt="Photo by Barbara M" />
+				</div>
+				<div class="gallery fade">
+					<img src="images/pictures/Ryan/sashenka.jpg" alt="Photo by Ryan W" />
+				</div>
+				<div class="gallery fade">
+					<img src="images/pictures/Barb/NPCs.jpg" alt="Photo by Barbara M" />
+				</div>
+				<div class="gallery fade">
+					<img src="images/pictures/Layn/Dalion.jpg" alt="Photo by Layn S" />
+				</div>
+				<div class="gallery fade">
+					<img src="images/pictures/Layn/Group 2.jpg" alt="Photo by Layn S" />
+				</div>
+				<div class="gallery fade">
+					<img src="images/pictures/Ryan/masquerade.jpg" alt="Photo by Ryan W" />
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="caption-container"><p id="caption"></p></div>
+
+				<div class="thumbnail-row">
+					<div class="thumbnail-column">
+						<img class="demo cursor" src="images/pictures/Barb/CorinAndChris.jpg" onclick="currentSlide(1)" alt="Photo Credit: Barbara M">
+					</div>
+					<div class="thumbnail-column">
+						<img class="demo cursor" src="images/pictures/Ryan/sashenka.jpg" onclick="currentSlide(2)" alt="Photo Credit: Ryan W">
+					</div>
+					<div class="thumbnail-column">
+						<img class="demo cursor" src="images/pictures/Barb/NPCs.jpg" onclick="currentSlide(3)" alt="Photo Credit: <a href='mailto:babzm13@gmail.com'>Barbara M</a>">
+					</div>
+					<div class="thumbnail-column">
+						<img class="demo cursor" src="images/pictures/Layn/Dalion.jpg" onclick="currentSlide(4)" alt="Photo Credit: Layn S">
+					</div>
+					<div class="thumbnail-column">
+						<img class="demo cursor" src="images/pictures/Layn/Group 2.jpg" onclick="currentSlide(5)" alt="Photo Credit: Layn S">
+					</div>
+					<div class="thumbnail-column">
+						<img class="demo cursor" src="images/pictures/Ryan/masquerade.jpg" onclick="currentSlide(6)" alt="Photo Credit: Ryan W">
+					</div>
+				</div>
+			</aside>
+		</section>
+		<section class="left-image-right-text">
+			<aside class="image_container left_image">
+				<img src="images/pictures/Barb/OrcSquad3.jpg">
+			</aside>
+			<article class="article right_article">
+				<h3>About Our Game</h3>
+				<p>Refuge Portland is Portland's local chapter of Refuge LARP. We have two campaigns, and are always looking for new players to join us in our excellent hobby!</p>
+				<p>Our two campaigns - <a href="palla_plot.html">Palla</a> and <a href="bros_plot.html">The Broken Shards</a> (BroS) - tell two different stories. Palla is the story of a pacifistic group of people trying to save their settlement from monsters, while pirates help (and hinder?) the process.</p>
+				<p>In The Broken Shards, players have found themselves, by accident, a long ways from home with no way to return. They are looking for a way to get home and maybe make a difference in the lives of others along the way.</p>
+				<p>Palla is a standard campaign with players of all levels. The Broken Shards has a level cap to ensure players are fairly low level. That cap increases regularly as games are played. Palla plays 5-6 times a year in non-pandemic times, while The Broken Shards plays about twice a year.</p>
+			</article>
+		</section>
+		<div class="row">
+			<div class="columns">
+				<p class="thumbnail_align"><span class="thumbnail_overlay"><img src="images/circle borders/icon 2 circle border.png" alt="A star icon" class="thumbnail"/></span></p>
+				<h4>LARPING and COVID-19</h4>
+				<p>While Covid-19 has rocked the world and changed a lot of things, we are still LARPing. We have taken precautions that you can read about on our <a href="policies_safety.html#covid">Covid-19 Policy Page</a>. Many things are the same, but some are different, including people's various desires and needs.</p>
+				<p>Our policies around Covid-19 are being constantly scrutinized and updated. Please check back before each game to see where things are at, or join one of our <a href="contact_us.html">Social Media</a> pages to get notified when it updates.</p>
+			</div>
+			<div class="columns">
+				<p class="thumbnail_align"><span class="thumbnail_overlay"><img src="images/circle borders/icon 4 circle border.png" alt="A whispy icon" class="thumbnail"/></span></p>
+				<h4>FAMILY FRIENDLY!</h4>
+				<p>Our game was designed to be an older family-friendly space! We don't allow players younger than 8 to play our game, and children 8-14 need to Page, but they are welcomed. There are things for these older children to do, and there are some adults playing who have been playing with us since they were 8!</p>
+				<p>If you want to know more about our policies around children playing our game, check our our <a href="policies_safety.html#page">page</a> information page.</p>
+				<p>It's important to note that, while our game on the whole is around PG to PG-13, there are a lot of older teens and adults present, so individual experiences may vary.</p>
+			</div>
+			<div class="columns">
+				<p class="thumbnail_align"><span class="thumbnail_overlay"><img src="images/circle borders/icon 3 circle border.png" alt="A whispy hand icon" class="thumbnail"/></span></p>
+				<h4>OUR GUIDING PRINCIPLES</h4>
+				<p>Refuge as a game was founded with the desire to be a fun, exciting and inclusive experience for all. We are very strict about our desire to ensure the safety of all.</p>
+				<p>From our Diversity Committee, who works to ensure an inclusive experience for people from all walks of life, to our Refuge Accountability Committee, who acts as an oversight committee for the owners and chapters, to our national <a href="pdfs/CoC-AntiHarassment.pdf">Code of Conduct</a>, we aim to create an environment where people are welcomed and feel secure in exporing their stories.</p>
+				<p>Suggestions on places for improvement are always welcome! Please reach out if you have an idea!</p>
+			</div>
+			<div class="columns">
+				<p class="thumbnail_align"><span class="thumbnail_overlay"><img src="images/circle borders/icon 5 circle border.png" alt="" class="thumbnail"/></span></p>
+				<h4>AN INTERNATIONAL GAME</h4>
+				<p>Our chapters are found throughout the United States and Canada. Wondering if there's a chapter closer to you, or near where you are going on a trip? Check out our <a href="https://db.refugelarp.org" target="_blank">Online Database</a> to see!</p>
+				<p>Any character you create in any chapter can be played in any other chapter. Some chapters do have level caps, so you might have to squish your character, but you can play them anywhere you like! For more details, check out our <a href="https://www.refugelarp.org" target="_blank">National website</a>.</p>
+			</div>
+		</div>
+		<div class="trio">
+			<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 1 circle border.png" alt="An ocean icon" class="thumbnail" /></span>
+			<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+			<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 3 circle border.png" alt="A hand with a whisp of air icon" class="thumbnail" /></span>
+		</div>
+		<div class="row">
+			<article class="column_half">
+				<h2 class="column_title left_half">Is LARPing with Refuge for me?</h2>
+				<p>There are always things to consider when deciding to pick up a new hobby. Here are some of the ones we suggest thinking about:</p>
+				<ul>
+					<li><strong>Time:</strong> LARPing is a weird hobby because it take a LOT of time once in a while, and not a lot of time the rest of the time (unless you want it to). If you have a hard time getting one weekend a month or so off, this might be a more frustrating hobby than fun hobby for you. If you want to see what our schedule looks like so you can plan, check out our <a href="calendar.html">calendar</a>. That being said, unless you want it to take more time (and most of us do by the time we're three games in), there are infinite ways to do this! You can join <a href="policy_staff.html">staff</a>, engage in online roleplaying on our Discord Server, spend time upgrading your costume, hang out with local LARP buddies talking shop, etc. There are so many possibilities, but only attending the game is truly "required".</li>
+					<li><strong>Money:</strong> LARPing can be an expensive hobby. It doesn't have to be one, however, expenses do add up. If you're playing your own character (PCing), you'll need to spend money on your costume (garb), weapons, and other essentials. Depending on how crafty and thrifty you are, this can range from a small investment to a huge one - but that choice is up to you and your own budget. No one expects a new character to look amazing! You can make a small effort and do really well, and invest in new/better/nicer garb over time. You will also need to pay your event fee, which generally ranges from $75-$100 a weekend. If you want to play for cheaper, you can play on the monster side, which has no event cost. Regardless of whether you PC or NPC, you will need to pay for transportation and food for the weekend. Depending on your situation, you may also need to invest in good boots, the right clothes (black street clothes for NPCs, garb for PCs), time off from work, and other things like that.</li>
+					<li><strong>Reality:</strong> LARPing is a live-action game. We have a lot of options for players who have special needs, but there are some things we cannot change: LARPing in the Portland area is COLD and WET most of the year, and can be outrageously hot the other times. It's important to know the limits of your health when it comes to weather conditions. The physicality of the game can range from just walking between your cabin and the tavern a few times a day to engaging in full combat, but there are some physical elements to the game. We do have a number of accommodations depending on the site that we can offer if you struggle with the physicality of the game, so no fear, but only you can decide if those accommodations are what you need to enjoy the game. Finally, we also play at sites that generally don't have cell phone or internet coverage. If you need access to technology for the weekend to monitor children, work, or what have you, that's going to be a challenge.</li>
+				</ul>
+				<p>If you have considered these points and are ready to explore more, please go to our <a href="new_player_faq.html">New Player FAQ</a> page to read more</p>
+			</article>
+			<article class="column_half">
+				<h2 class="column_title right_half">What should I know before I start?</h2>
+				<p>LARPing is an incredible sport, hobby and adventure. But there are some things to think about before you begin exploring the hobby as one that you want to join:</p>
+				<ul>
+					<li>You are going to have to make a lot of decisions in the beginning. This isn't a bad thing, and you aren't alone! We are more than happy to help walk you through all the decisions to make, and give you alternatives if you want to do things differently. There's no one-size-fits-all in LARPing with Refuge!</li>
+					<li>There are as many ways to LARP "correctly" as there are people on this planet. Maybe more! Don't worry too much about figuring out what the "right" way to do something is, and just have fun! We're here to help you figure it out as you go, and we're all still learning, too!</li>
+					<li>Our official <a href="pdfs/RefugeRulebook_v1.0.6.1.pdf" target="_blank">Rulebook</a> is a huge thing that contains every rule for every single thing in the game. It's huge in part because the game designers and creators were influenced by games like Dungeons and Dragons, and because they wanted to give characters a LOT of opportunities to do basically anything they could think of! But fear not, you do NOT need to read the whole thing! Read through the <a href="new_player_faq.html">New Player FAQ</a>, and decide if you want to PC or NPC first. NPCs don't need to know any of the rules, really, and PCs can get away with only knowing a few at the beginning, and learning the rest through gameplay.</li>
+					<li>Our players are MORE than happy to teach you how to do anything you like, and will gladly take you under an arm, wing, or claw to instruct you in how to play the game.</li>
+					<li>If you have any special needs of any kind, feel free to <a href="contact_us.html">reach out to us</a> and discuss how we can best accommodate your needs. We'll do what we can to make you feel safe and happy and ensure you have a good game.</li>
+				</ul>
+				<p>There's an awful lot to do and think of at first, but we do promise that we'll try our best to ensure that you are as well-supported in your journey as you can be! We encourage everyone who plays to routinely check-in with themselves and others to ensure they are coming to the game from a place of compassion (for themselves and others). We want to tell amazing stories, and we want <strong>YOU</strong> to be a part of it! Join us now!</p>
+			</article>
+		</div>
+		<div class="trio">
+			<span class="thumbnail_overlay light_blue"><img src="images/circle borders/icon 2 circle border.png" alt="A star icon" class="thumbnail" /></span>
+			<span class="thumbnail_overlay light_blue"><img src="images/circle borders/icon 6 circle border.png" alt="A shield icon" class="thumbnail" /></span>
+			<span class="thumbnail_overlay light_blue"><img src="images/circle borders/icon 4 circle border.png" alt="A wing and wind icon" class="thumbnail" /></span>
+		</div>
+		<article class="article center_article">
+			<h2>So what now...</h2>
+			<p>Thinking LARP sounds fun? Start at the top with the <span class="menu-sections">Beginnings</span> tab and read from left to right across the menu. <a href="getting_started.html">Getting Started</a> will help direct you through the choices you need to make and how to get your questions answered, if you have them. Good luck, and can't wait to see you in the world!</p>
+		</article>
+				<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

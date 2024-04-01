@@ -1,0 +1,294 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/first_pc.css" rel="stylesheet" type="text/css">
+		<title>First Time PCing</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>First Time PCing</h1>
+				<h3>What to expect from your first game</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<p>Your first time PCing is amazing! It’s more complicated than NPCing in a lot of ways, but it is SO worth it to so many people in the end. And if you ever want to be on Plot, it’s a great way to explore the other side of the game!</p>
+
+				<p>Here are the key steps to take to create yourself a PC. You don’t have to do them in exactly this order, but it does help:</p>
+				<ul>
+					<li><a href="#concept">Create a Concept</a></li>
+					<li><a href="#backstory">Write your Backstory</a></li>
+					<li><a href="#card">Create your Card</a></li>
+					<li><a href="#gear">Gear your Character</a></li>
+					<li><a href="#prereg">Pre-Register</a></li>
+					<li><a href="#getting_there">Get to Site</a></li>
+					<li><a href="#first_game">My First Game</a></li>
+					<li><a href="#conclusion">Conclusion</a></li>
+				</ul>
+				<section class="color pink-bg">
+					<img src="images/BG image 2/BG image_2_5.png" alt="a torn paper background image" />
+					<article class="right-image-left-text">
+						<article class="image_container right_image"><img src="images/pictures/Layn/Rachis 1.jpg" alt="A proud avana stands in the woods, photo by Layn S" /></article>
+						<article class="article left_article">
+							<h3 id="concept">Create a Concept</h3>
+							<p>The first thing you need to do as a PC is come up with a character concept. In my experience, great first character concepts are simple 1-sentence explanations of the story you want to tell with this character. They could be things like any of the following:</p>
+							<ul>
+								<li>A grumpy scoundrel with a heart of gold, seeking redemption for a terrible failure.</li>
+								<li>A new adventurer who has just left their home, looking for gold and glory.</li>
+								<li>A new adventurer hiding a dark secret, which caused them to leave their home.</li>
+								<li>A wayward traveler whose solution to struggling with their family’s expectations is to run away.</li>
+							</ul>
+							<p>The secret to a good concept like this is to have a very short description of who your character is to the world, and why they are adventuring. I strongly encourage you to skip the thesaurus, and look for motivations to tell a story - what story do you want this character to experience, and to tell in themselves. Are they young and naive? Does that mean they’re going to tell a story about growing up? Are they young and struggling with something? Does that mean they’re going to tell a story about confronting those struggles and overcoming them (or falling victim to them)? Are they old and wisened? Does that mean they need to tell the story of passing on their legacy to the next generation? Is their legacy worth passing on?</p>
+							<p>These are all simple stories that can become FAR more interesting and nuanced with a few details, and make for great characters. Think about characters and stories you’ve enjoyed in the past, and don’t aim to recreate them, but perhaps find threads that draw them together. For example:</p>
+							<ul>
+								<li>Sal loves Legolas. They love especially how Legolas goes from hating dwarves in the Fellowship of the Ring to being besties with Gimli in the Return of the King. Sal decides to make a pacifist healer character who is struggling with a prophecy that says that they will find true love among the most violent creatures in the world, Adventurers.</li>
+								<li>Devin adores the story of Katniss and Peeta and wishes to do something similar with their character. They make a character whose family are farmers, but who feels called to defend the land as a Knight. The character is conflicted by wanting peace in their heart of hearts, but feeling like their calling is to give themselves over to war so others can find that peace they so desire. They struggle with wanting to find a peaceful way to end every fight, but knowing that it’s just not possible sometimes.</li>
+								<li>Jean really enjoys reading stories about Dracula - he was a total badass. In particular, Jean loves how Dracula was willing to do any and everything to be reunited with his lost love. Jean chooses to create a pirate character whose goal is to collect as much gold as possible so they can buy the love of the person they fancy. The person they fancy refuses to marry anyone who has less than 100 platinum to their name, so this character is Adventuring to find the platinum to wed…and may just find some new reasons to Adventure along the way.</li>
+							</ul>
+							<p>Note that all of these concepts are short, nuanced, and not exact replicas of the stories they came from. Also, all of these characters have a reason to be adventuring - they are looking for something, and are open to their story going sideways. In the first example, the true love they find could be a person, or it could be a group of friends and comrades, or it could be something else. It’s very open-ended. Likewise, the second story tells of a person who wants to become a knight, but might not make it, as they don’t want to fight. They have knightly virtues, and a drive to solve problems with peace, and want to be an adventurer to fulfill what they see as their calling. They may find that this *is* their calling, and then the story can turn into one of conflict as the character falls further and further from their knightly ideals into a pit of “it’s for the greater good!” Finally, the last has the most direct goal, but even that can easily be subverted by finding friends who encourage the PC to do different things with their life.</p>
+							<p>The true goal is to create the START of a story, one that you can fill in with details later.</p>
+						</article>
+					</article>
+					<img src="images/BG image 5/BG image_5_5.png" alt="a torn paper background image" class="invert_bottom"/>
+				</section>
+				<section class="right-image-left-text">
+					<article class="article left_article">
+						<h3 id="backstory">Write your Backstory</h3>
+						<p>Once you have a concept, you need a backstory. The best backstories are generally simple (1-2 pages MAX - most of the best ones I’ve read have been 2-3 paragraphs), and have lots of reasons for your character to be an Adventurer. Here’s a small list of things I recommend for backstories, and things I would encourage you to skip. This is just my personal opinion, though, so feel free to disregard if you think of something that will make a sick backstory!</p>
+						<p>Good things to include in a backstory:</p>
+						<ul>
+							<li>Why is your character an adventurer now?</li>
+							<li>What happened to make your character become an adventurer?</li>
+							<li>Why do they want this life? What about this life would they like to change?</li>
+							<li>Some sort of internal or external conflict - conflict generates growth over time.</li>
+							<li>Some reason to be looking for or open to new friends or family.</li>
+						</ul>
+						<p>Things to avoid with a backstory:</p>
+						<ul>
+							<li>Not really wanting to be an adventurer or be around other PCs.</li>
+							<li>Any motivation that puts you in conflict with the other PCs in dramatic ways. (Save this for your second or third character, once you know what the social contract is like at game.)</li>
+							<li>Making up villains or other people like that that you want plot to put into game for you and you alone.</li>
+							<li>Any reason to not like being in groups or hanging out with other people.</li>
+							<li>Too much death - Refuge people are allowed to die a LOT before they die for good, so it’s uncommon for death to be permanent.</li>
+							<li>Anything that involves being nobility - nobility is NOT inherited in Refuge, and just because your father was a King doesn’t mean you’ll become King too. Also, these titles are earned IN GAME EXCLUSIVELY. You can’t just “be a prince from another kingdom” or whatever, because those positions need to be earned by the things you do in the game world.</li>
+						</ul>
+						<p>Here are some examples of (Very short) starts to backstories:</p>
+						<p><emp>Druuva was born to a pair of chicken farmers. She HATED chickens with a passion growing up, and as soon as she came of age, she left her family farm to find bigger and better things. Her travels took her to a mercenary group, who showed her how to use a sword and stand on her own in small fights. She wasn’t good, but she was getting better when the mercenary group was beset by a group of undead. The undead won the fight, and the mercenary group was scattered to the winds. Lost and adrift after her resurrection, and unable to track down the rest of her group, Druuva decided to become an adventurer and hunt down and destroy the undead to the best of her abilities. She has developed a hatred for the undead, but also misses her friends in the mercenary group something fierce.</emp></p>
+						<p><emp>Veret was the son of a Knight. He never showed much knightly inclination, though, and preferred to play cards in the local tavern instead of training in the training grounds. His Knightly mother was disgusted by him, which hurt more than he cared to admit, but he refused to try and live up to her unattainable “goodness.” When war came to his lands, Veret’s mother was deployed to the front, and Veret decided it was time to leave home - without his mother around, he just couldn’t bear the expectations of others any more. Too many “If only the Knight was here...” for his taste. So he left, and decided to do the least knightly thing he could think of - join an adventuring community. He enjoys adventuring, but has occasionally wondered if he’s too “knightly” for this life...</emp></p>
+						<p><emp>Gol was raised by the University of Magicians since they first remember. No one ever talked about how Gol got there - they had just always been present, as far as they knew. Gol loved magic, and read books like a wildfire burns trees. They know an awful lot about very useless topics, and have even penned a novel or two, but they don’t know much about things that really matter - or so they think. About 6 months ago, one of the leaders of the University came to Gol and told them something incredibly hard: the truth. The leader revealed that Gol was found abandoned one night in the University halls. There was a note attached to their shirt that read, “when they are strong enough to come find me, send them to me. 44 38 19 7.” The wisest minds in the University couldn’t interpret these numbers with accuracy, and Gol was not yet strong enough, as far as they could tell, so it was time for Gol to go and become strong enough to solve their puzzle, if they so chose. Gol asked how they should go about doing that, and they were encouraged to go become an adventurer. They would gain strength and power much faster, and they might uncover something that would give them the understanding they needed to interpret the numbers. With the mystery fresh in their mind, Gol set out that night, ready to find their parent.</emp></p>
+						<p>Notice that all of these give a reason for the person to be an adventurer, have some elements of conflict inherent to them, and are the beginnings of stories. You want to feel like there’s somewhere to go with a story (one of the reasons we don’t allow knighthood and nobility as a starting point - where do you go from there?), so start low with lofty goals, and then see if you can achieve them!</p>
+					</article>
+					<article class="image_container right_image"><img src="images/pictures/Layn/Loclyn.jpg" alt="A stellarean looks into the distance, photo by Layn S" /></article>
+				</section>
+				<section class="color gold-bg">
+					<img src="images/BG image 7/BG image_7_6.png" alt="a torn paper background image" />
+					<h3 id="card">Create your Card</h3>
+					<p>Once you have your backstory, you should create your character card. You can read our <a href="quick_start_guides.html">guides</a> to get some ideas of how to do this, and I would encourage you to start in the <a href="https://freeplay-db.refugelarp.org/" target="new">freeplay database</a> so you can play with ideas before you lock in a build. Remember, you can rebuild your card after your first game! Just email logistics for help with that!</p>
+					<img src="images/BG image 3/BG image_3_5.png" alt="a torn paper background image" class="invert_bottom"/>
+				</section>
+				
+				<h3 id="gear">Gear your Character</h3>
+				<p>Once you have your card, you can start thinking about your character’s gear. You need both your IG Gear (potions, weapons, shields, etc), and OOG garb and the like.</p>
+				<p>The <a href="quick_start_guides.html">guides</a> have suggestions about how to Gear your character IG. Don't forget about the physreps you'll need for each item. Some can be reused, others will need their own rep for each. You can read the gear section in the <a href="quick_start_guides.html">guides</a> or the <a href="pdfs/RefugeRulebook_v1.0.6.1.pdf">rulebook</a> for more information on this, if you like.</p>
+				<p>As for OOG, there are lots of ways to gear up your character. Garb can easily be thrifted or found in stores (I’ve found great women’s period shirts in stores like Torrid recently, and Medieval Collectables has a lot of great stuff, too!).You can also peruse sites like Etsy, where many people get their garb from local and non-local crafters of all sorts (Chicken Vicious is a local LARPer who many of us know, for example! Check out <a href="links.html">links</a> for more store suggestions!). If you’re crafty, you can easily make your own garb from patterns at stores like Joann’s or Michael’s, or you can ask in our <a href="https://discord.gg/refuge-pdx">Discord</a> in the crafting section if anyone is willing to do a commission for you! We have loads of crafty people in the area who are happy to work with you!</p>
+				<p>For garb, please be prepared for the weather (usually raining, occasionally nice). Bring a cloak made of wool or something like that to keep the rain off, plan on needing a long-sleeved in-period shirt, long pants under whatever outer gear you’re wearing, and things like that. Check out the <a href="photos.html">photos</a> for pictures of some of our PC’s garb to get good ideas for what to wear! Also, be prepared to LAYER. The fastest way to avoid hypothermia is to have lots of good, sturdy layers under your garb that you can swap out for dry stuff as the game progresses. UnderArmour makes great gear for this, and you can find all sorts of alternatives online and at places like REI.</p>
+				<p>After that, it's basically checking off the <a href="packing_list.html">packing list</a> to ensure you've got everything you could possibly need. Some fun things to include:</p>
+				<ul>
+					<li>Tapestries or banners to hide things that are OOG.</li>
+					<li>IG or period art work to tape to the walls or put out on tables.</li>
+					<li>In genre writing supplies (fountain pens, paper, journals).</li>
+					<li>Etc...</li>
+				</ul>
+				<p>None of these things are required! They're just fun in game, and can easily be added to your kit later!</p>
+				
+				<section class="color blue-bg">
+					<img src="images/BG image 1/BG image_1_5.png" alt="a torn paper background image" />
+					<h3 id="prereg">Pre-Register</h3>
+					<p>Once your character is ready to go in the <a href="https://db.refugelarp.org/" target="new">online database</a>, you need to pre-register for the event.</p>
+					<p>To do this, find the event (you can find a link in our announcements on Discord, Facebook and the forums, or by going to the Events tab in the <a href="https://db.refugelarp.org/" target="new">online database</a>), and Start Preregistration. Fill out the questions as needed (feel free to post questions to Discord, Facebook and the forums if you have them). Once you complete your preregistration, you can view it to ensure it’s complete, and after a day or two, you can check that it’s been received by checking the applicable post on the forums to see if your name is there.</p>
+					<p>Once you’ve done that, you can pre-pay for the event (and food, if it’s an option), by sending the money over Square, or you can pay on site. Either is fine with us!</p>
+					<p>As a note, we like our pre-registrations to happen by 2 weeks before the event usually (sometimes it’s 1 week). You MUST make this deadline to get the discounted Pre-Reg rate. If you pre-register after this time, you will be charged an extra fee (usually $10-$15) because of the challenges it presents to our volunteer Logistics people. You also get <a href="use_cp.html">Chapter Points</a> for pre-registering before the deadline. They are super nifty and can be used for all sorts of cool things! Check it out!</p>
+					<p>That’s it! You’re done! Now all you need is to get to site and check in for FUN AND AWESOMENESS!</p>
+					<img src="images/BG image 6/BG image_6_5.png" alt="a torn paper background image" class="invert_bottom"/>
+				</section>
+				
+				<section class="left-image-right-text">
+					<section class="image_container left_image"><img src="images/pictures/Ryan/weena.jpg" alt="A sheep-kyn stands in the tavern talking, photo by Ryan W" /></section>
+					<section class="article article_right">
+						<h3 id="getting_there">Get to Site</h3>
+						<p>Okay! Here’s the fun! Getting to site is a fun experience - driving through the country can be beautiful and lovely!</p>
+						<p>Once you get to site, things get exciting fast! You’ll want to start by parking your car, then finding logistics. Parking should be obvious when you get to site, but if you have questions, stop and ask! Logistics is usually in the Tavern, and the Tavern is usually the biggest building on site.</p>
+						<p>If you’re at Brooks Memorial, the Tavern’s down the hill from the parking area, and if you’re at Lutherwood, it’s across the bridge and past the pavilion. Logistics at Lutherwood may also be held in the Cascadia building, across from the pavilion. Feel free to stop in there and see if it is before heading to the Tavern.</p>
+						<p>Depending on what Covid policies are like at the time, you may be asked for your Covid Proof of Vaccination and a negative Covid test when you arrive at the Tavern. Once that is sorted, the person checking Covid tests should be able to show you where your cabin is for sleeping. You can then unload your gear into your cabin (and your food into the Tavern) and get dressed in your garb.</p>
+						<p>Once you’re dressed in your garb (including armour!), report to Logistics again (be sure to bring your weapons and payment, if you didn’t pre-pay). There is where the magic happens!</p>
+						<p>You will be asked for payment (if applicable), then you will be given your character card, and any tags you pre-registered for. These tags will include armour tags, weapon tags, potion tags, etc. DO NOT LOSE THESE TAGS. You will NOT be reissued them if you lose them - you’ll have to track them down in game. You’ll also get whatever coin you’re due.</p>
+						<p>You will also be asked to fill out some <a href="forms.html">forms</a> - a legal release, a photography release (optional) and a Covid release form. These forms can be found online if you’d like to look them over in advance. You CANNOT PLAY OUR GAME without signing the legal release and the Covid release. The photography release is completely optional.</p>
+						<p>You will also need to have your weapon marshalled. This means you will need a Rules Marshal to look over it and ensure it’s safe before you engage in combat. There is usually a Marshal hanging around at logistics, but if there isn’t, they should be able to help you find one (sometimes that’s just going outside and screaming…). If your weapon passes, you’ll get your tags no problem! If it doesn’t, you’ll need to provide another physrep for any weapons you want to use with your tags. Sometimes people have spares with them, but it’s usually a good idea to have a spare pre-arranged just in case!</p>
+						<p>Once you’ve signed your forms and gotten your tags and the like, you can begin making your dinner, or hanging around and meeting people! We ask you don’t hang around inside the logistics space, unless you need to, but definitely introduce yourself to people inside the tavern building, cooking food, outside the tavern building, in your cabin, everywhere! This is how you start making friends and identifying those teammates who will be useful to you later on! People in our game LOVE to meet new people, so don’t worry! They’ll be so happy you’re there, you won’t be interrupting!</p>
+						<p>Around 9ish pm, someone will shout that Opening is beginning. Come to the Tavern and hang out as the Plot Team and Staff Members will get everyone together and go over important information for the event. There will be rules clarifications, introductions, introductions of new players (no ice breakers, just stand-and-wave), and a few other things. Once Opening is over, we’ll begin game.</p>
+						<p>There’s usually a short combat training before the actual beginning of game (often out by Monster Camp) and occasionally a new player mod. This ensures that everyone knows how to fight in our system, and the mod permits new players to get to know each other.</p>
+						<p>Then, it’s game on! This is when the roleplay and fighting begin. You’ll be in character basically all weekend, so enjoy yourself! It usually takes 3 games before your character feels like a REAL character, so don’t worry if it’s a little awkward at first - everyone has been there!</p>
+						<p>Enjoy!</p>
+					</section>
+				</section>
+				
+				<section class="color tan-bg">
+					<img src="images/BG image 5/BG image_5_5.png" alt="a torn paper background image" />
+					<h3 id="first_game">My First PC Game</h3>
+					<p>Once the game has begun, you’ll probably want to find your way to the Tavern IG and introduce your character to the other characters there.</p>
+					<p>It’s common for there to be a Friday Night town fight (a fight where all the PCs and all the NPCs fight in one big combat), a Saturday Day town fight, a Saturday Night town fight, and there’s SOMETIMES one on Sunday morning too.</p>
+					<p>Other than that, the game quickly becomes what you make of it. You can do things like go exploring for “Lair Cards” and “Info Cards.” These are pieces of printer paper hung up in the woods near trails protected by sheet protectors. Info Cards have information about the world and may give out loot if you have the right skills (we change up what the “right” skills are every game based on what the skills are of the people who are coming). Lair Cards are mods that you return to Monster Camp for.</p>
+					<p>Monster Camp is where the NPCs hang out all event. This is where they gear up for fights, and where you can usually find someone who can answer questions if you have them about plot stuff or whatever. It’s an OOG space, and please announce your presence by saying “PC ON DECK” as you approach, so you don’t spoil the event for yourself.</p>
+					<p>Lair Cards ask you to return to Monster Camp, so you can run a mod. This mod might be combat, a puzzle, a puzzle with combat, or other things. They’re color coded, so you always know what you’re getting into. You can check out more about Lair Cards and their colors <a href="lair_cards.html">here</a>. ((Note, this system is not used for BroS.))</p>
+					<p>Some Info Cards also have combat on them. You’ll find out by examining the card! You probably want to bring a friend or three with you when you’re exploring just in case.</p>
+					<p>Other than Info Cards and Lair Cards, you can make your own fun by interacting with the NPCs in the world - they all have important tidbits of information for you. Ask them questions, and listen to what they have to say. You might figure out something from their answers!</p>
+					<p>You can also wait around for hooked mods in the Tavern, or get involved in other people’s plots. Hooked mods are mods where someone comes in and asks you to complete a task - from saving the life of a dire badger, to looking for magic mushrooms, these tasks are all usually accomplishable within the frame of the world and the weekend, if you engage. Other people will also have personal mods (and you will too, soon!), and you can work with them to get engaged with those mods, too!</p>
+					<p>When you aren’t RPing or fighting, you are generally making food (eating is usually done IG), or sleeping (again, usually done IG, but not required to be so).</p>
+					<p>At around 12pm on Sunday, game will be called off, and we’ll gather in the Tavern for closing. Closing will have everyone give their favourite moments, and then cleanup will begin! We are all expected to contribute to cleaning up the campsite after our game - from cleaning up your stuff, to sweeping out your cabin, to cleaning the bathrooms you used, doing packet sweeps to ensure all the packets were picked up, to cleaning the kitchen. There are lots of tasks, and we all need all the help we can get with them. Please plan on staying until around 2pm to ensure everything is done. If you need to leave before that, please put in extra effort to keep the site clean during the weekend to make it easier on those who stay.</p>
+					<p>Once you leave, that’s it! You’ve done it! LARP weekend accomplished!</p>
+					<p>You’ll get your XP credit shortly on your character in the <a href="http://db.refugelarp.org" target="new">Online Database</a>, and then can spend it (or rewrite your character). The next event will be similar to the first (only they get way more fun as they go because you know more people and understand more about what’s going on!).</p>
+					<img src="images/BG image 2/BG image_2_5.png" alt="a torn paper background image" class="invert_bottom"/>
+				</section>
+				
+				<h3 id="conclusion">Conclusion</h3>
+				<p>Whew! That's a lot of information to take in all at once. Don't feel the need to do so! Take each step one at a time, and come back to this page to reference getting ready for the next step. It'll make things a lot easier on you. And remember, we're only a quick message away if you need help with anything. We are here to make your introduction to game as easy as possible, and look forward to seeing you soon!</p>
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

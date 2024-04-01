@@ -1,0 +1,331 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/policies_safety.css" rel="stylesheet" type="text/css">
+		<title>Safety Policies</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background" />
+			<div class="heading_text">
+				<h1>Safety Policies</h1>
+				<h3>Keeping yourself and others safe</h3>
+			</div>
+		</section>
+		<section class="right-image-left-text">
+			<article class="article left_article">
+				<p>We have several policies dedicated to keeping our players physically safe beyond what is listed in the rulebook. You can read about them here:</p>
+				<ul>
+					<li><a href="#banned">Banned Players Policy</a></li>
+					<li><a href="#covid">Covid-19 Policy</a></li>
+					<li><a href="#page">Page (Young or Incapacitated Players) Policy</a></li>
+					<li><a href="#physicalrp">Physical Roleplay Policy</a></li>
+					<li><a href="#romanticrp">Romantic Roleplay Policy</a></li>
+					<li><a href="#harassment">Harassment Policy</a></li>
+				</ul>
+			</article>
+			<article class="image_container right_image">
+				<img src="images/pictures/Ryan/disease.jpg" class="padded" alt="A group of players talking, photo by Ryan W" />
+			</article>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3 id="banned" class="anchor">Banned Players Policy</h3>
+				<p>On occasion, Refuge Portland will need to ban a player for violations of our rules, either game rules or out of game policies. Ban decisions are made by an advisory committee of our highest ranking staff members: Owner, GM, and Heads of Plot. Our DEI Coordinator or Head of Rules will be included in decision making when the behavior relates to their positions. The Owner has final authority.</p>
+				<p>We take bans very seriously as a tool we can use to keep our community healthy. There are two types of bans: <strong>Temporary</strong> and <strong>Permanent</strong>.</p>
+				<p><strong>Permanent</strong> bans are almost always used when a player has already had a temporary ban. We may decide that a particular violation is so egregious that it merits an instant permanent ban, but this will be a rare situation.</p>
+				<p><strong>Temporary</strong> bans remove problematic behavior while also allowing the opportunity for growth on behalf of the offending player. Temporary bans are often structured with an initial duration and a possible lower duration. In order to move to the lower duration, a banned player must complete external education related to their violation and demonstrate real learning to the satisfaction of the committee. Note that the initial ban may be indefinite. If a player would earn a second temporary ban under the same policy, that second temporary ban will be permanent instead.</p>
+				<p>Our current ban list will be maintained on the <a href="https://www.refugelarp.org/forum/viewtopic.php?f=81&t=4">Refuge Portland forums</a> in the Out of Game section. Permanent bans will list the player’s name and the policy they violated. For temporary bans, we will list the player’s name, the policy that was violated, the initial duration, and the potential shorter duration.</p>
+				<p>Any changes to the ban list will be accompanied by a new post on the ban thread briefly describing the change. This includes when a player has earned a reduction in ban time, or when a ban expires. Expired bans will be removed from the list at the owner’s discretion.</p>
+				<p>This policy applies to all Refuge Portland initiated bans. In addition, we have standing agreements in place with both Refuge Seattle and Refuge San Francisco to respect bans they make, and for them to respect the bans we institute. We believe that these other organizations follow the spirit of this policy in their ban decisions even if they do not follow the letter. Our ban list will include all such mirrored bans from Refuge Seattle and Refuge San Francisco, their durations, and the chapter of origin.</p>
+			</article>
+			<article class="article center_article">
+				<img src="images/BG image 1/BG image_1_3.png" class="flipped" alt="A torn page background" />
+				<div id="green_bg" class="dark_bg">
+					<h3 id="covid">Covid-19 Policy</h3>
+					<p>For the immediate future, all in-person players will be required to have a vaccine card for a completed COVID vaccine series, and be 2 weeks past their last (or only) shot. Players who elect to not receive the vaccine for medical, religious or other reasons will not be permitted at this time. Boosters are not required.</p>
+					<p>For all players, masks will be OPTIONAL. However, we are mandating a COVID-testing policy. Until further notice, to play at our game, you must take a rapid test no more than 24 hours of game-on (10pm Friday night). We recommend (but do not require) taking the test a few minutes before you leave for game. You will be asked to show proof of this negative test in the form of a picture of the negative test, the date (ideally written on the test in sharpie), and your face. All three of these things must be in the same picture - if you have questions or concerns about how to do that, please let me know. I'll be posting an example picture soon in our Discord, on the Forums and in our Facebook group. This is in line with other larps in the area.</p>
+					<p>If you have any concerns about taking photos of your rapid test, you are welcome to take the test on-site and show it directly to the person doing COVID screenings. If you choose to do this, please bring your own test. If you cannot for any reason acquire a rapid test (including finances), we will have a small number of rapid tests available with the person doing COVID screenings. Tests cost about $10 a piece, and if you use a test and can do so, please consider repaying us for those tests. If you can't, really, no worries. :)</p>
+					<p>All players MUST show proof of a negative test and vaccination in order to play at our game.</p>
+					<p>If you are otherwise ill in any way that is contagious (or possibly contagious), we ask that you respect the health and safety of others and do not attend. We know LARP is fun and we haven't done it in a while, but we want to ensure the safety of all of our players. In short, we want to avoid LARP-crud as much as possible. Sentence deleted.</p>
+					<p>People who become sick at game may be asked to leave, and those who came with them who are healthy may also be asked to leave. We aren't doctors and we aren't in the business of telling others what they can and can't do with their own bodies (beyond what's in our legal release and the game rules and policies), but we want to ensure this game is as safe as can be for all who play. Players who become sick at game may also be asked to take a rapid test, and results may be shared with the rest of the players, to ensure safety. We will do our best to keep this information as confidential as possible, but we can't guarantee confidentiality.</p>
+					<p>Sleeping spaces will be housed at capacity. Those concerned about COVID safety while sleeping are encouraged to wear a mask while sleeping (if possible) or bring a tent to sleep in. If you have other concerns or solutions, please let me know. I am more than willing to work with people on this.</p>
+					<p>Plot is more than willing to work with characters to explain absences, sudden or otherwise, so please reach out if you can't attend.</p>
+					<p>We will be adding a COVID waiver to our regular legal release that encompasses most of this information, and signatures will be required for gameplay.</p>
+					<p>Please review the current practices for safe check-ins on the Discord, Forums and Facebook groups to see how this policy is being implemented at this time.</p>
+					<p>Questions, comments or concerns about this policy? Please direct them to <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a>.</p>
+				</div>
+				<img src="images/BG image 3/BG image_3_3.png" class="right_ways" alt="A torn page background" />
+			</article>
+			<article class="article center_article">
+				<h3 id="page">Page (Young or Incapacitated Players) Policy</h3>
+				<div class="">
+					<p>We welcome minors aged 8 and up at our game. Before deciding to bring an underage participant to an Refuge game, please keep in mind that while we aim for a PG-13 environment, we run a game primarily populated by adults in intense situations, violently combating monsters in the dark. There are no overt sexual themes to the game that we run, but strong language and violent encounters are reasonably common. Not only will different people have different levels of tolerance for the dramatic situations they find themselves in, but not all younger players will have the level of maturity necessary to participate in a complex game among adults. Should you feel that a young player is mature and capable enough to participate at our events, we welcome them to give our game a try. However, due to safety concerns, there are a few restrictions regarding their ability to participate.</p>
+					<ol>
+						<li>For everybody under 18 years old, we need a parent’s signature on a consent form, which should include emergency contact info and medical/allergy information in case of an emergency.</li>
+						<li>Anybody under 16 must be accompanied by an adult guardian, participating in the same capacity as the minor (that is, PCing or NPCing). This does not need to be a parent (though it could be), but this person needs to be able to be responsible in case of injury, and willing to leave game with the child in case of a severe behavioral issue.</li>
+						<li>Anybody under 14 must participate as a Page (see the Page Policy, below), and may not NPC.</li>
+						<li>Finally, we do not accept players under age 8.</li>
+					</ol>
+					<p>It is the intention of Refuge Portland to do our best to safeguard against potential injury to its participants due to age, medical condition, or safety hazard. As such, a Page policy is outlined below. Note that this supersedes and overrides in all ways the sample Page policy outlined in the Refuge rulebook, including the “Page I slay you” call which is ineffective in Refuge Portland.</p>
+					<h4>Gaining Page Status</h4>
+					<ol>
+						<li>Any player may participate as a Page by his or her own choice. Players with medical issues that may affect their safety in combat may be required to take Page status to play the game.</li>
+						<li>Pages must wear a colored headband to denote their Page status, as defined below.</li>
+						<li>Any player under the age of 14 is under mandatory Page status. A parent or legal guardian must be on-site and is responsible for the player’s actions, and must remove the player from the site if asked. The parent or guardian must keep track of the player and be able to know where the player is at all times. Children under the age of 8 are not allowed to participate in any fashion, even as Pages.</li>
+						<li>A marshal may recommend that the executive staff place a player under Page status due to any condition that the marshal deems necessary to provide for the safety of Refuge Portland’s participants, such as health conditions or a player having multiple safety violations marked against them.</li>
+					</ol>
+					<h4>Page Conduct</h4>
+					<ol>
+						<li>Any Page (whether they are a Page by choice, age, medical, or disciplinary reason) that is disruptive, acts in an immature fashion, does not obey the rules, or in any other way is deemed to be harmful to the game may be asked to leave.</li>
+						<li>Pages may not enter combat in any way, including pouring healing potions in unconscious bodies in the middle of battle (though others may drag these bodies to the Pages for healing outside the combat zone). They must stay safely outside any combat zone. This means being sufficiently far that the combat will not sweep into their position before they can safely remove themselves, and is always a minimum of ten feet but may require further distance based on the situation.</li>
+						<li>There are effects that might prevent a Page from leaving a combat area when they would otherwise need to do so. These include but are not limited to unconsciousness, Pin, Web, Prison, etc. etc. If such a situation occurs, the Page should call a Hold and move themselves out of the way, keeping the effect once the Lay On occurs. Other players are expected to resolve the situation in a safe and appropriate manner – for example, a horde of players should not continue following a Pinned Page which would cause multiple Holds to be called.</li>
+						<li>Pages may never carry in-game weapons or weapon tags.</li>
+						<li>Pages may carry in-game items, and can be searched as per the search rules.</li>
+						<li>A Page may be affected by a normal combatant if the combatant’s weapon is within five feet, by having the combatant announce “Page, I [affect] you.” Legal affects are any that can be applied within the Refuge rules, such as (but not limited to): Spell Name, Gas Name, Waylay, Slay, Stun Limb, Disarm, Shatter Your [item], or Eviscerate. Applicable spell incants or weapon skill verbals must still be used (For example: “I call forth a 40 Flame Bolt! Page I 40 Flame Bolt you!” or “Page, I Disarm Potion you!”). Additionally, under the same conditions a Page may be struck for damage by adding “Page” to the damage call (ie, “Page, 4 Normal!” or “Page, 300 Magic!”). The damage called must follow normal Refuge rules for calling damage.</li>
+						<li>In response to any of the above, a Page may call any legal defenses they have at their disposal.</li>
+						<li>Pages earn XP for each event just like any other player. If they were a Page due to their age, then upon reaching the age of 14 they may create a new character with the same amount of XP and deaths or rearrange their current character with the XP they have earned.</li>
+					</ol>
+					<h4>Basic and Advanced Pages</h4>
+					<p>There are two distinct levels of Page status:</p>
+					<p><strong>Basic</strong> – All Pages begin at this level or participation. Basic Pages may not purchase any weapon skill or carry a weapon in game. They may purchase spells and alchemy, but are only allowed to touch cast spells, and may not throw gas globes. Basic level Pages must wear a yellow headband clearly displaying the word ‘PAGE’ to denote this status.</p>
+					<p><strong>Advanced</strong> – Once a Page has demonstrated good knowledge of the rules and an ability to interact with the game in a positive manner, they may be granted Advanced Page status as defined below. Advanced level Pages must wear an orange headband to denote this status.</p>
+					<p>To become an Advanced Page, a player must take the Advanced Page test. They must have played at least one full Refuge LARP event or gameday to be allowed to take the test, and must have displayed both roleplaying competency and understanding of the rules as determined by at least two staff members or marshals present at that Refuge event or gameday.</p>
+					<p>Any player wishing to play as an Advanced Page must take the Advanced Page test to do so. Even players who are temporarily Pages due to medical or disciplinary issues must take the test to use the Advanced Page rules.</p>
+					<p>Advanced Pages must follow all rules for Pages except for the following changes.</p>
+					<p>Advanced Pages may not be affected by “Page, I [affect] you” calls which would normally be packet-delivered. These effects must actually be thrown at the Page as they would a normal player, and the Page may use any means at their disposal (physically dodging the packet, running away, etc.) that a normal player would have.</p>
+					<p>Advanced Pages may interact with combat so long as the combat is individual. This means that the Advanced Page, and one other participant, are the only ones involved in combat in the immediate area. In this situation and this situation only, the Advanced Page is not required to leave the combat area and may in fact initiate combat. As soon as other participants become involved in the combat, however, the Advanced Page must attempt to leave the combat area and stay a safe distance away from other participants just like a Basic Page must. This means that an Advanced Page might initiate a combat which they must immediately run from if their target gains immediate assistance from others in the area.</p>
+					<p>If an Advanced Page is forced to leave a combat area, they may actively defend themselves via use of packets as they leave the combat area. Advanced Pages who are seen abusing this rule to stay in a combat area longer than necessary may be stripped of Advanced Page status immediately by any Marshal if necessary.</p>
+					<p>Advanced Pages may purchase the Archery skill. They may use Crossbows only with this skill and may pick up, carry, and utilize Crossbow physreps and tags.</p>
+					<p>Advanced Pages may purchase the Thrown Weapon skill. They may use any Alliance-legal thrown weapon.</p>
+				</div>
+			</article>
+			<article class="article center_article">
+				<img src="images/BG image 4/BG image_4_1.png" class="flipped" alt="A torn page background" />
+				<div id="yellow_bg" class="dark_bg">
+					<h3 id="physicalrp">Physical Roleplay Policy</h3>
+					<p>The players are more important than the game. At no time should any player ever be asked to subsume their OOG boundaries to serve their character’s IG motivation or verisimilitude. Telling a player that declining physical contact is “bad roleplay” or “not what their character would really do” is harassment, and may be grounds for suspension or banning.</p>
+					<p>Much like some other chapters in Refuge, Portland will be implementing the following physical roleplay consent policy:</p>
+					<h4>Physical Roleplay</h4>
+					<p><strong>Old policy:</strong></p>
+					<p class="italics">If player 1 wants to engage in physical contact with player 2 outside of combat (physical contact except with a weapon or packet is expressly forbidden in combat), they briefly go out of game by placing a hand on their head and ask “Do you consent to physical roleplay?” Player 2 will then also place a hand on their head and answer “Yes” or “No”. In some situations, this player may ask for clarification, or state boundaries, but the format does not invite them to do so, nor indicate to an unexperienced player what their options are.</p>
+					<p><strong>Problems that can arise:</strong></p>
+					<p>Without clarity, Player 2 may consent to physical contact anticipating a level with which they are comfortable (a hug), only to then receive a level of physical contact with which they are not comfortable (a kiss). This puts the player in the uncomfortable position of having been subjected to uncomfortable physical contact while feeling like they “agreed to it”. This physical RP consent functions most often as a sort of blank check, and is therefore vulnerable to intentional or unintentional abuse.</p>
+					<p><strong>New policy:</strong></p>
+					<p>If Player 1 wants to engage in physical roleplay with Player 2 outside of combat (physical contact except with a weapon remains expressly forbidden in combat), they briefly go out of game by placing a hand on their head and expressly requesting the specific physical interaction they are seeking.</p>
+					<p><strong>Example:</strong></p>
+					<p>“Physical roleplay negotiation: May I kiss you?”</p>
+					<p>Player two now has numerous options, because this is stated to be a negotiation. Options may include:</p>
+					<p>“No, thank you.”
+					<br>“No, but you may hug me, if you would like.”
+					<br>“I am not comfortable with a kiss, but my character would be, so I am comfortable simulating a kiss, or simply saying that they did without completing the action out of game.”
+					<br>“Yes, I am comfortable with a brief, closed-mouth kiss.”
+					<br>“Yes, I am comfortable with a lingering, open-mouth kiss.”</p>
+					<p>There is absolutely no room for debate in a physical roleplay negotiation. If a player declines a physical interaction, they do not owe an explanation for why, nor should you ever make an effort to talk them into it. OOG boundaries are not subject to either IG or OOG pressure.</p>
+					<p>Some players may set up long-standing consent agreements with people they know well, that follow boundaries that are familiar to them due to OOG boundary agreements. This is fine, but those agreements are always subject to cancellation on either person’s end, and no player should ever attempt physical roleplay with a new player or someone they do not have established boundaries with without expressly requesting consent. Additionally, no individual physical roleplay negotiation should be interpreted as the setting of an ongoing consent agreement. The consent is on a case-by-case basis, meaning that if the player consents to being hugged once, you must still obtain fresh consent the next time you want to hug them. If you want an ongoing physical roleplay agreement with another player, you must specifically request that, and negotiate it clearly. If at any point they wish to terminate that agreement, they may do so, and are not required to provide an IG or OOG explanation.</p>
+					<p>Physical contact with the intent to cause real bodily harm is not allowed in any form, with or without consent. Reckless contact is also disallowed. If a reasonable person is likely to conclude taking an action is likely to cause real injury, even by accident, you shouldn’t do it.</p>
+					<p>Physical roleplay consent can be revoked by any player, at any time, and must be respected. The player is expected to use whatever steering is necessary to cease the connection.</p>
+					<p>If any player feels at any time that their right to roleplay consent is not being respected (if a player engages in unwelcome physical roleplay without requesting consent, for instance, or after consent has been revoked), this is an addressable concern, and should be brought to staff attention. In addition to staff members, there are many senior players that are also willing to talk to staff on your behalf. We will try and identify these as they volunteer.</p>
+				</div>
+				<img src="images/BG image 7/BG image_7_2.png" class="right_ways" alt="A torn page background" />
+			</article>
+			<article class="article center_article">
+				<h3 id="romanticrp">Romantic Roleplay Policy</h3>
+				<p>Refuge LARP Portland's Romantic RP Policy follows along the lines of our <a href="#physicalrp">Physical RP Policy</a>. If you wish to engage in romantic RP with someone, you are expected to have a OOG conversation with that person(s) ahead of time, and come to an understanding of what is acceptable BEFORE ANY ROMANTIC ROLEPLAY OF ANY SORT is engaged in.</p>
+				<p>If your character would like to have a crush on another character, fall in love with another character, act romantically towards that other character (such as giving gifts or expressing emotions related to romance), etc, you should find a time to have an OOG conversation before such activities take place to set boundaries safely.</p>
+				<p>All persons involved in the romance should come to a mutually-agreed-upon understanding before romantic RP should take place. If anyone doesn't agree, the romantic RP is not okay, and should be treated as such. Even crushes should be considered "non-existent" if the crushed-upon party(ies) do not agree to said crushes. If you are struggling with how to navigate a situation such as this, please seek out a trusted staff member, such as the Player Rep.</p>
+				<p>For persons in polyamourous IG relationships, it is expected that conversations take place between all affected OOG players, pursuant to understandings with those players. Communication is the default, not the exception. For example, if character Jay is in a relationship with characters Kay and Elle, and their player wants to add character Zee to their relationship pool, it is expected that Jay's player will have a conversation with the players of Kay, Elle AND Zee about adding Zee to the relationship pool. This can happen all at once, or in individual conversations, as desired by the players. If there are prior agreements that state that players don't care if they're informed of other players' relationships, you can bypass this, but that is a conversation that must be had EXPLICITLY with players.</p>
+				<p>Likewise, if someone is telling a "cheating" storyline, and wants to engage in "cheating" behaviour with another player's character(s), we request that the "cheater" have a conversation both with the original partner(s) and the new partner(s), where they are open about the storyline they are interested in telling. Due to bleed, finding out IG that your character was cheated on can really ruin a game, and we are interested in communal story-telling based on consent.</p>
+				<p>At the end of the day, the best rule I can give you is that the more people that are involved in the situation, the more people should KNOW about the situation.</p>
+				<p>Any player may revoke consent to romantic roleplay at any time for any reason. Once the other player(s) are informed of this revocation, all romantic RP must stop immediately. The revoking player will receive NO IG or OOG repercussions due to the revocation of consent or the parties engaging in those repercussions will be considered in violation of this policy.</p>
+				<p>Refuge LARP Portland understands that not every person will engage in this behaviour perfectly, or to the exact satisfaction of others in the game. We will give some leeway for people doing their imperfect best, but this is a safety concern that is taken very seriously by our staff. We are happy to offer assistance in navigating these complicated situations, but violations of this policy are considered SERIOUS offenses, and may result in permanent banning from the game.</p>
+			</article>
+			<article class="article center_article">
+				<img src="images/BG image 7/BG image_7_3.png" class="flipped" alt="A torn page background" />
+				<div id="dark_blue_bg" class="dark_bg">
+					<h3 id="harassment">Harassment Policy</h3>
+					<p>The Refuge anti-discrimination policy states:</p>
+					<p class="italics"> Harassment of others, verbally, physically, sexually or otherwise, is illegal and strictly prohibited in our campaign. Players whose behaviour can be construed as harassment will be asked  to stop immediately. If the behaviour continues past that point, that player  will be banned permanently from the game. We are trying to create a fun and  safe game atmosphere; harassment of players and/or staff does not belong. Any  player that feels they are being harassed should bring the matter immediately  to the attention of the Owner and/or General Manager.</p>
+					<p class="italics">Types of harassment include, but are not limited to: bullying, psychological  harassment, racial harassment, religious harassment, sexual harassment,  stalking, mobbing, hazing, and hate speech.</p>
+					<p class="italics">Any questions about the definition of harassment should be directed to the  Owner and/or General Manager.</p>
+					<p class="italics"><strong>PLEASE NOTE:</strong> This rule extends outside of game and includes all interactions on any of our social media platforms, or communication with any member of our LARP.</p>
+
+					<p>Refuge Portland would like to clarify this policy for our chapter. In this clarification, be clear that the National policy is still the main document. We are simply attempting to add clarity to the policy as it is written.</p>
+					<p>Discrimination is favouring or not favouring a person over another based on a personal characteristic such as race, age, gender identity, etc. Discrimination is, by definition, unjust and prejudiced.</p>
+					<p>Discrimination may look like (this is not a comprehensive list):</p>
+					<p><strong>Direct discrimination:</strong></p>
+					<ul>
+						<li>Being told not to apply for a staff position because of your gender expression.</li>
+						<li>Not being allowed to sleep in a specific cabin because of your race.</li>
+						<li>Being removed as a marshal because you are “too old”.</li>
+						<li>Not being allowed to NPC because you have a hard time walking far from the tavern.</li>
+					</ul>
+					<p><strong>Indirect discrimination:</strong></p>
+					<ul>
+						<li>Not being trusted to be a rules marshal because of your country of origin.</li>
+						<li>The owners pass a policy that requires all players to be in game Sunday to receive XP, despite the fact you need to go to mass Sunday morning.</li>
+					</ul>
+					<p>Harassment is unwanted behaviour that the person being harassed finds offensive, and which makes them feel intimidated and humiliated. This can be written, verbal or physical. It may take place in person or online. The intent of the offender is irrelevant to whether harassment was committed or not.</p>
+
+					<p>Harassment may look like (this is not a comprehensive list):</p>
+					<ul>
+						<li>Racist microagressions such as trying to touch a black person’s hair.</li>
+						<li>Sexist jokes.</li>
+						<li>Calling someone “gay” as a pejorative.</li>
+						<li>Using real world slurs of any kind.</li>
+						<li>Making threats towards someone out of game that will be fulfilled either in game or out of game.</li>
+						<li>Sealioning: a type of trolling or harassment which consists of pursuing people with persistent requests for evidence or repeated questions, while maintaining a pretense of civility and sincerity. It may take the form of “incessant, bad-faith invitations to engage in debate”.</li>
+					</ul>
+					<p>Once you have witnessed or experienced harassment or discrimination, what do you do?</p>
+					<p>At Refuge Portland, we ask that you please find a trusted member of staff to report your experience. You are welcome to approach our Player Representative or DEI (Diversity, Equity, and Inclusion) Coordinator, if you aren’t sure who to start with, or you can find a member of plot or a marshal. The most important thing is that you report it, not who you report it to.</p>
+					<p>Our staff recognizes that reporting such incidences is frightening, worrisome, and takes a lot of courage. Be confident that if you report the incident to a member of staff, they will listen carefully, ask the questions they need to ask, and move your complaint up the chain.</p>
+					<p>Once you have explained your situation, the staff member you reported to will report to our owner and advisory board. The advisory board is made up of our GM, the heads of Aer’Astria and Broken Shards plot, and any other member of staff whom the advisory board deems as having pertinent points of view or evidence, such as our DEI Coordinator. If you have permitted your name to be shared with these people, they may contact you to get your experience in your own words and ask follow-up questions. If you did not permit your name to be shared, the group will begin fact-finding missions to determine what to do.</p>
+					<p>Once a decision has been reached, both parties will be informed of the decision. If an appeal is requested, due to new information, it will be granted on a case-by-case basis.</p>
+					<p>Questions about this policy can be directed to the owner or any member of the advisory council.</p>
+					<p>Owner: <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a></p>
+					<p>General Manager: <a href="mailto:gm@refugelarpportland.com">gm@refugelarpportland.com</a> </p>
+					<p>Palla Plot: <a href="mailto:plot@refugelarpportland.com">plot@refugelarpportland.com</a> </p>
+					<p>Broken Shards Plot: <a href="mailto:brokenshardsplot@refugelarpportland.com">brokenshardsplot@refugelarpportland.com</a> </p>
+					<p>Thevran Plot: <a href="mailto:thevran.plot@gmail.com">thevran.plot@gmail.com</a> </p>
+					<p>Player Rep: <a href="mailto:playerrep@refugelarpportland.com">playerrep@refugelarpportland.com</a> </p>
+					<p>DEI Coordinator: <a href="mailto:diversity@refugelarpportland.com">diversity@refugelarpportland.com</a> </p>
+				</div>
+				<img src="images/BG image 5/BG image_5_2.png" class="right_ways" alt="A torn page background" />
+			</article>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>

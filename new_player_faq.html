@@ -1,0 +1,282 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/new_player_faq.css" rel="stylesheet" type="text/css">
+		<title>New Player FAQ</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="bros_plot.html">BROKEN SHARDS PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>New Player FAQ</h1>
+				<h3>LARPing Basics</h3>
+			</div>
+		</section>
+		<section class="right-image-left-text">
+			<article class="article left_article">
+				<h3>Introduction to this FAQ</h3>
+				<p>Hello and welcome! If you're here, you're probably thinking about LARPing and have some questions. Well, hopefully we can get those answered for you as quickly as possible. If you don't find your desired answers here, please feel free to reach out to us on <a href="contact_us.html">social media or via email</a> to get the answers you need and want.</p>
+				<ul>
+				    <li><a href="#what_larp">What is a LARP?</a></li>
+				    <li><a href="#mean_to_larp">What does it mean to LARP?</a></li>
+				    <li><a href="#combat">What is combat like?</a></li>
+				    <li><a href="#getting_started">Getting Started</a></li>
+				    <li><a href="#npcing">What is an NPC/What is NPCing like?</a></li>
+					<li><a href="#pcing">What is a PC/What is PCing like?</a></li>
+					<li><a href="#safety">Safety</a></li>
+					<li><a href="#religion">Religion, sexual assault and Refuge</a></li>
+					<li><a href="#packing">What to pack</a></li>
+					<li><a href="#lexicon">A quick dictionary of terms</a></li>
+				</ul>
+				<h3 id="what_larp">What is a LARP?</h3>
+				<p>If you are here, you have probably heard of LARPing before. But! In case you haven't, Wikipedia defines LARPing as "A live action role-playing game (LARP) is a form of role-playing game where the participants physically portray their characters. The players pursue goals within a fictional setting represented by real world environments while interacting with each other in character. The outcome of player actions may be mediated by game rules or determined by consensus among players. Event arrangers called gamemasters decide the setting and rules to be used and facilitate play." (<a href="https://en.wikipedia.org/wiki/Live_action_role-playing_game">Wikipedia, 10/1/2021</a>)</p>	
+				<p>Refuge iteself is a medieval fantasy LARP. This means our games include medieval staples such as brave fighters, cutthroat rogues, noble royalty, crafty artisans and everything in between! These are combined with fantasy tropes, such as magic, sorcerers and undead.</p>						
+				<p>Unlike in a typical role-playing game, few interactions are decided with the roll of a die. If you wish to turn a member of the nobility to your cause, you must actually earn their trust and work with them to aid you. If you wish to strike down an evil foe with your magic arrows, you must actaually throw an arrow representation at the person and hit them with it!</p>						
+				<p>All combat in our games is done with padded foam weapons and bean-bag like packets of birdseed wrapped in cloth. As such, Refuge is a very safe game for all involved. The vast majority of people are injured by spraining their ankles or tripping over something in the woods, not by any of our fighting equipment or combat. Absolutely no physical contact by anything other than approved foam weapons or packets is allowed during combat.</p>
+			</article>
+			<article class="image_container right_image">
+					<img src="images/pictures/Layn/Blackberry.jpg" alt="A dryad walks with Crustacey, photo by Layn" />
+			</article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="image_container left_image">
+				<img src="images/pictures/Layn/Leander.jpg" alt="A human looking into the distance, photo by Layn" />
+			</article>
+			<article class="article right_article">
+				<h3 id="mean_to_larp">What does it mean to LARP?</h3>
+				<p>LARPing means that your character will never be completely separate from you as a person and your personal capabilities, emotional state, and needs.  It also means this will be true for every other person participating at an event. It means that stories play out in something approaching real time. That there are a lot more poeple involved than in any other form of roleplay - there are usually 6ish players for a pen-and-paper game, while 20 people is an incredibly small LARP. It means that staff are volunteers and no one (at least no one in our organization) is being paid to participate. It means that physical needs are a lot more relevant than they are in other forms of roleplaying - such as sleep, medicine and medical needs, nutrition, hydration, weather, good clothing, etc. LARP means that there will be light physical contact between you and other players (all of which should be expressly laid out in the rules), and that there are safety rules in place. LARPing with Refuge means no drugs or alcohol on site (prescriptions are a different matter), weapon checks to ensure that your weapon is safe for combat and unlikely to hurt other players, and the Pause Game rule. This rule says that if you hear the words "Pause game!" shouted, you should shout them yourself, and take a knee because something out of game is happening that needs attention - maybe there is a rules clarification, or someone is hurt, or something else. Feel free to start it yourself if you need help.</p>
+				<p>LARPing also means combat safety - we are a lightest-touch game, meaning you strike your opponent only as hard as you need to to be felt. We don't allow "charging", or getting so close to other players that you can touch their shoulder without reaching. We don't permit weapon pinning (or using strength to keep your opponent from moving their weapon), shield bashing (hitting others with your shield), 'machine gunning' (hitting the same place rapidly over and over again), or hitting invalid locations (head and groin).</p>
+				<p>LARPing means safety around children. This game is open to people ages 8+, and we have rules around both children and non-combatants (who we refer to as Pages). For Pages wearing yellow headbands, you are not allowed to strike them with weapons or spell packets, and they must leave combat if they get engaged. For Pages wearing orange headbands, you may not strike them with weapons, but can throw packets at them (and they can throw them at you). You can read more about this on our <a href="policies_safety.html#page">Page policy</a> section of the site.</p>
+				<p>LARPing also means reading up and agreeing to our local policies. We have some pretty strict policies around romantic RP, to protect everyone. You can access these through the LOCAL POLICIES section of the menu. They're good to read and to keep in mind while playing.</p>
+				<p>LARP can mean bleed happens. Bleed doesn't have anything to do with your arteries and veins, but rather is the term we use to describe when your emotions and feelings are impacted by those of your character, aand vice versa. Bleed could mean that you don't like Person A because their character was rude to your character, or maybe you don't like Person A, so you're going to be rude to their character yourself.  Bleed is also much more nuanced than that - it could be something like being afraid to confront a situation because you are worried about hurting a friend's feelings out of game, or agreeing to Romantic RP with someone because you have a crush on them. Bleed is NOT bad, and can, in fact, be very healthy. But it is something to be aware of. When bleed starts influencing your decisions without your conscious awareness of it, it can start to be worrisome. Bleed happens at LARP, especially with a game like Refuge PDX, and it's not something to fear or be worried about! But it is something to keep in mind.</p>
+				<p>Finally, for this list at least, LARPing means <strong>your</strong> possessions are safe, but your <strong>character's</strong> may not be. Theft is something that can happen at game, but only tagged items, merchant items, and coin are allowed to be stolen. Inhalers, family jewels, real-world money, and the like are NOT fair targets for thievery. If something that should not have been stolen gets grabbed, it is the responsibility of the person who did the stealing to find a marshal (our rules experts) and ensure that they turn over those items to get returned. It is a MUCH BETTER idea to never take them in the first place, but accidents do happen and must be rectified immediately.</p>
+				<p>So that's the general idea. If that sounds fun, pleaes read on for more useful information about LARPing!</p>
+			</article>
+		</section>
+		<section class="article center_article">
+			<h3 id="combat">What is combat like?</h3>
+			<p>We are asked a lot about the fighting style in Refuge. Refuge is a lightest-touch boffer combat system, which allows for physical contact, but only with approved foam weapons and birdseed packets. There is absolutely no physical contact allowed with unapproved weapons, hand-to-hand or ground combat. Think of Refuge as a representational system, rather than an actual fighting system. A tap with a weapon is just as effective in delivering damage to your opponent as a 90-degree axe-chop is.</p>						
+			<p>Each character has armour points and body points which are subtracted from mentally when you are struck. This is an honour system! You have to trust your opponents and allies to keep score and in return, you must respect them and do the same.</p>
+			<div class="trio">
+				<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 10 circle border.png" alt="A stylized bow and arrow icon" class="thumbnail" /></span>
+				<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 5 circle border.png" alt="A stylized flame icon" class="thumbnail" /></span>
+				<span class="thumbnail_overlay dark_green"><img src="images/circle borders/icon 10 circle border.png" alt="A stylized bow and arrow icon" class="thumbnail" /></span>
+			</div>
+			<h3 id="getting_started">Getting started</h3>
+			<p>Getting started with LARPing is actually quite simple, although it requires you to make a handful of decisions. Fear not! We'll help you through those decisions here:</p>
+			<ol>
+				<li><strong>Should you NPC or PC?</strong> The biggest decision you have to make is whether to NPC or PC for your first game. There are two schools of thought on this, but in the end, you should feel empowered to pick the one you want, and play that way. There's nothing wrong with picking one for your first game and trying the other for your next, either! To learn more about these two types of play, read <a href="#npcing">What is an NPC/What is NPCing like?</a>, and <a href="#pcing">What is a PC/What is PCing like?</a>.</li>
+				<li><strong>Making your character.</strong> The next thing you have to do is make your character. If you are NPCing, you just need a blank character, but if you are PCing, you'll need to choose skills and abilities, as well as a species, name and class. To create your character, you should go to the <a href="http://db.refugelarp.org" target="_blank">online database</a> and start a new character there. If you run into trouble, reach out to <a href="mailto:logistics@refugelarpportland.com">logistics</a> or the <a href="mailto:newplayer@refugelarpportland.com">new player rep</a>. They can both get you started on the right path. If you are intersted in playing a PC, but want to explore some different builds before locking in your purchases, feel free to make use of our <a href="http://freeplay-db.refugelarp.org" target="_blank">freeplay database</a>. In this database, you can make as many characters as you like, play with different builds, undo whatever you desire, and set your own XP, so you can see what you're building towards in the future. If you need more help with this, <a href="contact_us.html">reach out</a>! We'll be happy to help!</li>
+				<li><strong>Get to know the community?</strong> Most people will want to get to know the community before they show up for a weekend game, but not everyone has that requirement. If you'd like to explore our community first, please feel free to join us on <a href="contact_us.html">Discord</a>, which is where our community is most active. If you'd rather just show up and play, you should have all the resources you need on this website to get started! The choice is yours!</li>
+			</ol>
+			<article class="row">
+				<section class="column_half">
+					<h3 class="column_title left_half" id="npcing">What is an NPC/What is NPCing like?</h3>
+					<p>When you NPC, you play characters that the plot team has created for you. These might be monsters, villains, good folk, morally grey elves, etc. You will be put into situations where you have goals that have been set for you by the plot team, and you will be asked to give out certain information to players about certain things going on in the world. You don’t have as much freedom in which situations you interact with because plot will be telling you what to do more, but you will still have freedom to engage with the world in a way that feels authentic to yourself and your character (within limits). You will still need to rely on your OOG and IG skills, but less than you would need to as a PC.</p>
+					<p>As an NPC, you also play multiple characters over the course of the weekend. You might spend time as a good person (“townie”) Friday night, giving PCs some information about the monsters attacking the land, then be one of those same monsters. Saturday, you might go back to that same townie for breakfast, then play monsters for a while, then eat lunch as a new townie, then maybe be more monsters, but take a break to be the first townie again to drop information to the PCs, etc. A typical NPC has short stints of characters broken up by monsters of some kind or another, but plot will work with you if you only want to be monsters, or only want to be people as best as they can.</p>
+					<p>As an NPC, you don’t need to worry about finding a team as acutely. NPCs will generally be put into groups with more experienced players who will teach them the ropes, and they’ll have plot around who will be more than happy to answer questions and help create a comfortable environment. There’s more of a safety net with NPCing, in this regard, but making friends with people is still an important inroad to getting better at the game.</p>
+					<p>NPCs don’t have as much freedom over their cards as PCs do. They may play bigger cards than their first PC would be, but they also don’t have as many skills in general, and their purpose is generally to die and make the PCs feel awesome for killing them. They also have really different skills than the PCs have - they might be able to throw “5 elemental chaos” at will, or something. It depends heavily on the story being told and the cards that were written. However, you will also have everything on your card explained to you when you go out, and you are in no way expected to know all the PCs’ abilities and how they affect you. You’re welcome to just put a hand on your head and say “what does that do?” when you get hit by something new - it’s a safe way to learn the calls in a more measured way.</p>
+					<p>In terms of monetary requirements, NPCs don’t have many. We ask NPCs to come with black clothes (ideally without logos, or with logos that can be easily covered), and good shoes, and we provide the rest. Garb (in genre clothing), weapons, armour, etc, these are all provided by the chapter for NPCs to use. If you’re particular about your garb, you’re welcome to bring your own, but most people are well-garbed by what we have in Monster Camp. You also need to bring your own sleeping gear, but this amounts to pillows and blankets or regular sleeping bags, if nothing else. We have heated cabins for all players, so you don’t need excessive or expensive sleeping gear. Finally, in terms of food, we have meal plans for our NPCs almost every game. These meal plans are usually about $25 in Portland, and are an easy way to get fed - we’ll cook Friday dinner through Sunday breakfast for you, and then send you to get fed when it comes up. It’s simple and quite tasty! It’s worth noting that if you have severe or complicated food allergies (celiac, can’t eat soy, etc), it might be hard to accommodate such things, but we’ll try. We’ll reach out if we can’t with enough warning to give you time to find another solution.</p>
+					<p>Finally, we have the story. If you love to “peek behind the curtain” and see how stories are told, NPCing is probably the role for you. You won’t be surprised by much (except how the PCs react to things), but you’ll get to organically use your knowledge to tell a story. There’s a degree of puppetry that’s so fun and so exciting to be a part of, plus you get all the knowledge of what’s happening well in advance. AND you can occasionally see plot throw out their ideas at the drop of a hat and completely rewrite the game on the fly to respond to what the PCs are doing, which is basically the best thing that happens at LARP. ;) The hidden knowledge, and how and when to reveal it to the PCs, is so much fun, and keeps you coming back for more!</p>
+				</section>
+				<section class="column_half">
+					<h3 class="column_title right_half" id="pcing">What is a PC/What is PCing like?</h3>
+					<p>When you PC, you are playing a character you create yourself. That character will interact with the world however you choose, with whatever skills you have available to you both In and Out of Game. The situations you get yourself into and out of, and how you interact with those situations is entirely up to you. But you also need to rely on your IG (In Game) and OOG (Out of Game) skills to back you up in those situations.</p>
+					<p>As a PC, you also only play one person all weekend. You can come NPC for a little bit if you need a break (we call this “double-hooking”), but for the most part, people just play their PCs all weekend long. It’s a lot of fun to deep-dive into the character so intensely, but can cause issues with <a href="safety.html#bleed">Bleed</a>, if you aren’t careful. There’s nothing wrong with Bleed! It can be the whole point of the game for some people! Just be aware of it as you’re playing the game! </p>
+					<p>PCing is also a situation where you realize very quickly that you need a team to be good at this game. It’s possible to play the game without friends IG, but you won’t get as far as fast without them, and may not be able to get very far at all! That being said, this doesn’t mean you have to show up with a group! There are ALWAYS faces looking for friends in our game, and we’re happy to welcome you into the world.</p>
+					<p>In terms of game mechanics, PCs are given way more ownership over their skills, and have more varied skills than new NPCs do. PCs get to build their own cards, and do whatever their cards say they can do as often as their cards say they can do it. They make regular use of skills like Refit, Meditate, and other such skills that NPCs don’t use much. They also have the choice of when and where to use them. But PCs must also know their cards better than NPCs. They need to know the effects they can produce, what they do, and how to produce them - such as spell incants, if applicable. Rules Marshals will be present to ask questions, if you have them, but most of the onus is on the player to know what their actions do.</p>
+					<p>PCs also have some monetary considerations to take into account: they have to provide their own garb (clothes, belts, shoes, etc), weapons, armour (if any), sleeping gear and meals for the weekend. There’s also a fee for PCing from the chapter - each 2-day weekend-long event costs about $85 in Portland. But fear not! Your gear doesn’t have to look awesome when you start! You can grow your kit (your collection of gear) from something less impressive to something more impressive as you play the game - this is something basically EVERY PC does over the course of their career. It’s half the fun! We also have a <a href="scholarship_fund.html">scholarship fund</a> for PCs who can’t quite afford the $85, and need some assistance. We’re more than happy to help out our fellow players to ensure people can enjoy the game.</p>
+					<p>Finally, we have the story. If you love the chance to predict what’s going to happen, and then get surprised by a plot twist, PCing is probably the role for you. You won’t get a chance to “peek behind the curtain” much, but you’ll have chances to organically react to what’s going on with the world around you. You get to control how you feel about any given situation and be a living part of the story in a way only a main character (surrounded by dozens of other main characters) can be. It’s intoxicating to be so present in a situation, and can be the highlight of your month!</p>
+				</section>
+			</article>
+			<section class="left-image-right-text">
+				<article class="image_container left_image"><img src="images/pictures/Ryan/serious business luke.jpg" class="" alt="A serious human walking, photo by Ryan W" /></article>
+				<article class="article right_article">
+					<h3>Safety</h3>
+					<h4>Pause Game</h4>
+					<p>As outlined in the rulebook, whenever the call of “PAUSE GAME!” is yelled, it must be repeated by all players.  All combat and other in-game interactions must cease immediately until the hold is resolved.  You must call a pause game personally if you encounter an unsafe situation (someone falls, is injured, etc). When in doubt, call the pause game.</p>
+					<p>Pause games are generally not called for rules clarifications, checking to ensure someone is taking your blows, etc. It's for emergency or unsafe situations.</p>
+					<h4>Flames</h4>
+					<p>Absolutely no open flames are allowed inside of any buildings.  This includes the tavern, out buildings or cabins.  Depending on the venue and the time of year, open fire pits may be allowed outside so long as they are tended by someone at all times.</p>
+					<h4>Smoking</h4>
+					<p>Smoking is only allowed in designated out-of-game areas.  Please make sure to fully extinguish flame and ash, and to dispose of all butts and other refuse properly.</p>
+					<h4>Light</h4>
+					<p>Refuge is a 24-hour event, meaning that there is action going on at all hours, even at night! This means that moving between areas in the dark can be potentially hazardous and a light will be required.  Remember, please, that all lights must be in-period!  We recommend LED lanterns as they can be decorated to look proper and they will save you from falling, but if all you can find is a cell phone's flashlight app, that will do for now. Your lights should always be pointed at the ground; never shine a light in another player’s face.</p>
+					<h4>Alcohol and Drugs</h4>
+					<p>Absolutely no alcohol or illicit substances are allowed to be consumed at any Refuge events.  Period.  This includes imbibing off-site and then returning to the event later. People found in violation of this rule will be asked to leave immediately, and may be permanently banned from site. If you have questions about illicit substances that may be consumed for medical purposes, please ask the <a href="mailto:owner@refugelarpportland.com">owners</a> and we will address those situations on a case-by-case basis.</p>
+				</article>
+			</section>
+			<h3 id="religion">Religion, Sexual Assault and Refuge</h3>
+			<p>Refuge is a LARP without a pantheon of gods. In fact, religion is prohibited in the game, as is discussing it in game, to prevent offending our player base. Please avoid religious symbolism in your costuming and in your backstories to avoid running afoul of this rule.</p>
+			<p>Sexual assualt is a thing that <strong>DOES NOT HAPPEN</strong> in the world of Refuge. No one has come up with the idea ever, and no one ever will. This may be strange and unusual to players, but we want our game to be a safe space for as many people as possible, and a PG to PG-13 game. This means that sexual assualt is completely off the table. Do not mention it in your backstory, do not include it as part of your character's motivations, do not mention it in game.</p>
+			<div class="trio">
+				<span class="thumbnail_overlay dark_purple"><img src="images/circle borders/icon 2 circle border.png" alt="A stylized star icon" class="thumbnail" /></span>
+				<span class="thumbnail_overlay dark_purple"><img src="images/circle borders/icon 7 circle border.png" alt="A stylized fire icon" class="thumbnail" /></span>
+				<span class="thumbnail_overlay dark_purple"><img src="images/circle borders/icon 2 circle border.png" alt="A stylized star icon" class="thumbnail" /></span>
+			</div>
+			<h3 vid="packing">What to Bring to an Event</h3>
+			<p>Check out the <a href="packing_list.html">packing list</a> for ideas of what to bring!</p>
+			<div class="trio">
+				<span class="thumbnail_overlay dark_blue"><img src="images/circle borders/icon 8 circle border.png" alt="A stylized magic icon" class="thumbnail" /></span>
+				<span class="thumbnail_overlay dark_blue"><img src="images/circle borders/icon 9 circle border.png" alt="A stylized skull icon" class="thumbnail" /></span>
+				<span class="thumbnail_overlay dark_blue"><img src="images/circle borders/icon 8 circle border.png" alt="A stylized magic icon" class="thumbnail" /></span>
+			</div>
+			<h3 id="lexicon">Dictionary</h3>
+			<p><strong>Boffer</strong>: Weapons that are made from either PVC or graphite cores covered in foam and then wrapped in cloth or duct tape.</p>
+			<p><strong>Latex</strong>: Usually refers to weapons that are more realistic looking than their boffer cousins. Latex weapons look better but cost significantly more than boffers.</p>
+			<p><strong>NPC</strong>: Non-Player Character. These are the volunteers that make up all of the non-adventurers you see during an event. They are spiders, ghouls, townspeople, wizards, merchants or whatever else the Plot Team needs them to be. Someone playing an NPC will have multiple of roles over the course of an event.</p>
+			<p><strong>PC</strong>: Player Character. These are the people who play adventurers and play the one character for the entirety of the event. They are the protagonists of the story and are not tied down into doing anything by the Plot Team.</p>
+			<p><strong>Packet</strong>: A packet is a piece of cloth that has birdseed placed within it and tied together with a rubber band.  They are then thrown as representations of the ability, spell or arrow being used by the character.</p>
+			<p><strong>Garb</strong>: A character’s in-game outfit or costuming.</p>
+			<p><strong>Logistics</strong>: A band of volunteers who work tirelessly to ensure that all character sheets, experience points, event participation and any number of other behind-the-scenes work is done so that the rest of us can have a great time.</p>
+			<p><strong>Logistics Period (LP)</strong>: A Logistics Period is a day of game time, usually starting around 5pm to 6pm in the evening and going to the same time the following day. During a Logistics Period you may use the spells and abilities on your character sheet. You then regain the use of these abilities after the next Logistics Period has started.</p>
+			<p><strong>Page</strong>: A Page is a player that has certain physical combat limits placed on them for safety reasons. They cannot attack or be attacked by melee weapons, for instance. These policies are in place for our younger players and our players who are physically injured but still wish to participate.</p>
+			<p><strong>Plot Team</strong>: Most of the time this team of volunteers is referred to just as “Plot”. They are the ones that come up with the overarching storylines, the main villains, the little villains and more. They run the show, so to speak, and use NPCs to create the world and tell the story of the weekend.</p>
+			<p><strong>Item Tag</strong>: This is the in-game representation for an item. If they are used for something like a potion, once that potion has been used the tag is torn up. This means that other players can no longer use it, even if the potion bottle physrep is still useable.</p>
+			<p><strong>Physrep</strong>: Shortened from “physical representation”. That is, the actual physical out-of-game item that you use to represent an in-game item. As an example, your latex sword or your leather armor. Your in-game sword might end up shattered or stolen but your physrep that you shelled out real life dollars for will always remain with you or will at least be returned to you shortly.</p>
+			<p><strong>Carrier</strong>: A carrier is the type of damage called after the number in our combat system. “Two Normal” is a call for two points of normal damage. Other carriers include Flame, Ice, Silver, Disease and others. Certain carriers will have certain effects on different creatures or on a PC themselves. Refer to the rulebook for more about the specific carriers and what they do.</p>
+			<p><strong>Celestial Magic</strong>: Celestial magic is magic used mainly for offense and empowerment. These include bolts of flame or ice, spell shields, building wards, ice storms and dragon’s breath.</p>
+			<p><strong>Earth Magic</strong>: Earth magic is magic that is used mainly for defense and buffing. An Earth Caster is a well-loved member of an adventuring group! Their spells include healing, purify, destroy undead, restore, earth blade and even the power of life and death itself. Earth magic in Refuge is a reversible power force, meaning that if you are able to cast the healing spell “Cure Wounds” you are also automatically able to cast the necromantic version of the spell called “Cause Wounds”. This means that Earth magic is a double-edged sword, especially in a land where necromancy is illegal.</p>
+			<p><strong>Module or Mod</strong>: A module is a quest or battle that is held for a small group of players. A module may take up most of an entire day during a weekend event or it might be a quick skirmish with some lizards.</p>
+			<p><strong>FOIG</strong>: Acronym for “Find Out In Game”.</p>
+			<p><strong>IG</strong>: Acronym for “in-game”.</p>
+			<p><strong>OOG</strong>: Acronym for “out-of-game”.</p>
+			<p><strong>Chapter Points (CP)</strong>: Chapter Points are the reward that our volunteers who NPC, staff or donate items receive.  These CP may be be spent for experience boosts or magic items. If you are interested in learning how to acquire CP, check out the <a href="donations.html">donations</a> tab!</p>
+			<p><strong>Refuge Points (RP)</strong>: Refuge Points are like Chapter Points, but they are for the national organization. If you donate to the national org, you can receive RP, which can be spent in similar ways to CP. Look to the <a href="https://www.refugelarp.org/forum">National Forums</a> to learn more about how to earn and spend RP.</p>
+		</section>
+		<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>
