@@ -10,7 +10,7 @@
 #page_purple {
 	background: var(--dark-purple);
 }
-.article .page h3, .article .page ul {
+.article .page h3, .article .page h2, .article .page ul, .article .page p {
 	color: var(--dark-off-white);
 }
 #page_green {
