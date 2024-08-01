@@ -1,0 +1,274 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/basic_layout.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/menu_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/general_page_layout.css" rel="stylesheet" type="text/css">
+		<link href="css/constants.css" rel="stylesheet" type="text/css">
+		<link href="css/color_overlay_stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="css/footer.css" rel="stylesheet" type="text/css">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<link href="css/event.css" rel="stylesheet" type="text/css">
+		<link href="css/8-30-24_event.css" rel="stylesheet" type="text/css">
+		<title>8/30/24 Regionals Event Information</title>
+		<!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav id="top_bar">
+				<div id="quick_links">
+					<a href="https://discord.gg/NJWRWCS" target="_blank">Discord</a>
+					<a href="https://www.facebook.com/groups/refugepdx" target="_blank">Facebook</a>
+					<a href="https://www.refugelarp.org/forum" target="_blank">Forums</a>
+					<a href="getting_started.html">Getting Started</a>
+					<a href="quick_start_guides.html">Quick Start Guides</a>
+				</div>
+				<div id="searchable">
+					<a href="search.html">Search our Site</a>
+				</div>
+			</nav>
+			<nav id="menu_bar">
+				<nav id="main_menu">
+					<nav class="top_menu" id="top_menu_left">
+						<ul class="top_nav" id="left_menu">
+							<li class="main-menu" id="rlbks">RULEBOOKS&#9660;</li>
+							<li class="main-menu" id="geninf">GENERAL INFO&#9660;</li>
+							<li class="main-menu" id="abt">BEGINNINGS&#9660;</li>
+						</ul>
+					</nav>
+					<div id="logo">
+						<a href="index.html" id="menu_image" ><img src="images/portland_logo.png"/></a>
+					</div>
+					<nav class="top_menu" id="top_menu_right">
+						<ul class="top_nav" id="right_menu">
+							<li class="main-menu" id="dntns">HELPING OUT&#9660;</li>
+							<li class="main-menu" id="pols">LOCAL POLICIES&#9660;</li>
+							<li class="main-menu" id="wlds">USEFUL LINKS&#9660;</li>
+						</ul>
+					</nav>
+					<span class="hide" id="menu_label" onclick="openSideNav()">&#9776;</span>
+				</nav>
+				<nav class="set_of_sub_menues">
+					<nav class="sub_menu hide" id="rulebooks">
+						<ul>
+							<li><a href="pdfs/Refuge_LARP_Provisional_Rulebook_February_2024.pdf" target="_blank">Provisional Rulebook</a></li>
+							<li><a href="pdfs/Refuge_Treasure_Policy_February_2024.pdf" target="_blank">Provisional Treasure Policy</a></li>
+							<li><a href="https://docs.google.com/document/d/1IpRXOCRDa6Sc82J62DXZLPFjp1TRheOkGuXm7OG1lNo/edit" target="_blank">Transition Plan</a></li>
+							<li><a href="pdfs/CoC-AntiHarassment.pdf" target="_blank">CODE OF CONDUCT</a></li>
+							<li><a href="pdfs/Refuge_Inc_Bylaws_2020.pdf" target="_blank">REFUGE BY-LAWS</a></li>
+							<li><a href="pdfs/Refuge_Cosmology.pdf" target="_blank">REFUGE COSMOLOGY</a></li>
+							<li><a href="pdfs/Refuge_LARP_Book_of_Formal_and_Ritual_Magic_February_2024.pdf" target="_blank">REFUGE RITUAL BOOK</a></li>
+							<li><a href="pdfs/Refuge_Point_Item_Request_Policy_Sept_2023.pdf" target="_blank">REFUGE POINT ITEMS</a></li>
+							<li><a href="species.html">Species of Refuge</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="general_info">
+						<ul>
+							<li><a href="mission.html">MISSION STATEMENT</a></li>
+							<li><a href="calendar.html">CALENDAR</a></li>
+							<li><a href="https://freeplay-db.refugelarp.org/" target="_blank">FREEPLAY DATABASE</a></li>
+							<li><a href="https://db.refugelarp.org" target="_blank">OFFICIAL DATABASE</a></li>
+							<li><a href="forms.html">USEFUL FORMS</a></li>
+							<li><a href="safety.html">Safety</a></li>
+							<li><a href="diversity.html">Diversity and Inclusion</a></li>
+							<!--<li><a href="accessibility.html">Accessibility</a></li>-->
+							<li><a href="contact_us.html">Contact us</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="about">
+						<ul>
+							<li><a href="getting_started.html">Getting Started</a></li>
+							<li><a href="first_pc.html">PCing</a></li>
+							<li><a href="first_npc.html">NPCing</a></li>
+							<li><a href="new_player_faq.html">NEW PLAYER FAQ</a></li>
+							<li><a href="palla_plot.html">PALLA PLOT</a></li>
+							<li><a href="thevran_plot.html">Thevran PLOT</a></li>
+							<li><a href="downtimes.html">DOWNTIMES</a></li>
+							<li><a href="logistics_faq.html">LOGISTICS FAQ</a></li>
+							
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="donations">
+						<ul>
+							<li><a href="meet_staff.html">OUR STAFF</a></li>
+							<li><a href="policy_staff.html">STAFF ROLES</a></li>
+							<li><a href="how_to_donate.html">HOW TO DONATE</a></li>
+							<li><a href="use_cp.html">USING CHAPTER POINTS</a></li>
+							<li><a href="lcs_purchase_list.html">LCS PURCHASES</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="policies">
+						<ul>
+							<li><a href="policies_safety.html">Safety Policies</a></li>
+							<li><a href="policies_rules_clarifications.html">Rules Policies</a></li>
+							<li><a href="policies_ig.html">In Game Policies</a></li>
+							<li><a href="policies_staff.html">Staff-Related Policies</a></li>
+							<li><a href="policies_additional.html">Additional Policies</a></li>
+						</ul>
+					</nav>
+					<nav class="sub_menu hide" id="worlds">
+						<ul>
+							<li><a href="common_questions.html">Common questions</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="quick_start_guides.html">Quick Start Guides</a></li>
+							<li><a href="links.html">Links</a></li>
+						</ul>
+					</nav>
+				</nav>
+				<nav class="hide" id="side_nav">
+					<ul>
+						<li class="hide" id="close_menu" onclick="closeSideNav()">&times;</li>
+					</ul>
+				</nav>
+			</nav>
+		</header>
+		<!-- InstanceBeginEditable name="body" -->
+		<section class="page_heading">
+			<img class="heading_bg" src="images/bg.png" alt="A bunch of swirls on a dark background">
+			<div class="heading_text">
+				<h1>Event Information for 8/30/24 Boise/Portland Regional Event</h1>
+				<h3>The Pre-Registration Details for our Camp Arrowhead Game</h3>
+			</div>
+		</section>
+		<section>
+			<article class="article center_article">
+				<h3>Introduction</h3>
+				<p>This is for the Refuge Boise/Portland <strong>2024 Regionals</strong> event happening on Aug 30 - Sept 2, 2024 at <strong>Camp Arrowhead</strong> near Stevenson, WA! </p>
+				
+				<p>We will be using the current provisional ruleset. Character Cards will be printed 2 weeks prior to the event right after registration closes (printing on Aug 17th)..</p>
+					
+				<p>Registration is now OPEN! (If you have missed the early registration deadline please still send in a registration if you are planning on coming to the event. While you may not get the discount it still helps check-in run more smoothly). <strong>Registration deadline is Friday, Aug 16th, at 11:59 PM.</strong></p>
+				
+				<p>To register, please visit the <a href="https://db.refugelarp.org/events/537" target="_blank">event sign up page</a>.</p>
+			</article>
+		</section>
+		<section class="right-image-left-text">
+			<article class="image_container right_image">
+				<img src="images/pictures/Ryan/luke and markus.jpg" alt="Luke and Markus">
+			</article>
+			<article class="article left_article">
+				<h3 class="red_text">Pre-Registration Information</h3>
+				<ul>
+					<li>Price for Standard PC's is $120 and payment can be sent via:</li>
+					<ul>
+						<li>Square: <a href="https://square.link/u/3pVzqyGU" target="_blank">https://square.link/u/3pVzqyGU</a></li>
+						<li>Paypal: <a href="https://www.paypal.com/ncp/payment/AWEJHCXKDD85G" target="_blank">refugelarpportland@gmail.com</a></li>
+					</ul>
+					<li>Are you PC'ing Refuge for the first time? Your price is $60 and payment can be sent via:</li>
+					<ul>
+						<li>Square: <a href="https://square.link/u/TAbiOoNK" target="_blank">https://square.link/u/TAbiOoNK</a></li>
+						<li>Paypal: <a href="https://www.paypal.com/ncp/payment/AWEJHCXKDD85G" target="_blank">refugelarpportland@gmail.com</a></li>
+					</ul>
+					<li><strong>Pre-Reg closes on Friday, August 16th, at 11:59 PM.</strong></li>
+					<li><strong>Payment preferred prior to the event.</strong></li>
+					<li>We will have a scholarship fund. Contribute an event fee by purchasing one above (please specify that this is for the "scholarship fund" either when you send the payment, or via email after the fact, so we know who to credit! Thank you!) or by <a href="https://square.link/u/dCWhDyoz" target="_blank">donating $120</a>, and you will start the game off with a FREE FULL BOAT OF PROTECTIVES.</li>
+				</ul>
+			</article>
+		</section>
+		<section>
+			<article class="article center_article">
+				<img src="images/BG image 1/BG image_1_10.png" class="flipped" alt="A torn page background" />
+				<div id="dark_purple" class="dark_bg">
+					<h3>Game Info</h3>
+					<ul>
+						<li>PCs can be on site no earlier than <strong class="red_text">3:30pm on August 30</strong>.</li>
+						<li>Check-in Time: Start at 5pm</li>
+						<li>Game-on Time: Approximately 9pm, depending on how check-in goes</li>
+						<li><strong>LCS MI Policy</strong></li>
+						<ul>
+							<li>Up to 20 LCS Rits allowed from any chapter. Exceptions are the standard Portland Exceptions (found <a href="https://refugelarpportland.com/policies_additional.html#lcs_purchases" target="_blank">here</a>)</li>
+						</ul>
+						<li>Character sheets will be printed on August 17th. Make sure your memorization lists are in place prior to registration closing.</li>
+					</ul>
+				</div>
+				<img src="images/BG image 2/BG image_2_10.png" class="right_ways" alt="A torn page background" />
+			</article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="article right_article">
+				<h3>General Reminders</h3>
+				<h4>Meal Plans</h4>
+				<ul>
+					<li>NPC Meal Plan</li>
+					<ul>
+						<li>Expected Cost: $50</li>
+						<li>Complete the questions in the pre-reg if you wish to participate. We will email you the payment link when we have the meal plan details confirmed (if one is able to be offered). Payment preferred prior to the event.</li>
+						<li><strong>We are still  looking for people to run the meal plan.</strong> Reach out to <a href="mailto:refuge.regional.logistics.2024@gmail.com">refuge.regional.logistics.2024@gmail.com</a> if interested in helping. (Chapter points awarded for this work.)</li>
+					</ul>
+					<li>PC Meal Plan</li>
+					<ul>
+						<li>Expected Cost: $50</li>
+						<li>Complete the questions in the pre-reg if you wish to participate. We will email you the payment link when we have the meal plan details confirmed (if one is able to be offered). Payment preferred prior to the event.</li>
+						<li><strong>We are still  looking for people to run the meal plan.</strong> Reach out to <a href="mailto:refuge.regional.logistics.2024@gmail.com">refuge.regional.logistics.2024@gmail.com</a> if interested in helping. (Chapter points awarded for this work.)</li>
+					</ul>
+				</ul>
+				<h4>Covid Policy</h4>
+				<ul>
+					<li>Proof of COVID-19 vaccine must be submitted via email to <a href="mailto:refuge.regional.logistics.2024@gmail.com">refuge.regional.logistics.2024@gmail.com</a> by Aug 29 at 10pm.</li>
+					<li>Proof of a COVID-19 rapid test required within 24 hours of game-on (10 pm).</li>
+					<ul>
+						<li>You will be asked to show proof of this negative test in the form of a picture of the negative test, the date (ideally written on the test in sharpie), and your face.</li>
+						<li>All three of these things must be in the same picture.</li>
+						<li>Alternatively, you are welcome to take the test on-site and show it directly to the person doing COVID screenings.</li>
+						<li>If you choose to do this, please bring your own test.</li>
+						<li>If, for any reason (including finances), you cannot acquire a rapid test, we will have a small number of rapid tests available with the person doing COVID screenings. Tests cost about $10 a piece, and if you use a test please consider making an equivalent donation if you are able to do so.</li>
+					</ul>
+					<li>Please see our <a href="https://www.refugelarpportland.com/policies_safety.html#covid" target="_blank">full COVID-19 policy</a> for further details. Questions, comments or concerns may be directed to <a href="mailto:owner@refugelarpportland.com">owner@refugelarpportland.com</a>.</li>
+				</ul>
+			</article>
+			<article class="image_container left_image">
+				<img class="padded_image" src="images/pictures/Layn/Kix - Oops.jpg" alt="Oops!">
+				<img class="padded_image" src="images/pictures/Layn/PCs and Sven.jpg" alt="A dragon is born">
+			</article>
+		</section>
+		<section class="left-image-right-text">
+			<article class="image_container left_image">
+				<img src="images/pictures/Layn/No Pirates Yes Puzzles.jpg" alt="Pirates at work">
+			</article>
+			<article class="article right_article">
+					<h3>New Characters</h3>
+					<p>If your character has not been played before, please complete a copy of the <a href="https://docs.google.com/spreadsheets/d/1hGGaHpFqTtsEzzNqpKCi7dolgJ6gBCZV6SGjKOPl-ZE/edit?usp=sharing" target="_blank">New Character Starting Gear</a> document and email it to <a href="mailto:refuge.regional.logistics.2024@gmail.com">refuge.regional.logistics.2024@gmail.com</a>. We will be unable to generate new character magic items for you at check-in and you will not be able to do this at a later date.</p>
+			</article>	
+		</section>
+		<section class="pink-bg">
+			<img src="images/BG image 2/BG image_2_5.png" alt="a torn paper background image" />
+			<article class="article center_article dark_bg pink-bg">
+				<h3>Conversions</h3>
+				<p>If you have unconverted items please out to your local logistics or <a href="mailto:refuge.regional.logistics.2024@gmail.com">refuge.regional.logistics.2024@gmail.com</a> to determine the best route for conversion.</p>
+			</article>
+			<img src="images/BG image 3/BG image_3_5.png" class="flipped" alt="A torn page background" />
+		</section>
+		<section class="right-image-left-text">
+			<article class="image_container right_image">
+				<img src="images/pictures/Ryan/luke rachis kolostrum.jpg" alt="Luke, Rachis, and Dr. Klaustrum">
+			</article>
+			<article class="article left_article">
+				<h3>Cabin Sign-Up List - Camp Arrowhead</h3>
+				<p>Link to the Bunk Sign-Ups. <a href="https://docs.google.com/spreadsheets/d/1J9mtE5H69qAKSUn5t1nsXwS7MqNsbUBwKY1fgyNLZJs/edit?usp=sharing" target="_blank">Bunk Request form</a></p>
+				<p>Please use the above link to sign up for your bunks. Pre-registration will need to be submitted in order for a spot to be fully reserved.</p>
+				<h4>Mini-Lodge Areas</h4>
+				<ol>
+					<li>They cannot be warded. There are bathrooms and a kitchen in there. If you’re sleeping in there, you cannot ward, Limited CoP, etc that building to keep it away from PCs who want to use those facilities. </li>
+					<li>Likewise, rogue marshals will NOT be needed to enter those buildings if you are staying in the local Birdhouses.</li>
+					<li>Sign up with these rules in mind.</li>
+				</ol>
+			</article>
+		</section>
+	<!-- InstanceEndEditable -->
+		<div class="social">
+			<div class="social_icon"><a href="about_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 1 no circle.png" width="100" alt="About Us" class="thumbnail"/></span><p>About Us</p></a></div>
+			<div class="social_icon"><a href="meet_staff.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 3 no circle.png" width="100" alt="Our Staff" class="thumbnail"/></span><p>Our Staff</p></a></div>
+			<div class="social_icon"><a href="logistics_faq.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 5 no circle.png" width="100" alt="Logistics" class="thumbnail"/></span><p>Logistics</p></a></div>
+			<div class="social_icon"><a href="contact_us.html"><span class="thumbnail_overlay bottom_menu"><img src="images/no circle borders/icon 6 no circle.png" width="100" alt="Contact Us" class="thumbnail"/></span><p>Contact Us</p></a></div>
+		</div>
+		<footer class="secondary_header footer">
+			<div class="copyright">Barbara Martin - 2022</div>
+		</footer>
+	</body>
+<!-- InstanceEnd --></html>
